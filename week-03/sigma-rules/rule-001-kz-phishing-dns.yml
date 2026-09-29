@@ -1,0 +1,26 @@
+title: Оповещение о DNS-запросе к фишинговым доменам РК
+id: a1b2c3d4-e5f6-7890-1234-567890abcdef
+status: experimental
+description: Обнаруживает DNS-запросы к доменам, использующим тайпосквоттинг казахстанских брендов (Kaspi, eGov, Kazpost).
+author: Ikhsan Muptiadil
+date: 2026-09-29
+logsource:
+    category: dns
+detection:
+    selection:
+        query|contains:
+            - 'kaspi-bonus-2026'
+            - 'eg0v-portal'
+            - 'kazpost-delivery-track'
+    filter:
+        query|endswith:
+            - 'kaspi.kz'
+            - 'egov.kz'
+            - 'post.kz'
+    condition: selection and not filter
+falsepositives:
+    - Легитимные сервисы, случайно содержащие эти подстроки.
+level: high
+tags:
+    - attack.initial_access
+    - attack.t1566.002
