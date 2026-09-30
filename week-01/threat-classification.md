@@ -1,22 +1,22 @@
-# Классификация угроз: фишинг под бренды Kaspi и eGov
+# Threat Classification: Phishing Targeting Kaspi and eGov Brands
 
-## Подделываемые бренды
-- Kaspi.kz (банк/платёжная система)
-- eGov.kz (портал госуслуг)
-- Другие: Halyk Bank, Kaspi Gold
+## Impersonated Brands
+- Kaspi.kz (bank/payment system)
+- eGov.kz (government services portal)
+- Others: Halyk Bank, Kaspi Gold
 
-## Каналы доставки атаки
-| Канал | Описание |
+## Attack Delivery Channels
+| Channel | Description |
 |---|---|
-| SMS | Сообщение с ссылкой на фейковую страницу входа |
-| WhatsApp / Telegram | Рассылка ссылок в мессенджерах |
-| Email | Фишинговые письма с вредоносными вложениями/ссылками |
+| SMS | Message containing a link to a fake login page |
+| WhatsApp / Telegram | Links distributed through messaging apps |
+| Email | Phishing emails with malicious attachments/links |
 
-## Тип похищаемых данных
-- Логин и пароль от личного кабинета
-- Данные банковской карты (номер, CVV, срок действия)
-- Коды подтверждения (OTP)
+## Type of Data Stolen
+- Login and password for the personal account
+- Bank card details (number, CVV, expiration date)
+- One-time confirmation codes (OTP)
 
-## Предполагаемые акторы
-- Организованные группы, занимающиеся финансовым мошенничеством
-- Действуют преимущественно в СНГ, цель — быстрая монетизация украденных данных
+## Suspected Threat Actors
+- Organized groups engaged in financial fraud
+- Operating mainly within the CIS region, aiming for quick monetization of stolen data
