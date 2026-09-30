@@ -1,45 +1,23 @@
-# Threat Hunting Project (Weeks 1–3 Increment)
+## Week 3: Threat Intelligence Platforms (MISP) & Detection Engineering
 
-**Group Members:** [Ikson,Kazhymukan,Alizhan]  
-**Topic:** Introduction to Threat Hunting Practice  
+### 1. MISP Deployment
+- Successfully deployed **MISP (Malware Information Sharing Platform)** locally using Docker containers.
+- Configured the environment to store, share, and manage Cyber Threat Intelligence (CTI) data.
 
----
+### 2. Event Creation & IoC Management
+- Created a dedicated threat event: **Phishing Campaign targeting Kaspi, eGov, and Kazpost**.
+- Added multiple Indicators of Compromise (IoCs) with the **IDS (Intrusion Detection System)** flag enabled for SIEM export:
+  - **Domains (Typosquatting):** `kaspi-bonus-2026.com`, `eg0v-portal.kz`, `kazpost-delivery-track.net`
+  - **IP Addresses:** `185.120.10.45`, `193.100.20.15`
+  - **URL & Email:** Malicious login endpoint and fake sender address (`security@kaspi-bonus-2026.com`).
+- Exported the complete event as a JSON file for external platform integration.
 
-## Week 1: Cyber Threat Intelligence Fundamentals
+### 3. Detection Engineering (Sigma Rule)
+- Developed a **Sigma rule** (`rule-001-kz-phishing-dns.yml`) to detect DNS queries associated with the identified phishing infrastructure.
+- **Log Source:** DNS
+- **MITRE ATT&CK Mapping:** Initial Access (T1566.002 - Phishing: Spearphishing Link).
 
-### 1. CTI Terms Glossary
-| Term | Definition |
-| :--- | :--- |
-| **CTI (Cyber Threat Intelligence)** | Evidence-based knowledge about cyber threats that helps organizations make informed decisions. |
-| **IOC (Indicator of Compromise)** | Artifacts (IPs, hashes, domain names) that indicate a potential system compromise. |
-| **TTP (Tactics, Techniques, Procedures)** | Patterns of activities or methods used by threat actors. |
-| **Threat Hunting** | Proactive search for cyber threats that have evaded existing security controls. |
-
-### 2. Threat Classification & Sources
-- **Phishing:** Social engineering attacks via email.
-- **Ransomware:** Malware encrypting business data for ransom.
-- **APT (Advanced Persistent Threats):** State-sponsored or sophisticated threat groups.
-
----
-
-## Week 2: Data Collection Process
-
-### 1. OSINT Data Collection
-Collected intelligence on suspicious domain/IP/hash using **Shodan** and **VirusTotal**.
-*(Add screenshots below)*
-
-### 2. Data Source Mapping
-| Target Data | Source Log | Event ID / Log Type |
-| :--- | :--- | :--- |
-| Process Execution | Sysmon / Windows Event Log | Event ID 1 (Process Create) |
-| Network Connections | Firewall Logs / Sysmon | Event ID 3 (Network Connect) |
-
----
-
-## Week 3: Data Processing and Exploitation
-
-### 1. MISP Threat Sharing Platform
-Deployed MISP instance and imported IOCs (hashes/IPs) related to the scenario.
-
-### 2. Data Normalization & Filtering
-Applied log normalization rules (using Python/Sigma) to remove benign noise and filter critical events.
+### Artifacts in this Repository
+- `week-03/misp-event-export.json`: Raw MISP event export.
+- `week-03/sigma-rules/rule-001-kz-phishing-dns.yml`: Sigma detection rule.
+- Screenshots of the local MISP deployment and event attributes.
