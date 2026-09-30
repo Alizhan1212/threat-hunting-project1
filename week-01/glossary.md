@@ -1,12 +1,12 @@
-# Глоссарий терминов CTI
+# CTI Terms Glossary
 
-| Термин | Определение | Пример из темы (фишинг Kaspi/eGov) |
+| Term | Definition | Example from the topic (Kaspi/eGov phishing) |
 |---|---|---|
-| IOC (Indicator of Compromise) | Технический признак компрометации: домен, IP, хэш файла | Домен `kaspi-pay-secure[.]com` |
-| TTP (Tactics, Techniques, Procedures) | Модель поведения атакующего | Рассылка SMS со ссылкой на фейковый Kaspi |
-| OSINT (Open Source Intelligence) | Разведка на основе открытых источников | Поиск доменов через crt.sh, Shodan |
-| Threat Actor | Субъект, стоящий за атакой | Группа, специализирующаяся на фишинге в СНГ |
-| Typosquatting | Регистрация доменов, похожих на легитимные | `kzspi.com` вместо `kaspi.kz` |
-| Phishing kit | Готовый набор шаблонов для фишинговой страницы | Клон формы входа eGov |
-| C2 (Command and Control) | Сервер, управляющий заражённой инфраструктурой | Сервер, собирающий украденные данные |
-| Indicator | Любой технический след атаки | IP-адрес хостинга фишингового сайта |
+| IOC (Indicator of Compromise) | A technical sign of compromise: a domain, IP, or file hash | Domain `kaspi-pay-secure[.]com` |
+| TTP (Tactics, Techniques, Procedures) | A model of attacker behavior | Sending SMS with a link to a fake Kaspi page |
+| OSINT (Open Source Intelligence) | Intelligence gathered from publicly available sources | Searching for domains via crt.sh, Shodan |
+| Threat Actor | The entity behind an attack | A group specializing in phishing across the CIS region |
+| Typosquatting | Registering domains that closely resemble legitimate ones | `kzspi.com` instead of `kaspi.kz` |
+| Phishing kit | A ready-made template set for building a phishing page | A clone of the eGov login form |
+| C2 (Command and Control) | A server that manages compromised infrastructure | A server collecting stolen data from phishing pages |
+| Indicator | Any technical trace left by an attack | The IP address hosting a phishing site |
