@@ -1,4 +1,0 @@
-requests>=2.31
-python-dotenv>=1.0
-shodan>=1.31
-pymisp>=2.4.190
