@@ -2,7 +2,7 @@
 
 **Case study:** SolarWinds Orion supply-chain attack (SUNBURST), attributed to APT29 / UNC2452 / "Nobelium"
 **Models used:** Lockheed Martin Cyber Kill Chain, mapped to MITRE ATT&CK
-**Author:** Alizhan1212
+**Author:** IXIMIXIT
 
 ---
 
