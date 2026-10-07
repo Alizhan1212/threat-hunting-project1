@@ -1,0 +1,43 @@
+
+==============================================================================
+H0  INTEL-DRIVEN: DNS hits on week-3 MISP indicators
+==============================================================================
+2026-09-29T11:42:05+05:00  WS-007  l.sadykova     kaspi-bonus-2026.com -> 185.120.10.45
+-> 1 hit(s)
+
+==============================================================================
+H1  HYPOTHESIS: DNS queries to brand look-alike domains (not official)
+==============================================================================
+domain                        cnt hosts  first_seen                 hosts
+cdekteam.ru                     3     3  2026-09-29T10:00:00+05:00  WS-003,WS-018,WS-020
+kaspi-bonus-2026.com            1     1  2026-09-29T11:42:05+05:00  WS-007
+kaspi-gold-bonus.top            4     1  2026-09-30T11:24:03+05:00  WS-012
+kazpost-notice.site             1     1  2026-09-30T14:05:23+05:00  WS-021
+egov.proteantech.in             3     3  2026-09-30T15:04:00+05:00  WS-002,WS-011,WS-022
+egov-vyplata.online             2     1  2026-10-01T11:16:03+05:00  WS-015
+kazpost-posylka.site            2     1  2026-10-01T12:23:03+05:00  WS-019
+cdek-dostavka-kz.info           1     1  2026-10-02T10:11:03+05:00  WS-004
+-> 8 look-alike domain(s)
+
+==============================================================================
+H2  HYPOTHESIS: POST (form submission) to a look-alike domain
+==============================================================================
+2026-09-30T11:25:40+05:00  WS-012  s.aitkulova    POST https://kaspi-gold-bonus.top/login/verify  bytes_out=2181
+2026-09-30T11:30:40+05:00  WS-012  s.aitkulova    POST https://kaspi-gold-bonus.top/sms/confirm  bytes_out=2387
+2026-10-01T11:17:40+05:00  WS-015  v.sokolova     POST https://egov-vyplata.online/posobie/card  bytes_out=1702
+2026-10-01T12:24:40+05:00  WS-019  b.karimova     POST https://kazpost-posylka.site/pay  bytes_out=2708
+-> 4 POST(s) from 3 host(s)
+
+==============================================================================
+H3  HYPOTHESIS: PowerShell started by an Office application
+==============================================================================
+2026-09-30T14:05:22+05:00  WS-021 e.sultanov
+   parent: C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE
+   cmd:    powershell.exe -nop -w hidden -enc TABBAEIALQBTAEEATQBQAEwARQA6ACAAcwBpAG0AdQBsAGEAdABlAGQ...
+   net:    2026-09-30T14:05:24+05:00 -> 203.0.113.99:443
+-> 1 hit(s)
+
+For comparison - every encoded PowerShell by parent (naive rule would flag all):
+    30  C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe
+     1  C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE
+-> 31 encoded PowerShell events, 30 of them are a legitimate IT agent

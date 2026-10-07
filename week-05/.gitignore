@@ -1,0 +1,5 @@
+# Part B: large files, re-create with  python3 scripts/real_feed_hunt.py
+data/real/phishing-domains-ACTIVE.txt
+data/real/feed_for_splunk.csv
+scripts/__pycache__/
+.DS_Store

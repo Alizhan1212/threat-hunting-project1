@@ -1,0 +1,57 @@
+Real feed: phishing-domains-ACTIVE.txt, 392,164 unique active phishing domains
+
+=== STEP 1. Kazakhstani brands (week-02/config/brands.json) ===
+brand     naive  refined
+kaspi         3        3
+egov         87        0
+halyk        11        2
+kazpost       0        0
+cdek          3        1
+olx         103        1
+kolesa        0        0
+krisha        5        5
+forte         0        0
+jusan         2        2
+TOTAL       214       14
+
+Refined hits, analyst verdict:
+  PHISHING (Kaspi)   kaspibank.auth-telegramm.ru                                Kaspi name + fake Telegram 'auth' page on a .ru host
+  PHISHING (Kaspi)   kaspiy-delfin.tarho05.ru                                   Kaspi-like label on a throw-away .ru subdomain
+  PHISHING (Kaspi)   kaspl.ga                                                   Typosquat kaspi -> kaspl (i -> l), free .ga TLD
+  NOT OUR BRAND      homebank-argenta.be                                        Phishing of Argenta Bank (Belgium) 'homebank', not Halyk Homebank
+  NOT OUR BRAND      ing.be.homebank.quarantainezone-omgeving.online            Phishing of ING Belgium 'homebank', not Halyk
+  UNCLEAR            cdekbefotlfzxyqk-dot-millinium.ey.r.appspot.com            Random App Engine label that happens to start with 'cdek'
+  PHISHING (OLX.kz)  olxkz.pay-sacure4ds.ru                                     Fake '3-D Secure' payment page for OLX Kazakhstan sellers
+  FALSE POSITIVE     krishakg2006.github.io                                     Personal GitHub page, first name 'Krisha'
+  FALSE POSITIVE     krishamakwana11.github.io                                  Personal GitHub page, first name 'Krisha'
+  FALSE POSITIVE     krishankantsen.github.io                                   Personal GitHub page, first name 'Krishan'
+  FALSE POSITIVE     krishansharma02.github.io                                  Personal GitHub page, first name 'Krishan'
+  FALSE POSITIVE     krishayinfotech.com                                        Indian IT company 'Krishay'
+  FALSE POSITIVE     workers-playground-cold-violet-5b28.jusang425.workers.dev  Cloudflare account name 'jusang'
+  FALSE POSITIVE     workers-playground-wandering-dew-9153.jusang425.workers.dev Cloudflare account name 'jusang'
+-> confirmed KZ-brand phishing: 4  | not our brand: 2  | false positive: 7  | unclear: 1
+
+Why the naive 'contains' rule fails on real data (examples):
+  'egov' inside: advanced.thegovuk.com, aktiftalep-turkiyegovtr.com, aregovk.ru
+  '1414' inside: 1645275141433.pagedemo.co, 341231543214142523.com, 41414att.weebly.com
+  'olx' inside: 0xprotocolx-project.pages.dev, 3dmghazal81bw8a4dolx7.tempa-bersama.co.id, 7ymjolxfafr005e4.qwo231sdx.club
+  'homebank' inside: argenta-homebanking.xyz, bancogaliciahomebanking--galiciaar22.repl.co, citibanamex-homebanking.firebaseapp.com
+
+=== STEP 2. Global analogs of our brands (refined rule) ===
+brand                    KZ analog                     naive  refined  top TLDs
+PayPal                   Kaspi (payments/bank)          1122     1078  .com 416, .ru 74, .net 70
+DHL                      Kazpost / CDEK (delivery)       505      404  .com 152, .dev 32, .top 18
+USPS                     Kazpost (national post)        1621     1313  .top 930, .cc 176, .xin 58
+Gosuslugi                eGov (government portal)         19       16  .ru 9, .nz 1, .directory 1
+OLX (other countries)    OLX.kz (marketplace)            103       55  .pl 10, .xyz 9, .com 5
+
+Examples (lures similar to our KZ scenarios):
+  PayPal                 account-paypal-secure.net, au-paypalverify.com, au-paypalverify.net
+  DHL                    check.dhl-trackinged.com, confirm-package-redelivery-dhll.vercel.app, delivery-dhl-services.toptivi.com
+  USPS                   alexus71696.usps-parcel.com, httpsalexus71696.usps-parcel.com, my-package-usps-mover-guide.mrbasic.com
+  Gosuslugi              gosuslugi-covid-qr.ru, gosuslugi-kultura.ru, gosuslugi-pay.ru
+  OLX (other countries)  olx-paygate.site, olx-pl-3ds.id-43051.xyz, olx-pl.3dsecure-pay.com
+
+Triage signals across 2866 global hits:
+  top TLDs: .top 968, .com 606, .cc 215, .ru 92, .net 88, .org 60, .xin 58, .xyz 46
+  on free hosting / dev platforms (pages.dev, vercel.app, web.app, ...): 92 (3%)

@@ -1,0 +1,93 @@
+``` ============================================================================
+    Week 05 - Threat hunt queries for Splunk (SPL)
+    Data: week-05/data/*.csv uploaded with
+          index=th_lab   sourcetype=lab_dns | lab_proxy | lab_sysmon
+    Time range picker: "All time" (logs are 2026-09-28 .. 2026-10-04)
+    ============================================================================ ```
+
+
+``` ---------------------------------------------------------------------------
+    H0  INTEL-DRIVEN - did anyone resolve a week-3 MISP indicator?
+    Expected: 1 event (WS-007, kaspi-bonus-2026.com)
+    --------------------------------------------------------------------------- ```
+index=th_lab sourcetype=lab_dns
+    (query IN ("kaspi-bonus-2026.com", "eg0v-portal.kz", "kazpost-delivery-track.net")
+     OR answer IN ("185.120.10.45", "193.100.20.15"))
+| table _time hostname user query answer
+
+
+``` ---------------------------------------------------------------------------
+    H1  HYPOTHESIS - DNS queries to brand look-alike domains
+    "Any domain that contains a Kazakhstani brand name but is not the brand's own domain"
+    Expected: 8 domains (6 malicious + 2 known false positives from week-2 OSINT)
+    --------------------------------------------------------------------------- ```
+index=th_lab sourcetype=lab_dns
+    (query="*kaspi*" OR query="*egov*" OR query="*kazpost*" OR query="*post.kz*"
+     OR query="*cdek*" OR query="*halyk*" OR query="*homebank*")
+| eval official=if(match(query, "(^|\.)(kaspi\.kz|kaspibank\.kz|cdn-kaspi\.kz|egov\.kz|gov\.kz|post\.kz|kazpost\.kz|cdek\.kz|cdek\.ru|halykbank\.kz|homebank\.kz)$"), 1, 0)
+| where official=0
+| stats count dc(hostname) AS hosts values(hostname) AS host_list earliest(_time) AS first_seen BY query
+| convert ctime(first_seen)
+| sort first_seen
+
+
+``` ---------------------------------------------------------------------------
+    H1b TRIAGE - mark the false positives we already investigated in week 2
+    --------------------------------------------------------------------------- ```
+index=th_lab sourcetype=lab_dns
+    (query="*kaspi*" OR query="*egov*" OR query="*kazpost*" OR query="*cdek*" OR query="*halyk*")
+| where NOT match(query, "(^|\.)(kaspi\.kz|kaspibank\.kz|egov\.kz|gov\.kz|post\.kz|kazpost\.kz|cdek\.kz|cdek\.ru|halykbank\.kz|homebank\.kz)$")
+| eval verdict=case(query IN ("cdekteam.ru", "egov.proteantech.in"), "FALSE POSITIVE (week-2 OSINT)",
+                    query IN ("kaspi-bonus-2026.com"), "KNOWN IoC (MISP)",
+                    true(), "NEW - investigate")
+| stats count dc(hostname) AS hosts BY query verdict
+| sort verdict
+
+
+``` ---------------------------------------------------------------------------
+    H2  HYPOTHESIS - did a user SUBMIT data (POST) to a look-alike domain?
+    Expected: 4 POST requests from 3 hosts (WS-012, WS-015, WS-019)
+    --------------------------------------------------------------------------- ```
+index=th_lab sourcetype=lab_proxy method=POST
+    (domain="*kaspi*" OR domain="*egov*" OR domain="*kazpost*" OR domain="*cdek*" OR domain="*halyk*")
+| where NOT match(domain, "(^|\.)(kaspi\.kz|kaspibank\.kz|egov\.kz|gov\.kz|post\.kz|kazpost\.kz|cdek\.kz|cdek\.ru|halykbank\.kz|homebank\.kz)$")
+| table _time hostname user method url bytes_out
+
+
+``` ---------------------------------------------------------------------------
+    H2b VISIT TIMELINE - GET then POST within minutes = victim filled the form
+    --------------------------------------------------------------------------- ```
+index=th_lab sourcetype=lab_proxy
+    (domain="*kaspi*" OR domain="*egov*" OR domain="*kazpost*" OR domain="*cdek*")
+| where NOT match(domain, "(^|\.)(kaspi\.kz|egov\.kz|gov\.kz|post\.kz|cdek\.kz|cdek\.ru)$")
+| stats values(method) AS methods count earliest(_time) AS first latest(_time) AS last BY hostname user domain
+| eval submitted=if(mvfind(methods, "POST")>=0, "YES - reset password / block card", "no")
+| convert ctime(first) ctime(last)
+
+
+``` ---------------------------------------------------------------------------
+    H3  HYPOTHESIS (syllabus example) - PowerShell started by an Office app
+    Expected: 1 event (WS-021, WINWORD.EXE -> powershell -enc)
+    --------------------------------------------------------------------------- ```
+index=th_lab sourcetype=lab_sysmon event_id=1 image="*\\powershell.exe"
+    (parent_image="*\\WINWORD.EXE" OR parent_image="*\\EXCEL.EXE"
+     OR parent_image="*\\OUTLOOK.EXE" OR parent_image="*\\POWERPNT.EXE")
+| table _time hostname user parent_image command_line
+
+
+``` ---------------------------------------------------------------------------
+    H3b WHY NOT JUST "-enc"? - stack encoded PowerShell by parent process
+    Expected: 30 from the ManageEngine IT agent (benign) vs 1 from WINWORD.EXE
+    --------------------------------------------------------------------------- ```
+index=th_lab sourcetype=lab_sysmon event_id=1 image="*\\powershell.exe" command_line="* -enc*"
+| stats count dc(hostname) AS hosts BY parent_image
+| sort - count
+
+
+``` ---------------------------------------------------------------------------
+    H3c PIVOT - what did the suspicious PowerShell connect to, and which domain is that?
+    --------------------------------------------------------------------------- ```
+index=th_lab hostname=WS-021 (sourcetype=lab_sysmon event_id=3 dest_ip=203.0.113.99) OR (sourcetype=lab_dns answer=203.0.113.99)
+| eval ip=coalesce(dest_ip, answer)
+| table _time sourcetype hostname image query ip dest_port
+| sort _time

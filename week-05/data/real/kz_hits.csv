@@ -1,0 +1,15 @@
+brand,domain,verdict,reason
+kaspi,kaspibank.auth-telegramm.ru,PHISHING (Kaspi),Kaspi name + fake Telegram 'auth' page on a .ru host
+kaspi,kaspiy-delfin.tarho05.ru,PHISHING (Kaspi),Kaspi-like label on a throw-away .ru subdomain
+kaspi,kaspl.ga,PHISHING (Kaspi),"Typosquat kaspi -> kaspl (i -> l), free .ga TLD"
+halyk,homebank-argenta.be,NOT OUR BRAND,"Phishing of Argenta Bank (Belgium) 'homebank', not Halyk Homebank"
+halyk,ing.be.homebank.quarantainezone-omgeving.online,NOT OUR BRAND,"Phishing of ING Belgium 'homebank', not Halyk"
+cdek,cdekbefotlfzxyqk-dot-millinium.ey.r.appspot.com,UNCLEAR,Random App Engine label that happens to start with 'cdek'
+olx,olxkz.pay-sacure4ds.ru,PHISHING (OLX.kz),Fake '3-D Secure' payment page for OLX Kazakhstan sellers
+krisha,krishakg2006.github.io,FALSE POSITIVE,"Personal GitHub page, first name 'Krisha'"
+krisha,krishamakwana11.github.io,FALSE POSITIVE,"Personal GitHub page, first name 'Krisha'"
+krisha,krishankantsen.github.io,FALSE POSITIVE,"Personal GitHub page, first name 'Krishan'"
+krisha,krishansharma02.github.io,FALSE POSITIVE,"Personal GitHub page, first name 'Krishan'"
+krisha,krishayinfotech.com,FALSE POSITIVE,Indian IT company 'Krishay'
+jusan,workers-playground-cold-violet-5b28.jusang425.workers.dev,FALSE POSITIVE,Cloudflare account name 'jusang'
+jusan,workers-playground-wandering-dew-9153.jusang425.workers.dev,FALSE POSITIVE,Cloudflare account name 'jusang'

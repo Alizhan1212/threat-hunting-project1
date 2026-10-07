@@ -1,0 +1,38 @@
+// ============================================================================
+// Week 05 - the same hunts for Elastic (Kibana -> Discover -> ES|QL)
+// Data: week-05/data/*.csv uploaded via Kibana "Upload a file" into indices
+//       th-dns, th-proxy, th-sysmon   (timestamp field: time)
+// ============================================================================
+
+// H0  INTEL-DRIVEN - MISP indicators            (expected: 1 row, WS-007)
+FROM th-dns
+| WHERE query IN ("kaspi-bonus-2026.com", "eg0v-portal.kz", "kazpost-delivery-track.net")
+     OR answer IN ("185.120.10.45", "193.100.20.15")
+| KEEP time, hostname, user, query, answer
+
+// H1  HYPOTHESIS - brand look-alike domains      (expected: 8 domains)
+FROM th-dns
+| WHERE query RLIKE ".*(kaspi|egov|kazpost|post\\.kz|cdek|halyk|homebank).*"
+  AND NOT query RLIKE "(.*\\.)?(kaspi\\.kz|kaspibank\\.kz|cdn-kaspi\\.kz|egov\\.kz|gov\\.kz|post\\.kz|kazpost\\.kz|cdek\\.kz|cdek\\.ru|halykbank\\.kz|homebank\\.kz)"
+| STATS count = COUNT(*), hosts = COUNT_DISTINCT(hostname), first_seen = MIN(time) BY query
+| SORT first_seen
+
+// H2  HYPOTHESIS - data submitted (POST)          (expected: 4 rows, 3 hosts)
+FROM th-proxy
+| WHERE method == "POST"
+  AND domain RLIKE ".*(kaspi|egov|kazpost|cdek|halyk).*"
+  AND NOT domain RLIKE "(.*\\.)?(kaspi\\.kz|egov\\.kz|gov\\.kz|post\\.kz|kazpost\\.kz|cdek\\.kz|cdek\\.ru|halykbank\\.kz|homebank\\.kz)"
+| KEEP time, hostname, user, url, bytes_out
+
+// H3  HYPOTHESIS - PowerShell spawned by Office   (expected: 1 row, WS-021)
+FROM th-sysmon
+| WHERE event_id == 1
+  AND TO_LOWER(image) LIKE "*powershell.exe"
+  AND TO_LOWER(parent_image) RLIKE ".*(winword|excel|outlook|powerpnt)\\.exe"
+| KEEP time, hostname, user, parent_image, command_line
+
+// H3b encoded PowerShell stacked by parent        (expected: 30 IT agent vs 1 Word)
+FROM th-sysmon
+| WHERE event_id == 1 AND TO_LOWER(command_line) LIKE "* -enc*"
+| STATS count = COUNT(*) BY parent_image
+| SORT count DESC

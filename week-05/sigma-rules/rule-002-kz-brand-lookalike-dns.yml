@@ -1,0 +1,67 @@
+title: DNS Query to Kazakhstani Brand Look-alike Domain
+id: 5f3e9c1a-2b7d-4e8a-9c61-0d4a7b2e8f13
+related:
+    - id: a1b2c3d4-e5f6-7890-1234-567890abcdef   # week-03 rule-001 (fixed IoC list)
+      type: derived
+status: experimental
+description: |
+    Behaviour-based successor of rule-001. Instead of a fixed list of known phishing
+    domains, it fires on ANY domain with a label that starts with a Kazakhstani brand name
+    and that is not one of the brand's official domains. Produced by hunt H1 (week 5) and
+    tuned on 392 164 real phishing domains (Phishing.Database, README section 9).
+author: Kazhymukan Boris (threat-hunting-project1 group)
+date: 2026-10-06
+modified: 2026-10-06
+references:
+    - https://attack.mitre.org/techniques/T1566/002/
+    - https://attack.mitre.org/techniques/T1583/001/
+logsource:
+    category: dns
+detection:
+    selection:
+        # brand keyword must START a domain label (after start, "." or "-").
+        # Tested on 392 164 real phishing domains: plain "contains" gave 214 hits (mostly noise,
+        # e.g. "egov" inside "thegovuk"), this regex gave 14 (see README section 9).
+        query|re: '(^|[.-])(kaspi|kaspl|kasp1|egov|eg0v|kazpost|kazpochta|cdek|sdek|halyk|homebank|olxkz|krisha|jusan)'
+    filter_generic_word:
+        query|re: '(^|[.-])homebanking'
+    filter_official:
+        query|endswith:
+            - '.kaspi.kz'
+            - '.kaspibank.kz'
+            - '.egov.kz'
+            - '.gov.kz'
+            - '.post.kz'
+            - '.cdek.kz'
+            - '.cdek.ru'
+            - '.halykbank.kz'
+            - '.homebank.kz'
+    filter_official_apex:
+        query:
+            - 'kaspi.kz'
+            - 'kaspibank.kz'
+            - 'cdn-kaspi.kz'
+            - 'egov.kz'
+            - 'gov.kz'
+            - 'post.kz'
+            - 'kazpost.kz'
+            - 'cdek.kz'
+            - 'cdek.ru'
+            - 'halykbank.kz'
+            - 'homebank.kz'
+    filter_known_benign:   # verified in week-2 OSINT
+        query:
+            - 'cdekteam.ru'
+            - 'egov.proteantech.in'
+    condition: selection and not 1 of filter_*
+falsepositives:
+    - Unrelated sites that contain a brand word (e.g. cdekteam.ru, egov.proteantech.in) - add to filter_known_benign after review
+    - New official domains of the brands - keep the allow-list up to date
+    - Personal names that start like a brand (real-feed examples - krishakg2006.github.io, jusang425.workers.dev)
+    - Other banks' "homebank" portals (Argenta, ING Belgium) - not Halyk
+level: medium
+tags:
+    - attack.initial_access
+    - attack.t1566.002
+    - attack.resource_development
+    - attack.t1583.001

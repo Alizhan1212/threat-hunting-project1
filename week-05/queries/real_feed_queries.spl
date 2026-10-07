@@ -1,0 +1,75 @@
+``` ============================================================================
+    Week 05 - Part B: H1 on REAL data (Phishing.Database active phishing domains)
+    Data: data/real/feed_for_splunk.csv  (created by scripts/real_feed_hunt.py)
+          uploaded with  index=th_real  sourcetype=real_feed
+          (no timestamp in this file - Splunk uses the upload time, so pick "All time")
+    Expected numbers are for the 2026-10-02 snapshot (392 164 domains).
+    ============================================================================ ```
+
+
+``` ---------------------------------------------------------------------------
+    R0  sanity check                                    expected: 392 164
+    --------------------------------------------------------------------------- ```
+index=th_real sourcetype=real_feed | stats count
+
+
+``` ---------------------------------------------------------------------------
+    R1  STEP 1a - KZ brands, NAIVE rule ("domain contains keyword")
+        Same logic as rule-002.                          expected: 214 hits
+    --------------------------------------------------------------------------- ```
+index=th_real sourcetype=real_feed
+| where match(domain, "kaspi|kaspl|kasp1|egov|e-gov|1414|eg0v|halyk|homebank|kazpost|post\.kz|kazpochta|cdek|sdek|olx|kolesa-kz|kolesakz|krisha|fortebank|forte-bank|jusan")
+  AND NOT match(domain, "(^|\.)(kaspi\.kz|kaspibank\.kz|cdn-kaspi\.kz|egov\.kz|gov\.kz|halykbank\.kz|homebank\.kz|post\.kz|cdek\.kz|cdek\.ru|olx\.kz|kolesa\.kz|krisha\.kz|forte\.kz|fortebank\.com|jusan\.kz)$")
+| rex field=domain "(?<keyword>kaspi|kaspl|kasp1|egov|e-gov|1414|eg0v|halyk|homebank|kazpost|kazpochta|cdek|sdek|olx|kolesa|krisha|forte|jusan)"
+| stats count BY keyword
+| sort - count
+
+
+``` ---------------------------------------------------------------------------
+    R2  STEP 1b - KZ brands, REFINED rule (keyword must START a label: after ".", "-" or at the start)
+                                                         expected: 69 hits = 14 KZ-relevant + 55 OLX abroad
+    --------------------------------------------------------------------------- ```
+index=th_real sourcetype=real_feed
+| where match(domain, "(^|[.-])(kaspi|kaspl|kasp1|egov|eg0v|kazpost|kazpochta|cdek|sdek|halyk|homebank|olx|kolesakz|krisha|fortebank|jusan)")
+  AND NOT match(domain, "(^|[.-])homebanking")
+  AND NOT match(domain, "(^|\.)(kaspi\.kz|kaspibank\.kz|cdn-kaspi\.kz|egov\.kz|gov\.kz|halykbank\.kz|homebank\.kz|post\.kz|cdek\.kz|cdek\.ru|olx\.kz|kolesa\.kz|krisha\.kz|forte\.kz|fortebank\.com|jusan\.kz)$")
+| eval scope=if(match(domain, "(^|[.-])olx") AND NOT match(domain, "olxkz|olx-kz"), "OLX abroad -> step 2", "KZ brand")
+| table domain tld scope
+| sort scope domain
+
+
+``` ---------------------------------------------------------------------------
+    R2b only the KZ scope, with the analyst verdict from data/real/kz_hits.csv
+        (upload kz_hits.csv as a lookup: Settings -> Lookups -> Lookup table files)
+                                                         expected: 4 PHISHING, 2 NOT OUR BRAND, 7 FP, 1 UNCLEAR
+    --------------------------------------------------------------------------- ```
+index=th_real sourcetype=real_feed
+| where match(domain, "(^|[.-])(kaspi|kaspl|kasp1|egov|eg0v|kazpost|kazpochta|cdek|sdek|halyk|homebank|olxkz|olx-kz|kolesakz|krisha|fortebank|jusan)")
+  AND NOT match(domain, "(^|[.-])homebanking")
+| lookup kz_hits.csv domain OUTPUT brand verdict reason
+| table brand domain verdict reason
+| sort verdict
+
+
+``` ---------------------------------------------------------------------------
+    R3  STEP 2 - global analogs of our brands             expected: PayPal 1078, USPS 1313, DHL 404,
+                                                                    OLX abroad 55, Gosuslugi 16
+    --------------------------------------------------------------------------- ```
+index=th_real sourcetype=real_feed
+| rex field=domain "(^|[.-])(?<brand>paypal|dhl|usps|gosuslugi|olx)"
+| where isnotnull(brand) AND NOT match(domain, "olxkz")
+  AND NOT match(domain, "(^|\.)(paypal\.com|paypal\.me|dhl\.com|dhl\.de|usps\.com|gosuslugi\.ru|olx\.(kz|pl|ua|ro|bg|pt|com|ba|uz))$")
+| eval kz_analog=case(brand="paypal", "Kaspi", brand="dhl", "Kazpost / CDEK", brand="usps", "Kazpost",
+                      brand="gosuslugi", "eGov", brand="olx", "OLX.kz")
+| stats count BY brand kz_analog
+| sort - count
+
+
+
+``` ---------------------------------------------------------------------------
+    R4  TRIAGE SIGNAL - which TLDs do these phishing domains use?
+    --------------------------------------------------------------------------- ```
+index=th_real sourcetype=real_feed
+| rex field=domain "(^|[.-])(?<brand>paypal|dhl|usps|gosuslugi|olx|kaspi|kaspl)"
+| where isnotnull(brand)
+| top limit=10 tld
