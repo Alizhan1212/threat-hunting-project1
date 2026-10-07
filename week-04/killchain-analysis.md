@@ -172,5 +172,3 @@ Used together, the Kill Chain organizes the story and ATT&CK supplies the concre
 - United States v. Netyksho et al., Indictment, US Department of Justice, 13 July 2018.
 - Special Counsel Robert S. Mueller III, *Report on the Investigation into Russian Interference in the 2016 Presidential Election*, Vol. I, 2019.
 - CrowdStrike, *Bears in the Midst: Intrusion into the Democratic National Committee*, June 2016.
-
-> **Verification note:** Technique IDs and some details (for example, exact persistence methods) should be checked against the current ATT&CK version and the APT28 group page before submission, since I wrote this without live access to those pages. A second group, APT29 ("Cozy Bear"), was also reported inside the DNC network separately; this analysis focuses on APT28.
