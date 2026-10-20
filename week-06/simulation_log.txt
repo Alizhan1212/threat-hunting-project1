@@ -1,0 +1,8 @@
+=== Week 06 T1059.004 simulation started on kali ===
+[2026-10-20 07:28:23] T1059.004 / T1033 - bash -c 'id; whoami'
+[2026-10-20 07:28:23] T1059.004 / T1082 - sh -c 'uname -a; hostname'
+[2026-10-20 07:28:23] T1059.004 / T1027.010 / T1140 - echo <base64> | base64 -d | bash  (decodes to: whoami)
+[2026-10-20 07:28:23] T1082 - cat /etc/os-release
+[2026-10-20 07:28:23] T1087.001 - head -n 5 /etc/passwd
+[2026-10-20 07:28:23] T1016 - ip addr; ip route
+=== Simulation finished ===
