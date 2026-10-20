@@ -1,0 +1,161 @@
+{
+  "name": "Week 07 - CAR-2014-04-003 coverage (Windows)",
+  "versions": {
+    "attack": "20",
+    "navigator": "5.1.0",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "ATT&CK coverage of MITRE CAR-2014-04-003 'PowerShell Execution' and of our tuned SIEM detection (rule-004). 100 = covered by the CAR analytic as published, 70 = added by our tuning, 40 = technique in the phishing chain that the alert points to but does not detect by itself.",
+  "filters": {
+    "platforms": [
+      "Windows",
+      "PRE"
+    ]
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side",
+    "aggregateFunction": "average",
+    "showID": true,
+    "showName": true,
+    "showAggregateScores": false,
+    "countUnscored": false,
+    "expandedSubtechniques": "annotated"
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1059.001",
+      "score": 100,
+      "color": "#e60d0d",
+      "comment": "CAR-2014-04-003: PowerShell with parent != explorer.exe (CAR coverage: High). Lab: fired on M1, M2, M3.",
+      "enabled": true,
+      "showSubtechniques": true,
+      "tactic": "execution"
+    },
+    {
+      "techniqueID": "T1027.010",
+      "score": 70,
+      "color": "#ff9e3d",
+      "comment": "Our tuning: -enc / -EncodedCommand / -w hidden flags in the explorer.exe branch (M4).",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1036.003",
+      "score": 70,
+      "color": "#ff9e3d",
+      "comment": "Our tuning: match OriginalFileName=PowerShell.EXE, so a renamed copy (winupdate.exe, M5) is still caught.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 70,
+      "color": "#ff9e3d",
+      "comment": "User opened the attachment: .docm (M1), .xlsm (M2), .lnk (M4), .js (M5).",
+      "enabled": true,
+      "showSubtechniques": true,
+      "tactic": "execution"
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 40,
+      "color": "#ffe766",
+      "comment": "Spearphishing attachment impersonating Kazpost, Kaspi, eGov, CDEK. Alert parent shows the attachment type.",
+      "enabled": true,
+      "showSubtechniques": true,
+      "tactic": "initial-access"
+    },
+    {
+      "techniqueID": "T1218.005",
+      "score": 40,
+      "color": "#ffe766",
+      "comment": "M3: eGov .hta opened by mshta.exe, which then starts PowerShell (alert parent = mshta.exe).",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.003",
+      "score": 40,
+      "color": "#ffe766",
+      "comment": "M2: Excel macro -> cmd.exe -> PowerShell (see also CAR-2014-11-002 Outlier Parents of Cmd).",
+      "enabled": true,
+      "showSubtechniques": true,
+      "tactic": "execution"
+    },
+    {
+      "techniqueID": "T1059.007",
+      "score": 40,
+      "color": "#ffe766",
+      "comment": "M5: the .js runs in wscript.exe (Windows Script Host) before starting the renamed PowerShell.",
+      "enabled": true,
+      "showSubtechniques": true,
+      "tactic": "execution"
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 70,
+      "color": "#ff9e3d",
+      "comment": "Our topic rule (V3-dns): payload resolves a brand look-alike domain (EID 22), then connects to 203.0.113.x:443.",
+      "enabled": true,
+      "showSubtechniques": true,
+      "tactic": "command-and-control"
+    },
+    {
+      "techniqueID": "T1071.004",
+      "tactic": "command-and-control",
+      "score": 70,
+      "color": "#ff9e3d",
+      "comment": "Our topic rule: DNS query for kazpost-delivery-track.net, kaspi-bonus-2026.com, eg0v-portal.kz (week-3 MISP) and new cdek-nakladnaya.top, kaspi-cashback.online.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "tactic": "resource-development",
+      "score": 40,
+      "color": "#ffe766",
+      "comment": "Attacker registered look-alike domains of Kaspi, eGov, Kazpost, CDEK.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1656",
+      "score": 40,
+      "color": "#ffe766",
+      "comment": "Impersonation of Kazakhstani brands in the lure (our group topic).",
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffe766",
+      "#e60d0d"
+    ],
+    "minValue": 0,
+    "maxValue": 100
+  },
+  "legendItems": [
+    {
+      "label": "CAR analytic as published",
+      "color": "#e60d0d"
+    },
+    {
+      "label": "Added by our tuning",
+      "color": "#ff9e3d"
+    },
+    {
+      "label": "Related technique in the chain",
+      "color": "#ffe766"
+    }
+  ],
+  "metadata": [],
+  "links": [],
+  "showTacticRowBackground": false,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true,
+  "selectSubtechniquesWithParent": false,
+  "selectVisibleTechniques": false
+}

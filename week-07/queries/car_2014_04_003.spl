@@ -1,0 +1,39 @@
+``` Week 07 - CAR-2014-04-003 "PowerShell Execution" in Splunk
+    Data: data/sysmon_w7.csv -> index th_lab, sourcetype lab_sysmon_w7, timestamp field = time
+    Time picker: All time. Expected numbers: data/car_results.txt ```
+
+``` Q0 data check (expected EID 1 = 353, EID 3 = 5) ```
+index=th_lab sourcetype=lab_sysmon_w7 | stats count by event_id
+
+``` V0 CAR as published (expected 211). CAR's own Splunk version uses
+    Image="C:\\Windows\\*\\powershell.exe" ParentImage!="C:\\Windows\\explorer.exe" ```
+index=th_lab sourcetype=lab_sysmon_w7 event_id=1 image="*\\powershell.exe" NOT parent_image="*\\explorer.exe"
+| stats count values(command_line) as command_line by parent_image
+| sort - count
+
+``` V1 CAR + allow-list (expected 3: WS-021, WS-008, WS-014) ```
+index=th_lab sourcetype=lab_sysmon_w7 event_id=1 image="*\\powershell.exe" NOT parent_image="*\\explorer.exe"
+| eval p=lower(parent_image), c=lower(command_line)
+| where NOT (p="c:\\windows\\system32\\svchost.exe" AND c="powershell.exe -noprofile -file c:\\it\\inventory.ps1")
+    AND NOT (p="c:\\program files\\manageengine\\uems_agent\\bin\\dcagentservice.exe" AND c="powershell.exe -noninteractive -encodedcommand rwblahqalqbtaguacgb2agkaywblaa==")
+    AND NOT (like(p, "%\\code.exe") AND user="o.li" AND (c="powershell.exe -nologo" OR c="powershell.exe -nologo -noexit"))
+| table _time hostname user parent_image command_line
+
+``` V2 our detection (expected 5: M1-M5). Save as alert: Save As -> Alert, every 5 min ```
+index=th_lab sourcetype=lab_sysmon_w7 event_id=1
+| eval o=lower(original_file_name), i=lower(image), p=lower(parent_image), c=lower(command_line)
+| where o IN ("powershell.exe", "pwsh.dll") OR like(i, "%\\powershell.exe") OR like(i, "%\\pwsh.exe")
+| where NOT (p="c:\\windows\\system32\\svchost.exe" AND c="powershell.exe -noprofile -file c:\\it\\inventory.ps1")
+    AND NOT (p="c:\\program files\\manageengine\\uems_agent\\bin\\dcagentservice.exe" AND c="powershell.exe -noninteractive -encodedcommand rwblahqalqbtaguacgb2agkaywblaa==")
+    AND NOT (like(p, "%\\code.exe") AND user="o.li" AND (c="powershell.exe -nologo" OR c="powershell.exe -nologo -noexit"))
+| where NOT like(p, "%\\explorer.exe") OR match(c, "\s-(e|en|enc|encodedcommand)\s") OR match(c, "\s-w(indowstyle)?\s+hidden")
+| table _time hostname user parent_image image command_line
+
+``` V3-dns our topic rule: Kazakhstani brand look-alike resolved by a non-browser process (expected 5: M1-M5) ```
+index=th_lab sourcetype=lab_sysmon_w7 event_id=22
+| eval q=lower(query_name), i=lower(image)
+| where match(q, "(kaspi|egov|eg0v|kazpost|post\.kz|cdek|halyk|homebank)")
+    AND NOT match(q, "^(.*\.)?(kaspi\.kz|kaspibank\.kz|cdn-kaspi\.kz|egov\.kz|gov\.kz|post\.kz|kazpost\.kz|cdek\.kz|cdek\.ru|halykbank\.kz|homebank\.kz)$")
+    AND NOT match(i, "\\\\(chrome|msedge|firefox|outlook)\.exe$")
+| eval ioc=if(q IN ("kaspi-bonus-2026.com", "eg0v-portal.kz", "kazpost-delivery-track.net"), "known IoC (week-3 MISP)", "new look-alike")
+| table _time hostname user image query_name ioc

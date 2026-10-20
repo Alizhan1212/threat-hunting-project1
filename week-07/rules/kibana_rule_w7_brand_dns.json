@@ -1,0 +1,87 @@
+{
+  "rule_id": "w7-kz-brand-lookalike-dns-non-browser",
+  "name": "W7 - Kazakhstani brand look-alike domain resolved by a non-browser process",
+  "description": "Topic rule of threat-hunting-project1 (phishing impersonating Kaspi, eGov, Kazpost, CDEK). Sysmon EID 22: a domain that contains one of our brand keywords but is not an official brand domain is resolved by a process that is not a browser or Outlook, i.e. by the payload after an attachment was opened. Complements the CAR-2014-04-003 rule: CAR says 'PowerShell started by a non-user parent', this rule says which brand campaign it belongs to.",
+  "type": "esql",
+  "language": "esql",
+  "query": "FROM th-w7-sysmon METADATA _id, _index, _version\n| WHERE event_id == 22\n| EVAL q = TO_LOWER(query_name), i = TO_LOWER(image)\n| WHERE q RLIKE \".*(kaspi|egov|eg0v|kazpost|post\\\\.kz|cdek|halyk|homebank).*\" AND NOT q RLIKE \"(.*\\\\.)?(kaspi\\\\.kz|kaspibank\\\\.kz|cdn-kaspi\\\\.kz|egov\\\\.kz|gov\\\\.kz|post\\\\.kz|kazpost\\\\.kz|cdek\\\\.kz|cdek\\\\.ru|halykbank\\\\.kz|homebank\\\\.kz)\"\n  AND NOT (ENDS_WITH(i, \"\\\\chrome.exe\") OR ENDS_WITH(i, \"\\\\msedge.exe\") OR ENDS_WITH(i, \"\\\\firefox.exe\") OR ENDS_WITH(i, \"\\\\outlook.exe\"))\n| KEEP _id, _index, _version, @timestamp, hostname, user, image, query_name",
+  "risk_score": 73,
+  "severity": "high",
+  "interval": "5m",
+  "from": "now-30d",
+  "max_signals": 100,
+  "enabled": true,
+  "tags": [
+    "threat-hunting-project1",
+    "week-07",
+    "phishing-kz",
+    "Kaspi",
+    "eGov",
+    "Kazpost",
+    "CDEK"
+  ],
+  "references": [
+    "https://car.mitre.org/analytics/CAR-2014-04-003/",
+    "https://attack.mitre.org/techniques/T1566/001/",
+    "https://attack.mitre.org/techniques/T1071/004/"
+  ],
+  "false_positives": [
+    "A non-browser app (updater, mail client other than Outlook) that legitimately opens brand-related look-alike domains - add the image to the browser list",
+    "New official brand domain not yet in the official list"
+  ],
+  "author": [
+    "Kazhymukan Boris (threat-hunting-project1 group)"
+  ],
+  "license": "MIT",
+  "threat": [
+    {
+      "framework": "MITRE ATT&CK",
+      "tactic": {
+        "id": "TA0011",
+        "name": "Command and Control",
+        "reference": "https://attack.mitre.org/tactics/TA0011/"
+      },
+      "technique": [
+        {
+          "id": "T1071",
+          "name": "Application Layer Protocol",
+          "reference": "https://attack.mitre.org/techniques/T1071/",
+          "subtechnique": [
+            {
+              "id": "T1071.004",
+              "name": "DNS",
+              "reference": "https://attack.mitre.org/techniques/T1071/004/"
+            },
+            {
+              "id": "T1071.001",
+              "name": "Web Protocols",
+              "reference": "https://attack.mitre.org/techniques/T1071/001/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "framework": "MITRE ATT&CK",
+      "tactic": {
+        "id": "TA0001",
+        "name": "Initial Access",
+        "reference": "https://attack.mitre.org/tactics/TA0001/"
+      },
+      "technique": [
+        {
+          "id": "T1566",
+          "name": "Phishing",
+          "reference": "https://attack.mitre.org/techniques/T1566/",
+          "subtechnique": [
+            {
+              "id": "T1566.001",
+              "name": "Spearphishing Attachment",
+              "reference": "https://attack.mitre.org/techniques/T1566/001/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
