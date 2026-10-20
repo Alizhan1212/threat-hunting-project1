@@ -127,7 +127,7 @@ We used the same Elastic stack as in week 5 (Docker on a MacBook M2, see `../wee
 2. Kibana → **Upload a file** → `data/sysmon_w7.csv` → index name **`th-w7-sysmon`**, time field **`time`** → Import.
 3. **Discover → ES|QL**, time picker 2026-10-12 … 2026-10-19, run block **Q0**: expected `event_id 1 = 353`, `event_id 3 = 5`, `event_id 22 = 487`.
 
-<!-- ![Q0 data check](screenshots/w7_elk_q0.png) -->
+![Q0 data check](screenshots/w7_elk_q0.png)
 
 ## 6. Implementation in the SIEM
 
@@ -153,8 +153,8 @@ FROM th-w7-sysmon
 **Result: 211 alerts, 3 of them real (M1, M2, M3), precision 1.4 %, M4 and M5 missed.** Stacking the alerts by parent (block V0b) shows where the noise comes from:
 
 ![V0 alerts by parent](images/w7_v0_by_parent.png)
-<!-- ![V0 in Kibana](screenshots/w7_elk_v0.png) -->
-<!-- ![V0b stacked by parent](screenshots/w7_elk_v0b.png) -->
+![V0 in Kibana](screenshots/w7_elk_v0.png)
+![V0b stacked by parent](screenshots/w7_elk_v0b.png)
 
 A SOC would mute a rule that produces about 30 alerts a day with 98.6 % noise. CAR itself warns that legitimate software started from parents other than explorer.exe needs exclusions.
 
@@ -172,8 +172,8 @@ Each of the three noisy parents was reviewed (same command line every time, SYST
 
 This shows why CAR excludes explorer.exe (15 legitimate admin sessions) and why that exclusion is dangerous for phishing: a `.lnk` attachment is started by explorer.exe.
 
-<!-- ![V1 in Kibana](screenshots/w7_elk_v1.png) -->
-<!-- ![V1 blind spots](screenshots/w7_elk_v1_blind.png) -->
+![V1 in Kibana](screenshots/w7_elk_v1.png)
+![V1 blind spots](screenshots/w7_elk_v1_blind.png)
 
 ### 6.3 V2: our detection
 
@@ -185,11 +185,11 @@ Two changes on top of V1:
 **Result: 5 alerts, 5 real (M1–M5), 0 false positives.**
 
 ![Versions compared](images/w7_versions_tp_fp.png)
-<!-- ![V2 in Kibana](screenshots/w7_elk_v2.png) -->
+![V2 in Kibana](screenshots/w7_elk_v2.png)
 
 Block **V2-chain** confirms each alert: within 2–3 seconds every one of the five hosts made a connection to 203.0.113.x:443 from the same PowerShell image.
 
-<!-- ![V2 network follow-up](screenshots/w7_elk_v2_chain.png) -->
+![V2 network follow-up](screenshots/w7_elk_v2_chain.png)
 
 ### 6.4 Running it as a detection rule
 
@@ -211,8 +211,10 @@ Notes:
 - A rule only sees events inside its look-back window (`from: now-30d`). If the defense is later than mid-November, regenerate the data with `python3 scripts/generate_w7_logs.py --shift-to-now` (moves the week so it ends one hour ago), re-import it, and the alerts appear on the next run.
 - Expected in **Security → Alerts**: rule *W7 … tuned* = 5 alerts (WS-021, WS-008, WS-014, WS-003, WS-017); rule *as published* = 211 alerts; rule *brand look-alike domain* = 5 alerts (same hosts).
 
-<!-- ![Rule details](screenshots/w7_elk_rule.png) -->
-<!-- ![Alerts page](screenshots/w7_elk_alerts.png) -->
+![Detection rules list](screenshots/w7_elk_rules_list.png)
+![Rule details](screenshots/w7_elk_rule.png)
+![Alerts page: 211 + 5 + 5 = 221](screenshots/w7_elk_alerts.png)
+![Alert details](screenshots/w7_elk_alert_details.png)
 
 ### 6.5 Linking the alert to our topic: which brand campaign?
 
@@ -240,8 +242,9 @@ What this shows for our topic:
 
 From this we made a second, topic-specific rule, **V3-dns** ([`rules/kibana_rule_w7_brand_dns.json`](rules/kibana_rule_w7_brand_dns.json)): *a brand look-alike domain resolved by a process that is not a browser or Outlook*. Result: **5 alerts = M1–M5**, no browser noise. It does not depend on the process name, so it also catches the renamed winupdate.exe.
 
-<!-- ![V3 campaign attribution](screenshots/w7_elk_v3.png) -->
-<!-- ![V3 brand DNS rule](screenshots/w7_elk_v3_dns.png) -->
+![V3 query](screenshots/w7_elk_v3.png)
+![V3 campaign attribution result](screenshots/w7_elk_v3_p2.png)
+![V3 brand DNS rule](screenshots/w7_elk_v3_dns.png)
 
 The same logic is in [`queries/car_2014_04_003.spl`](queries/car_2014_04_003.spl) for Splunk (V2 can be saved as an alert) and in [`sigma-rules/rule-004-powershell-non-interactive-parent.yml`](sigma-rules/rule-004-powershell-non-interactive-parent.yml) for any SIEM.
 
@@ -281,7 +284,7 @@ Python ([`data/car_results.txt`](data/car_results.txt)), ES|QL and SPL give the 
 
 **Navigator:** open https://mitre-attack.github.io/attack-navigator/ → *Open Existing Layer* → *Upload from local* → [`navigator-layer-w7.json`](navigator-layer-w7.json). Red = covered by CAR as published, orange = added by our tuning and topic rule, yellow = related techniques in the chain.
 
-<!-- ![Navigator layer](screenshots/w7_navigator.png) -->
+![Navigator layer](screenshots/w7_navigator.png)
 
 Placed on the week-4 kill chain, the analytic sits at the **Exploitation / Installation** boundary: after the user opened the attachment, before the payload is downloaded. That is late for prevention, but early enough to isolate the host before credentials are stolen.
 
