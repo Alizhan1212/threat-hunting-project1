@@ -1,0 +1,63 @@
+title: PowerShell Started by a Non-Interactive Parent (CAR-2014-04-003, tuned for phishing)
+id: 4e7a1c92-6b3d-4f05-a8e1-9d2c5b7f3a64
+status: experimental
+description: |
+    Sigma version of MITRE CAR-2014-04-003 "PowerShell Execution" as tuned in week 7.
+    CAR hypothesis: PowerShell whose parent is not explorer.exe is not interactive use.
+    Tuning from the lab test: match on OriginalFileName (catches renamed copies),
+    drop allow-listed (parent + exact command line) pairs, and add explorer.exe-launched
+    PowerShell with hidden/encoded flags (phishing .lnk in a ZIP, e.g. "CDEK waybill").
+    Replaces nothing: rule-003 (Office -> PowerShell, week 5) stays as a high-confidence subset.
+references:
+    - https://car.mitre.org/analytics/CAR-2014-04-003/
+    - https://attack.mitre.org/techniques/T1059/001/
+author: Kazhymukan Boris (threat-hunting-project1 group)
+date: 2026-10-20
+tags:
+    - attack.execution
+    - attack.t1059.001
+    - attack.t1204.002
+    - attack.initial-access
+    - attack.t1566.001
+    - attack.defense-evasion
+    - attack.t1027.010
+    - attack.t1036.003
+    - car.2014-04-003
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_powershell:
+        - OriginalFileName:
+              - 'PowerShell.EXE'
+              - 'pwsh.dll'
+        - Image|endswith:
+              - '\powershell.exe'
+              - '\pwsh.exe'
+    filter_interactive:
+        ParentImage|endswith: '\explorer.exe'
+    suspicious_flags:
+        CommandLine|contains:
+            - ' -e '
+            - ' -en '
+            - ' -enc '
+            - ' -EncodedCommand '
+            - ' -w hidden'
+            - ' -WindowStyle Hidden'
+    known_inventory:
+        ParentImage: 'C:\Windows\System32\svchost.exe'
+        CommandLine: 'powershell.exe -NoProfile -File C:\IT\inventory.ps1'
+    known_uems_agent:
+        ParentImage: 'C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe'
+        CommandLine: 'powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA=='
+    known_vscode:
+        ParentImage|endswith: '\Microsoft VS Code\Code.exe'
+        User: 'o.li'
+        CommandLine:
+            - 'powershell.exe -NoLogo'
+            - 'powershell.exe -NoLogo -NoExit'
+    condition: selection_powershell and (not filter_interactive or suspicious_flags) and not 1 of known_*
+falsepositives:
+    - New IT automation started from a service - review, then add (parent + exact command line) to the filters
+    - Desktop shortcuts that start PowerShell hidden on purpose
+level: high

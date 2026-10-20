@@ -1,0 +1,105 @@
+// Week 07 - CAR-2014-04-003 "PowerShell Execution" in Elastic (Kibana -> Discover -> ES|QL)
+// Index: th-w7-sysmon  (data/sysmon_w7.csv, time field = time)
+// Time picker: 2026-10-12 ... 2026-10-19 (or "Last 1 year")
+// Paste ONE block at a time. Expected numbers are in data/car_results.txt.
+
+// Q0  data check                       (expected: EID 1 = 353, EID 3 = 5, EID 22 = 487)
+FROM th-w7-sysmon
+| STATS events = COUNT(*) BY event_id
+
+// V0  CAR pseudocode, literally                       (expected: 211 rows)
+//     process = search Process:Create
+//     powershell = filter process where (exe == "powershell.exe" AND parent_exe != "explorer.exe")
+FROM th-w7-sysmon
+| WHERE event_id == 1
+  AND ENDS_WITH(TO_LOWER(image), "\\powershell.exe")
+  AND NOT ENDS_WITH(TO_LOWER(parent_image), "\\explorer.exe")
+| KEEP @timestamp, hostname, user, parent_image, command_line
+| SORT @timestamp
+
+// V0b triage: stack V0 alerts by parent               (expected: svchost 168, dcagentservice 30,
+//                                                      Code 10, WINWORD 1, cmd 1, mshta 1)
+FROM th-w7-sysmon
+| WHERE event_id == 1
+  AND ENDS_WITH(TO_LOWER(image), "\\powershell.exe")
+  AND NOT ENDS_WITH(TO_LOWER(parent_image), "\\explorer.exe")
+| STATS alerts = COUNT(*), hosts = COUNT_DISTINCT(hostname), example = MIN(command_line) BY parent_image
+| SORT alerts DESC
+
+// V1  CAR + allow-list (parent AND exact command line) (expected: 3 rows, WS-021 / WS-008 / WS-014)
+FROM th-w7-sysmon
+| WHERE event_id == 1
+  AND ENDS_WITH(TO_LOWER(image), "\\powershell.exe")
+  AND NOT ENDS_WITH(TO_LOWER(parent_image), "\\explorer.exe")
+| EVAL p = TO_LOWER(parent_image), c = TO_LOWER(command_line)
+| WHERE NOT (p == """c:\windows\system32\svchost.exe""" AND c == """powershell.exe -noprofile -file c:\it\inventory.ps1""")
+  AND NOT (p == """c:\program files\manageengine\uems_agent\bin\dcagentservice.exe""" AND c == "powershell.exe -noninteractive -encodedcommand rwblahqalqbtaguacgb2agkaywblaa==")
+  AND NOT (ENDS_WITH(p, "\\code.exe") AND user == "o.li" AND c IN ("powershell.exe -nologo", "powershell.exe -nologo -noexit"))
+| KEEP @timestamp, hostname, user, parent_image, command_line
+| SORT @timestamp
+
+// V1-blind  what CAR cannot see   (expected 3 groups: WS-000 it.admin explorer 15 = benign admin,
+//           WS-003 d.omarov explorer 1 = M4 .lnk, WS-017 z.temirova winupdate.exe 1 = M5 renamed copy)
+FROM th-w7-sysmon
+| WHERE event_id == 1
+  AND TO_LOWER(original_file_name) == "powershell.exe"
+  AND (ENDS_WITH(TO_LOWER(parent_image), "\\explorer.exe") OR NOT ENDS_WITH(TO_LOWER(image), "\\powershell.exe"))
+| STATS runs = COUNT(*) BY hostname, user, parent_image, image
+| SORT runs
+
+// V2  our detection (= rules/kibana_rule_w7_powershell.json)   (expected: 5 rows, M1-M5)
+FROM th-w7-sysmon
+| WHERE event_id == 1
+  AND (TO_LOWER(original_file_name) IN ("powershell.exe", "pwsh.dll")
+       OR ENDS_WITH(TO_LOWER(image), "\\powershell.exe") OR ENDS_WITH(TO_LOWER(image), "\\pwsh.exe"))
+| EVAL p = TO_LOWER(parent_image), c = TO_LOWER(command_line)
+| WHERE NOT (p == """c:\windows\system32\svchost.exe""" AND c == """powershell.exe -noprofile -file c:\it\inventory.ps1""")
+  AND NOT (p == """c:\program files\manageengine\uems_agent\bin\dcagentservice.exe""" AND c == "powershell.exe -noninteractive -encodedcommand rwblahqalqbtaguacgb2agkaywblaa==")
+  AND NOT (ENDS_WITH(p, "\\code.exe") AND user == "o.li" AND c IN ("powershell.exe -nologo", "powershell.exe -nologo -noexit"))
+| WHERE NOT ENDS_WITH(p, "\\explorer.exe")
+     OR c RLIKE ".* -(e|en|enc|encodedcommand) .*"
+     OR c RLIKE ".* -w(indowstyle)? +hidden.*"
+| KEEP @timestamp, hostname, user, parent_image, image, command_line
+| SORT @timestamp
+
+// V2-chain  what happened right after each alert (network)   (expected: 5 hosts -> 203.0.113.x:443)
+FROM th-w7-sysmon
+| WHERE event_id == 3 AND hostname IN ("WS-021", "WS-008", "WS-014", "WS-003", "WS-017")
+| KEEP @timestamp, hostname, user, image, dest_ip, dest_port
+| SORT @timestamp
+
+// ======================= OUR TOPIC: link each alert to a brand campaign ==================
+// Brand list = week-02 config/brands.json, official domains = week-05 config.py,
+// known IoCs = week-03 MISP event. Sysmon EID 22 (DnsQuery) gives image + query_name.
+
+// V3  campaign attribution: V2 alert + brand DNS of the same image on the same host
+//     (expected 7 groups: M1 Kazpost, M2 Kaspi, M3 eGov = known IoC; M4 CDEK, M5 Kaspi = new
+//      domains; plus 2 "domain only" rows from chrome: WS-005 clicked the Kazpost link,
+//      WS-012 cdekteam.ru = benign look-alike already known from week-2 OSINT)
+FROM th-w7-sysmon
+| EVAL i = TO_LOWER(image), p = TO_LOWER(COALESCE(parent_image, "")), c = TO_LOWER(COALESCE(command_line, "")),
+       o = TO_LOWER(COALESCE(original_file_name, "")), q = TO_LOWER(COALESCE(query_name, ""))
+| EVAL is_ps = o IN ("powershell.exe", "pwsh.dll") OR ENDS_WITH(i, "\\powershell.exe") OR ENDS_WITH(i, "\\pwsh.exe")
+| EVAL allowed = (p == """c:\windows\system32\svchost.exe""" AND c == """powershell.exe -noprofile -file c:\it\inventory.ps1""")
+              OR (p == """c:\program files\manageengine\uems_agent\bin\dcagentservice.exe""" AND c == "powershell.exe -noninteractive -encodedcommand rwblahqalqbtaguacgb2agkaywblaa==")
+              OR (ENDS_WITH(p, "\\code.exe") AND user == "o.li" AND c IN ("powershell.exe -nologo", "powershell.exe -nologo -noexit"))
+| EVAL is_alert = event_id == 1 AND is_ps AND NOT allowed
+                  AND (NOT ENDS_WITH(p, "\\explorer.exe") OR c RLIKE ".* -(e|en|enc|encodedcommand) .*" OR c RLIKE ".* -w(indowstyle)? +hidden.*")
+| EVAL is_brand_dns = event_id == 22 AND q RLIKE ".*(kaspi|egov|eg0v|kazpost|post\\.kz|cdek|halyk|homebank).*" AND NOT q RLIKE "(.*\\.)?(kaspi\\.kz|kaspibank\\.kz|cdn-kaspi\\.kz|egov\\.kz|gov\\.kz|post\\.kz|kazpost\\.kz|cdek\\.kz|cdek\\.ru|halykbank\\.kz|homebank\\.kz)"
+| WHERE is_alert OR is_brand_dns
+| EVAL brand = CASE(q LIKE "*kaspi*", "Kaspi", q LIKE "*eg*v*", "eGov", q LIKE "*kazpost*", "Kazpost", q LIKE "*cdek*", "CDEK", null),
+       ioc = CASE(q IN ("kaspi-bonus-2026.com", "eg0v-portal.kz", "kazpost-delivery-track.net"), "known IoC (week-3 MISP)", is_brand_dns, "new look-alike", null)
+| STATS alerts = SUM(CASE(is_alert, 1, 0)), domain = VALUES(query_name), brand = VALUES(brand), ioc = VALUES(ioc),
+        first_seen = MIN(@timestamp) BY hostname, user, image
+| EVAL verdict = CASE(alerts > 0, "PowerShell alert + brand domain = phishing payload", "brand domain only - triage")
+| SORT first_seen
+
+// V3-dns  topic detection on its own (= rules/kibana_rule_w7_brand_dns.json)
+//         brand look-alike resolved by a NON-browser process  (expected: 5 rows, M1-M5)
+FROM th-w7-sysmon
+| WHERE event_id == 22
+| EVAL q = TO_LOWER(query_name), i = TO_LOWER(image)
+| WHERE q RLIKE ".*(kaspi|egov|eg0v|kazpost|post\\.kz|cdek|halyk|homebank).*" AND NOT q RLIKE "(.*\\.)?(kaspi\\.kz|kaspibank\\.kz|cdn-kaspi\\.kz|egov\\.kz|gov\\.kz|post\\.kz|kazpost\\.kz|cdek\\.kz|cdek\\.ru|halykbank\\.kz|homebank\\.kz)"
+  AND NOT (ENDS_WITH(i, "\\chrome.exe") OR ENDS_WITH(i, "\\msedge.exe") OR ENDS_WITH(i, "\\firefox.exe") OR ENDS_WITH(i, "\\outlook.exe"))
+| KEEP @timestamp, hostname, user, image, query_name
+| SORT @timestamp

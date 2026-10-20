@@ -1,0 +1,56 @@
+Process-creation events (Sysmon EID 1): 353   planted attacks: 5
+
+=== V0 CAR as published ===
+alerts=211  true positives=3 ['M1', 'M2', 'M3']  false positives=208  missed=['M4', 'M5']  precision=1.4%  recall=3/5
+alerts by parent process:
+    168  svchost.exe
+     30  dcagentservice.exe
+     10  code.exe
+      1  winword.exe
+      1  cmd.exe
+      1  mshta.exe
+
+=== V1 CAR + allow-list ===
+alerts=3  true positives=3 ['M1', 'M2', 'M3']  false positives=0  missed=['M4', 'M5']  precision=100.0%  recall=3/5
+alerts by parent process:
+      1  winword.exe
+      1  cmd.exe
+      1  mshta.exe
+alerts:
+   [M1] 2026-10-13T10:41:06+05:00 WS-021 e.sultanov     winword.exe -> powershell.exe
+   [M2] 2026-10-14T11:17:06+05:00 WS-008 m.tulegenov    cmd.exe -> powershell.exe
+   [M3] 2026-10-15T14:02:04+05:00 WS-014 t.zhaksylykov  mshta.exe -> powershell.exe
+
+=== V2 our detection ===
+alerts=5  true positives=5 ['M1', 'M2', 'M3', 'M4', 'M5']  false positives=0  missed=[]  precision=100.0%  recall=5/5
+alerts by parent process:
+      1  winword.exe
+      1  cmd.exe
+      1  mshta.exe
+      1  explorer.exe
+      1  wscript.exe
+alerts:
+   [M1] 2026-10-13T10:41:06+05:00 WS-021 e.sultanov     winword.exe -> powershell.exe
+   [M2] 2026-10-14T11:17:06+05:00 WS-008 m.tulegenov    cmd.exe -> powershell.exe
+   [M3] 2026-10-15T14:02:04+05:00 WS-014 t.zhaksylykov  mshta.exe -> powershell.exe
+   [M4] 2026-10-16T09:48:00+05:00 WS-003 d.omarov       explorer.exe -> powershell.exe
+   [M5] 2026-10-16T15:33:09+05:00 WS-017 z.temirova     wscript.exe -> winupdate.exe
+
+=== V3 campaign attribution: V2 alert + DNS query of the same image within 60 s ===
+   [M1] WS-021  powershell.exe  -> kazpost-delivery-track.net   brand=Kazpost  known IoC (week-3 MISP)
+   [M2] WS-008  powershell.exe  -> kaspi-bonus-2026.com         brand=Kaspi    known IoC (week-3 MISP)
+   [M3] WS-014  powershell.exe  -> eg0v-portal.kz               brand=eGov     known IoC (week-3 MISP)
+   [M4] WS-003  powershell.exe  -> cdek-nakladnaya.top          brand=CDEK     brand look-alike (new)
+   [M5] WS-017  winupdate.exe   -> kaspi-cashback.online        brand=Kaspi    brand look-alike (new)
+alerts attributed to a brand campaign: 5
+
+=== For comparison: brand-related DNS without any process alert (domain-only view) ===
+   2026-10-13T10:41:07+05:00 WS-021 powershell.exe  kazpost-delivery-track.net   known IoC (week-3 MISP)
+   2026-10-13T10:52:00+05:00 WS-005 chrome.exe      kazpost-delivery-track.net   known IoC (week-3 MISP)
+   2026-10-14T11:17:07+05:00 WS-008 powershell.exe  kaspi-bonus-2026.com         known IoC (week-3 MISP)
+   2026-10-14T16:05:00+05:00 WS-012 chrome.exe      cdekteam.ru                  brand look-alike (new)
+   2026-10-15T14:02:05+05:00 WS-014 powershell.exe  eg0v-portal.kz               known IoC (week-3 MISP)
+   2026-10-16T09:48:02+05:00 WS-003 powershell.exe  cdek-nakladnaya.top          brand look-alike (new)
+   2026-10-16T15:33:10+05:00 WS-017 winupdate.exe   kaspi-cashback.online        brand look-alike (new)
+DNS rule (brand look-alike resolved by a non-browser process): 5 alerts on ['WS-003', 'WS-008', 'WS-014', 'WS-017', 'WS-021']
+DNS queries by class: other=304, official brand site=176, known IoC (week-3 MISP)=4, brand look-alike (new)=3
