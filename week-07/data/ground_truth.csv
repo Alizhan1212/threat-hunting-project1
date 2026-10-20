@@ -1,0 +1,6 @@
+scenario,brand,time,hostname,image,parent_image
+M1,Kazpost,2026-10-13T10:41:06+05:00,WS-021,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE
+M2,Kaspi,2026-10-14T11:17:06+05:00,WS-008,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\System32\cmd.exe
+M3,eGov,2026-10-15T14:02:04+05:00,WS-014,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\System32\mshta.exe
+M4,CDEK,2026-10-16T09:48:00+05:00,WS-003,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\explorer.exe
+M5,Kaspi,2026-10-16T15:33:09+05:00,WS-017,C:\Users\Public\Libraries\winupdate.exe,C:\Windows\System32\wscript.exe

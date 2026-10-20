@@ -1,0 +1,846 @@
+time,hostname,user,event_id,image,original_file_name,parent_image,command_line,dest_ip,dest_port,query_name
+2026-10-12T02:00:00+05:00,WS-000,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:03+05:00,WS-001,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:04+05:00,WS-002,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:06+05:00,WS-003,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:09+05:00,WS-004,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:11+05:00,WS-005,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:12+05:00,WS-006,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:15+05:00,WS-007,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:16+05:00,WS-008,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:19+05:00,WS-009,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:20+05:00,WS-010,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:23+05:00,WS-011,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:25+05:00,WS-012,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:26+05:00,WS-013,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:29+05:00,WS-014,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:31+05:00,WS-015,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:32+05:00,WS-016,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:35+05:00,WS-017,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:37+05:00,WS-018,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:39+05:00,WS-019,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:40+05:00,WS-020,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:42+05:00,WS-021,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:45+05:00,WS-022,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T02:00:47+05:00,WS-023,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-12T09:01:00+05:00,WS-016,y.dauletov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:03:00+05:00,WS-012,s.aitkulova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:03:00+05:00,WS-021,e.sultanov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:05:00+05:00,WS-004,e.kim,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:06:00+05:00,WS-014,u.baimukhanova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:07:00+05:00,WS-000,it.admin,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:08:00+05:00,WS-019,b.karimova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:08:00+05:00,WS-022,f.mamyrova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:10:00+05:00,WS-010,o.li,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:10:00+05:00,WS-017,z.temirova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:11:00+05:00,WS-007,l.sadykova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:12:00+05:00,WS-001,a.akhmetov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:12:00+05:00,WS-003,d.omarov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:14:00+05:00,WS-002,b.zhunusova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:14:00+05:00,WS-006,k.bekov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:15:00+05:00,WS-018,a.yesenov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:16:00+05:00,WS-020,d.alieva,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:19:00+05:00,WS-011,r.mukanov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:23:00+05:00,WS-008,m.tulegenov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:24:00+05:00,WS-013,t.zhaksylykov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:24:00+05:00,WS-015,v.sokolova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:24:00+05:00,WS-023,m.ospanova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:25:00+05:00,WS-005,g.abenova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:25:00+05:00,WS-009,n.kassymova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-12T09:30:00+05:00,WS-000,it.admin,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-001,a.akhmetov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-002,b.zhunusova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-003,d.omarov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-004,e.kim,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-005,g.abenova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-006,k.bekov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-007,l.sadykova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-008,m.tulegenov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-009,n.kassymova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-010,o.li,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-011,r.mukanov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-012,s.aitkulova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-015,v.sokolova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-016,y.dauletov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-017,z.temirova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-018,a.yesenov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-019,b.karimova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-020,d.alieva,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-021,e.sultanov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-022,f.mamyrova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T09:30:00+05:00,WS-023,m.ospanova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-12T10:00:35+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-12T10:06:43+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-12T10:08:00+05:00,WS-010,o.li,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Users\o.li\AppData\Local\Programs\Microsoft VS Code\Code.exe,powershell.exe -NoLogo,,,
+2026-10-12T10:09:03+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-12T10:23:48+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-12T10:25:57+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-12T10:36:25+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-12T10:38:26+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-12T10:40:00+05:00,WS-010,o.li,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Users\o.li\AppData\Local\Programs\Microsoft VS Code\Code.exe,powershell.exe -NoLogo -NoExit,,,
+2026-10-12T10:40:19+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-12T10:50:38+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-12T10:51:13+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-12T11:03:50+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-12T11:05:00+05:00,WS-018,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-12T11:15:44+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-12T11:18:18+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-12T11:19:00+05:00,WS-001,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-12T11:21:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe -Command Get-ADUser -Filter *,,,
+2026-10-12T11:31:01+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-12T11:38:29+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-12T11:52:48+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-12T11:54:41+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-12T11:55:10+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-12T11:57:55+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-12T12:01:28+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-12T12:04:39+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-12T12:08:13+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-12T12:11:19+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-12T12:17:00+05:00,WS-002,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-12T12:20:47+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-12T12:23:21+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-12T12:25:49+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-12T12:26:08+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-12T12:33:12+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-12T12:36:43+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-12T12:38:58+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-12T12:40:05+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-12T12:50:54+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-12T12:57:40+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-12T13:04:45+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-12T13:07:51+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-12T13:12:02+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-12T13:13:00+05:00,WS-015,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-12T13:21:37+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-12T13:34:48+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-12T13:43:02+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-12T13:44:07+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-12T13:47:46+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-12T13:49:01+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-12T13:58:03+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-12T14:01:32+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-12T14:11:11+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-12T14:11:57+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-12T14:14:08+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-12T14:18:28+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-12T14:27:57+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-12T14:34:58+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-12T14:43:53+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-12T14:44:01+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-12T14:49:30+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-12T15:20:15+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-12T15:42:52+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-12T15:47:49+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-12T15:57:58+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-12T16:04:00+05:00,WS-020,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-12T16:05:45+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-12T16:11:07+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-12T16:17:08+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-12T16:17:09+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-12T16:25:07+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-12T16:28:18+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-12T16:35:12+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-12T16:36:00+05:00,WS-013,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-12T16:40:14+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-12T17:01:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe,,,
+2026-10-12T17:01:39+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-12T17:12:14+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-12T17:27:52+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-12T17:36:32+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-12T17:39:57+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-12T17:42:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe,,,
+2026-10-12T17:48:41+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-12T17:52:56+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-13T02:00:01+05:00,WS-000,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:03+05:00,WS-001,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:05+05:00,WS-002,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:07+05:00,WS-003,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:09+05:00,WS-004,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:10+05:00,WS-005,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:13+05:00,WS-006,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:15+05:00,WS-007,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:16+05:00,WS-008,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:19+05:00,WS-009,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:21+05:00,WS-010,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:22+05:00,WS-011,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:24+05:00,WS-012,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:27+05:00,WS-013,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:29+05:00,WS-014,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:30+05:00,WS-015,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:32+05:00,WS-016,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:35+05:00,WS-017,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:36+05:00,WS-018,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:38+05:00,WS-019,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:40+05:00,WS-020,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:43+05:00,WS-021,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:45+05:00,WS-022,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T02:00:47+05:00,WS-023,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-13T09:00:00+05:00,WS-018,a.yesenov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:04:00+05:00,WS-000,it.admin,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:04:00+05:00,WS-005,g.abenova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:04:00+05:00,WS-022,f.mamyrova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:06:00+05:00,WS-020,d.alieva,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:07:00+05:00,WS-012,s.aitkulova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:08:00+05:00,WS-002,b.zhunusova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:08:00+05:00,WS-006,k.bekov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:08:00+05:00,WS-010,o.li,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:11:00+05:00,WS-011,r.mukanov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:13:00+05:00,WS-009,n.kassymova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:13:00+05:00,WS-015,v.sokolova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:14:00+05:00,WS-003,d.omarov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:14:00+05:00,WS-021,e.sultanov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:16:00+05:00,WS-014,u.baimukhanova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:16:00+05:00,WS-017,z.temirova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:18:00+05:00,WS-013,t.zhaksylykov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:19:00+05:00,WS-008,m.tulegenov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:20:00+05:00,WS-016,y.dauletov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:20:00+05:00,WS-023,m.ospanova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:21:00+05:00,WS-001,a.akhmetov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:22:00+05:00,WS-007,l.sadykova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:23:00+05:00,WS-004,e.kim,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:23:00+05:00,WS-019,b.karimova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-13T09:29:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe,,,
+2026-10-13T09:30:00+05:00,WS-000,it.admin,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-001,a.akhmetov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-002,b.zhunusova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-003,d.omarov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-004,e.kim,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-005,g.abenova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-006,k.bekov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-007,l.sadykova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-008,m.tulegenov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-009,n.kassymova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-010,o.li,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-011,r.mukanov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-012,s.aitkulova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-015,v.sokolova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-016,y.dauletov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-017,z.temirova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-018,a.yesenov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-019,b.karimova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-020,d.alieva,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-021,e.sultanov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-022,f.mamyrova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T09:30:00+05:00,WS-023,m.ospanova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-13T10:06:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,"""C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe""",,,
+2026-10-13T10:12:56+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-13T10:22:14+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-13T10:31:20+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-13T10:39:04+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-13T10:41:00+05:00,WS-021,e.sultanov,1,C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE,WinWord.exe,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,"""WINWORD.EXE"" /n ""C:\Users\e.sultanov\Downloads\Kazpost_uvedomlenie.docm"" /o """"",,,
+2026-10-13T10:41:06+05:00,WS-021,e.sultanov,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE,powershell.exe -nop -w hidden -enc TABBAEIALQBTAEEATQBQAEwARQA6ACAAcwBpAG0AdQBsAGEAdABlAGQAIABkAG8AdwBuAGwAbwBhAGQAZQByACAAcABsAGEAYwBlAGgAbwBsAGQAZQByACAAZgBvAHIAIABkAGUAdABlAGMAdABpAG8AbgAgAHAAcgBhAGMAdABpAGMAZQA=,,,
+2026-10-13T10:41:07+05:00,WS-021,e.sultanov,22,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,,,,,,kazpost-delivery-track.net
+2026-10-13T10:41:08+05:00,WS-021,e.sultanov,3,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,,,,203.0.113.99,443,
+2026-10-13T10:41:17+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-13T10:52:00+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kazpost-delivery-track.net
+2026-10-13T10:52:55+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-13T11:02:47+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-13T11:04:25+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-13T11:06:56+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-13T11:14:55+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-13T11:18:21+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-13T11:25:39+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-13T11:28:08+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-13T11:36:05+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-13T11:41:19+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-13T11:46:09+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-13T11:47:47+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-13T11:56:08+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-13T12:00:00+05:00,WS-010,o.li,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Users\o.li\AppData\Local\Programs\Microsoft VS Code\Code.exe,powershell.exe -NoLogo -NoExit,,,
+2026-10-13T12:03:59+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-13T12:06:33+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-13T12:09:00+05:00,WS-009,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-13T12:29:14+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-13T12:31:36+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-13T12:33:20+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-13T12:38:25+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-13T12:51:14+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-13T12:54:31+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-13T13:05:14+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-13T13:06:11+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-13T13:16:09+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-13T13:19:00+05:00,WS-010,o.li,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Users\o.li\AppData\Local\Programs\Microsoft VS Code\Code.exe,powershell.exe -NoLogo -NoExit,,,
+2026-10-13T13:22:42+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-13T13:22:47+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-13T13:26:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe,,,
+2026-10-13T13:30:38+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-13T13:35:08+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-13T13:39:00+05:00,WS-018,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-13T13:46:18+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-13T13:48:26+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-13T13:54:03+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-13T14:12:00+05:00,WS-009,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-13T14:12:34+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-13T14:13:00+05:00,WS-012,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-13T14:35:43+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-13T14:39:45+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-13T14:43:00+05:00,WS-012,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-13T14:46:07+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-13T14:51:42+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-13T15:05:52+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-13T15:11:47+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-13T15:12:23+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-13T15:20:59+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-13T15:22:43+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-13T15:23:10+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-13T15:26:10+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-13T15:27:15+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-13T15:27:57+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-13T15:35:09+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-13T15:40:38+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-13T15:41:50+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-13T15:44:37+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-13T15:51:42+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-13T15:55:00+05:00,WS-008,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-13T16:00:32+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-13T16:08:51+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-13T16:11:20+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-13T16:14:09+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-13T16:23:23+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-13T16:53:57+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-13T16:58:02+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-13T17:02:08+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-13T17:02:08+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-13T17:04:24+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-13T17:09:39+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-13T17:14:10+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-13T17:15:29+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-13T17:21:28+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-13T17:22:39+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-13T17:27:03+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-13T17:44:06+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-14T02:00:01+05:00,WS-000,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:02+05:00,WS-001,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:04+05:00,WS-002,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:07+05:00,WS-003,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:09+05:00,WS-004,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:10+05:00,WS-005,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:12+05:00,WS-006,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:15+05:00,WS-007,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:17+05:00,WS-008,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:18+05:00,WS-009,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:20+05:00,WS-010,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:22+05:00,WS-011,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:24+05:00,WS-012,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:27+05:00,WS-013,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:29+05:00,WS-014,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:31+05:00,WS-015,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:32+05:00,WS-016,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:34+05:00,WS-017,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:36+05:00,WS-018,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:38+05:00,WS-019,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:41+05:00,WS-020,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:43+05:00,WS-021,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:44+05:00,WS-022,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T02:00:46+05:00,WS-023,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-14T09:02:00+05:00,WS-008,m.tulegenov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:02:00+05:00,WS-021,e.sultanov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:03:00+05:00,WS-002,b.zhunusova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:03:00+05:00,WS-011,r.mukanov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:04:00+05:00,WS-015,v.sokolova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:04:00+05:00,WS-019,b.karimova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:05:00+05:00,WS-012,s.aitkulova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:06:00+05:00,WS-003,d.omarov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:06:00+05:00,WS-005,g.abenova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:06:00+05:00,WS-010,o.li,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:07:00+05:00,WS-007,l.sadykova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:07:00+05:00,WS-023,m.ospanova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:09:00+05:00,WS-001,a.akhmetov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:10:00+05:00,WS-009,n.kassymova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:12:00+05:00,WS-022,f.mamyrova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:14:00+05:00,WS-004,e.kim,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:15:00+05:00,WS-013,t.zhaksylykov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:15:00+05:00,WS-020,d.alieva,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:16:00+05:00,WS-018,a.yesenov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:18:00+05:00,WS-014,u.baimukhanova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:22:00+05:00,WS-006,k.bekov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:22:00+05:00,WS-017,z.temirova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:24:00+05:00,WS-000,it.admin,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:25:00+05:00,WS-016,y.dauletov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-14T09:30:00+05:00,WS-000,it.admin,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-001,a.akhmetov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-002,b.zhunusova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-003,d.omarov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-004,e.kim,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-005,g.abenova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-006,k.bekov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-007,l.sadykova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-008,m.tulegenov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-009,n.kassymova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-010,o.li,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-011,r.mukanov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-012,s.aitkulova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-015,v.sokolova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-016,y.dauletov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-017,z.temirova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-018,a.yesenov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-019,b.karimova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-020,d.alieva,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-021,e.sultanov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-022,f.mamyrova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:30:00+05:00,WS-023,m.ospanova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-14T09:54:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,"""C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe""",,,
+2026-10-14T10:02:04+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-14T10:06:57+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-14T10:10:54+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-14T10:11:23+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-14T10:14:28+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-14T10:17:56+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-14T10:21:16+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-14T10:27:17+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-14T10:32:23+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-14T10:37:40+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-14T10:40:14+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-14T10:42:40+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-14T10:45:00+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-14T10:45:21+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-14T10:47:21+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-14T10:48:06+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-14T10:53:43+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-14T10:55:00+05:00,WS-016,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-14T11:02:30+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-14T11:13:00+05:00,WS-020,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-14T11:14:00+05:00,WS-016,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-14T11:17:00+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-14T11:17:00+05:00,WS-008,m.tulegenov,1,C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE,Excel.exe,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,"""EXCEL.EXE"" ""C:\Users\m.tulegenov\Downloads\Kaspi_vypiska_oktyabr.xlsm""",,,
+2026-10-14T11:17:05+05:00,WS-008,m.tulegenov,1,C:\Windows\System32\cmd.exe,Cmd.Exe,C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE,cmd.exe /c powershell -ep bypass -enc TABBAEIALQBTAEEATQBQAEwARQA6ACAAcwBpAG0AdQBsAGEAdABlAGQAIABkAG8AdwBuAGwAbwBhAGQAZQByACAAcABsAGEAYwBlAGgAbwBsAGQAZQByACAAZgBvAHIAIABkAGUAdABlAGMAdABpAG8AbgAgAHAAcgBhAGMAdABpAGMAZQA=,,,
+2026-10-14T11:17:06+05:00,WS-008,m.tulegenov,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\cmd.exe,powershell -ep bypass -enc TABBAEIALQBTAEEATQBQAEwARQA6ACAAcwBpAG0AdQBsAGEAdABlAGQAIABkAG8AdwBuAGwAbwBhAGQAZQByACAAcABsAGEAYwBlAGgAbwBsAGQAZQByACAAZgBvAHIAIABkAGUAdABlAGMAdABpAG8AbgAgAHAAcgBhAGMAdABpAGMAZQA=,,,
+2026-10-14T11:17:07+05:00,WS-008,m.tulegenov,22,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,,,,,,kaspi-bonus-2026.com
+2026-10-14T11:17:08+05:00,WS-008,m.tulegenov,3,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,,,,203.0.113.47,443,
+2026-10-14T11:20:59+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-14T11:22:12+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-14T11:24:02+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-14T11:31:53+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-14T11:39:08+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-14T11:41:23+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-14T11:54:14+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-14T11:57:12+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-14T12:06:07+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-14T12:06:21+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-14T12:10:00+05:00,WS-014,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-14T12:10:02+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-14T12:18:11+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-14T12:20:45+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-14T12:29:21+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-14T12:33:37+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-14T12:36:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe -Command Get-ADUser -Filter *,,,
+2026-10-14T12:37:00+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-14T12:42:40+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-14T12:50:03+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-14T13:04:29+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-14T13:04:31+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-14T13:31:15+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-14T13:50:24+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-14T13:52:12+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-14T13:56:00+05:00,WS-010,o.li,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Users\o.li\AppData\Local\Programs\Microsoft VS Code\Code.exe,powershell.exe -NoLogo -NoExit,,,
+2026-10-14T14:07:18+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-14T14:12:56+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-14T14:15:15+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-14T14:17:29+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-14T14:37:15+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-14T14:57:00+05:00,WS-022,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-14T14:59:23+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-14T15:04:28+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-14T15:04:28+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-14T15:19:38+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-14T15:25:39+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-14T15:46:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe -NoExit -Command Get-Service Spooler,,,
+2026-10-14T15:46:04+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-14T16:04:30+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-14T16:05:00+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdekteam.ru
+2026-10-14T16:08:56+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-14T16:11:58+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-14T16:16:19+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-14T16:27:38+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-14T16:30:00+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-14T16:30:16+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-14T16:30:51+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-14T16:36:26+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-14T16:48:51+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-14T17:12:00+05:00,WS-014,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-14T17:14:54+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-14T17:24:29+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-14T17:27:10+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-14T17:29:54+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-14T17:34:00+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-14T17:34:36+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-14T17:48:00+05:00,WS-010,o.li,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Users\o.li\AppData\Local\Programs\Microsoft VS Code\Code.exe,powershell.exe -NoLogo,,,
+2026-10-14T17:49:48+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-14T17:58:01+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-14T17:59:36+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-15T02:00:00+05:00,WS-000,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:02+05:00,WS-001,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:05+05:00,WS-002,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:06+05:00,WS-003,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:09+05:00,WS-004,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:10+05:00,WS-005,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:13+05:00,WS-006,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:14+05:00,WS-007,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:17+05:00,WS-008,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:19+05:00,WS-009,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:21+05:00,WS-010,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:23+05:00,WS-011,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:25+05:00,WS-012,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:26+05:00,WS-013,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:28+05:00,WS-014,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:30+05:00,WS-015,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:32+05:00,WS-016,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:34+05:00,WS-017,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:36+05:00,WS-018,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:38+05:00,WS-019,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:40+05:00,WS-020,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:42+05:00,WS-021,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:45+05:00,WS-022,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T02:00:47+05:00,WS-023,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-15T09:01:00+05:00,WS-017,z.temirova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:02:00+05:00,WS-018,a.yesenov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:05:00+05:00,WS-000,it.admin,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:05:00+05:00,WS-010,o.li,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:05:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe,,,
+2026-10-15T09:06:00+05:00,WS-006,k.bekov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:08:00+05:00,WS-020,d.alieva,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:09:00+05:00,WS-011,r.mukanov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:10:00+05:00,WS-007,l.sadykova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:11:00+05:00,WS-003,d.omarov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:11:00+05:00,WS-016,y.dauletov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:11:00+05:00,WS-019,b.karimova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:14:00+05:00,WS-015,v.sokolova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:14:00+05:00,WS-021,e.sultanov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:14:00+05:00,WS-022,f.mamyrova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:14:00+05:00,WS-023,m.ospanova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:15:00+05:00,WS-002,b.zhunusova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:19:00+05:00,WS-005,g.abenova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:20:00+05:00,WS-001,a.akhmetov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:20:00+05:00,WS-008,m.tulegenov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:21:00+05:00,WS-013,t.zhaksylykov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:22:00+05:00,WS-004,e.kim,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:22:00+05:00,WS-014,u.baimukhanova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:23:00+05:00,WS-009,n.kassymova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:24:00+05:00,WS-012,s.aitkulova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-15T09:30:00+05:00,WS-000,it.admin,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-001,a.akhmetov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-002,b.zhunusova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-003,d.omarov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-004,e.kim,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-005,g.abenova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-006,k.bekov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-007,l.sadykova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-008,m.tulegenov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-009,n.kassymova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-010,o.li,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-011,r.mukanov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-012,s.aitkulova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-015,v.sokolova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-016,y.dauletov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-017,z.temirova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-018,a.yesenov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-019,b.karimova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-020,d.alieva,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-021,e.sultanov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-022,f.mamyrova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T09:30:00+05:00,WS-023,m.ospanova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-15T10:06:14+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-15T10:10:28+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-15T10:11:42+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T10:23:32+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-15T10:30:27+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-15T10:30:33+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-15T10:33:49+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T10:38:47+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T10:43:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe,,,
+2026-10-15T11:11:53+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-15T11:12:51+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-15T11:27:53+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-15T11:42:00+05:00,WS-010,o.li,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Users\o.li\AppData\Local\Programs\Microsoft VS Code\Code.exe,powershell.exe -NoLogo,,,
+2026-10-15T11:45:18+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-15T11:46:42+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-15T12:08:39+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-15T12:13:38+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-15T12:15:47+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-15T12:16:44+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-15T12:25:31+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-15T12:26:00+05:00,WS-023,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-15T12:34:17+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-15T12:35:53+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-15T12:36:49+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-15T12:51:37+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-15T12:55:40+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-15T13:01:49+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-15T13:03:23+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-15T13:10:46+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-15T13:14:09+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T13:23:49+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T13:26:04+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-15T13:31:17+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-15T13:38:00+05:00,WS-016,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-15T13:40:38+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T13:45:55+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-15T13:46:25+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-15T13:53:47+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T14:00:37+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-15T14:00:39+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-15T14:02:00+05:00,WS-014,t.zhaksylykov,1,C:\Windows\System32\mshta.exe,MSHTA.EXE,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,"""C:\Windows\System32\mshta.exe"" ""C:\Users\t.zhaksylykov\Downloads\egov_uvedomlenie.hta""",,,
+2026-10-15T14:02:04+05:00,WS-014,t.zhaksylykov,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\mshta.exe,powershell.exe -w hidden -enc TABBAEIALQBTAEEATQBQAEwARQA6ACAAcwBpAG0AdQBsAGEAdABlAGQAIABkAG8AdwBuAGwAbwBhAGQAZQByACAAcABsAGEAYwBlAGgAbwBsAGQAZQByACAAZgBvAHIAIABkAGUAdABlAGMAdABpAG8AbgAgAHAAcgBhAGMAdABpAGMAZQA=,,,
+2026-10-15T14:02:05+05:00,WS-014,t.zhaksylykov,22,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,,,,,,eg0v-portal.kz
+2026-10-15T14:02:06+05:00,WS-014,t.zhaksylykov,3,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,,,,203.0.113.12,443,
+2026-10-15T14:11:43+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-15T14:17:24+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T14:21:47+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-15T14:26:13+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T14:40:52+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-15T14:44:52+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-15T14:45:35+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-15T14:49:08+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-15T14:49:39+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-15T14:56:17+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T14:56:30+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-15T15:01:13+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T15:19:09+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-15T15:21:00+05:00,WS-021,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-15T15:22:29+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-15T15:24:05+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-15T15:27:16+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T15:36:27+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-15T15:49:27+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-15T15:57:00+05:00,WS-001,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-15T16:13:23+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-15T16:17:35+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-15T16:22:00+05:00,WS-014,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-15T16:23:42+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-15T16:32:43+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-15T16:35:18+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-15T16:47:54+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-15T16:50:53+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-15T16:52:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe -Command Get-ADUser -Filter *,,,
+2026-10-15T17:04:58+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-15T17:08:27+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-15T17:09:59+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-15T17:14:42+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-15T17:17:00+05:00,WS-015,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-15T17:27:23+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-15T17:28:33+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-15T17:31:58+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-15T17:46:47+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-15T17:48:00+05:00,WS-010,o.li,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Users\o.li\AppData\Local\Programs\Microsoft VS Code\Code.exe,powershell.exe -NoLogo -NoExit,,,
+2026-10-15T17:53:19+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-15T17:56:14+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-15T17:57:14+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-16T02:00:00+05:00,WS-000,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:02+05:00,WS-001,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:04+05:00,WS-002,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:07+05:00,WS-003,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:09+05:00,WS-004,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:11+05:00,WS-005,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:13+05:00,WS-006,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:15+05:00,WS-007,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:17+05:00,WS-008,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:18+05:00,WS-009,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:21+05:00,WS-010,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:23+05:00,WS-011,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:25+05:00,WS-012,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:27+05:00,WS-013,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:29+05:00,WS-014,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:31+05:00,WS-015,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:32+05:00,WS-016,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:34+05:00,WS-017,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:37+05:00,WS-018,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:39+05:00,WS-019,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:40+05:00,WS-020,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:43+05:00,WS-021,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:44+05:00,WS-022,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T02:00:47+05:00,WS-023,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-16T09:00:00+05:00,WS-002,b.zhunusova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:00:00+05:00,WS-022,f.mamyrova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:03:00+05:00,WS-003,d.omarov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:03:00+05:00,WS-005,g.abenova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:03:00+05:00,WS-015,v.sokolova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:03:00+05:00,WS-019,b.karimova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:04:00+05:00,WS-000,it.admin,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:04:00+05:00,WS-008,m.tulegenov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:05:00+05:00,WS-009,n.kassymova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:07:00+05:00,WS-011,r.mukanov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:11:00+05:00,WS-020,d.alieva,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:12:00+05:00,WS-023,m.ospanova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:15:00+05:00,WS-012,s.aitkulova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:15:00+05:00,WS-016,y.dauletov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:16:00+05:00,WS-006,k.bekov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:16:00+05:00,WS-010,o.li,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:17:00+05:00,WS-007,l.sadykova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:18:00+05:00,WS-017,z.temirova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:19:00+05:00,WS-021,e.sultanov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:20:00+05:00,WS-014,u.baimukhanova,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:21:00+05:00,WS-004,e.kim,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:21:00+05:00,WS-013,t.zhaksylykov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:25:00+05:00,WS-001,a.akhmetov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:25:00+05:00,WS-018,a.yesenov,1,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,Outlook.exe,C:\Windows\explorer.exe,"""OUTLOOK.EXE""",,,
+2026-10-16T09:30:00+05:00,WS-000,it.admin,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-001,a.akhmetov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-002,b.zhunusova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-003,d.omarov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-004,e.kim,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-005,g.abenova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-006,k.bekov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-007,l.sadykova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-008,m.tulegenov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-009,n.kassymova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-010,o.li,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-011,r.mukanov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-012,s.aitkulova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-015,v.sokolova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-016,y.dauletov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-017,z.temirova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-018,a.yesenov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-019,b.karimova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-020,d.alieva,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-021,e.sultanov,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-022,f.mamyrova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:30:00+05:00,WS-023,m.ospanova,22,C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE,,,,,,outlook.office365.com
+2026-10-16T09:48:00+05:00,WS-003,d.omarov,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe -WindowStyle Hidden -EncodedCommand TABBAEIALQBTAEEATQBQAEwARQA6ACAAcwBpAG0AdQBsAGEAdABlAGQAIABkAG8AdwBuAGwAbwBhAGQAZQByACAAcABsAGEAYwBlAGgAbwBsAGQAZQByACAAZgBvAHIAIABkAGUAdABlAGMAdABpAG8AbgAgAHAAcgBhAGMAdABpAGMAZQA=,,,
+2026-10-16T09:48:02+05:00,WS-003,d.omarov,22,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,,,,,,cdek-nakladnaya.top
+2026-10-16T09:48:03+05:00,WS-003,d.omarov,3,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,,,,203.0.113.150,443,
+2026-10-16T10:01:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe -Command Get-ADUser -Filter *,,,
+2026-10-16T10:05:50+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-16T10:10:07+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-16T10:34:11+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-16T10:36:04+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-16T10:47:00+05:00,WS-016,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-16T10:49:44+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-16T11:07:28+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-16T11:10:50+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-16T11:17:21+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-16T11:32:04+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-16T11:33:51+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-16T11:53:42+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-16T11:55:52+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-16T11:58:22+05:00,WS-019,b.karimova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-16T12:06:36+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-16T12:11:15+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-16T12:13:47+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-16T12:16:29+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-16T12:18:51+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-16T12:26:42+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-16T12:33:28+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-16T12:36:54+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-16T12:41:58+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-16T12:53:00+05:00,WS-015,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-16T13:01:51+05:00,WS-013,t.zhaksylykov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-16T13:13:38+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-16T13:16:53+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-16T13:19:44+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-16T13:31:00+05:00,WS-019,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-16T13:36:18+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-16T13:37:33+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-16T13:44:43+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-16T13:50:56+05:00,WS-006,k.bekov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-16T13:56:49+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-16T13:56:53+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-16T14:03:11+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-16T14:03:21+05:00,WS-004,e.kim,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-16T14:05:56+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-16T14:08:19+05:00,WS-012,s.aitkulova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-16T14:19:49+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-16T14:20:27+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-16T14:24:22+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-16T14:36:39+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-16T14:48:34+05:00,WS-017,z.temirova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-16T14:48:41+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-16T14:53:07+05:00,WS-009,n.kassymova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-16T14:57:50+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-16T15:00:01+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-16T15:18:05+05:00,WS-011,r.mukanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-16T15:19:11+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-16T15:21:00+05:00,WS-010,o.li,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Users\o.li\AppData\Local\Programs\Microsoft VS Code\Code.exe,powershell.exe -NoLogo,,,
+2026-10-16T15:24:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,powershell.exe -Command Get-ADUser -Filter *,,,
+2026-10-16T15:24:25+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-16T15:28:21+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-16T15:33:00+05:00,WS-017,z.temirova,1,C:\Windows\System32\wscript.exe,wscript.exe,C:\Windows\explorer.exe,"""C:\Windows\System32\WScript.exe"" ""C:\Users\z.temirova\Downloads\Kaspi_bonus_50000.js""",,,
+2026-10-16T15:33:09+05:00,WS-017,z.temirova,1,C:\Users\Public\Libraries\winupdate.exe,PowerShell.EXE,C:\Windows\System32\wscript.exe,winupdate.exe -nop -enc TABBAEIALQBTAEEATQBQAEwARQA6ACAAcwBpAG0AdQBsAGEAdABlAGQAIABkAG8AdwBuAGwAbwBhAGQAZQByACAAcABsAGEAYwBlAGgAbwBsAGQAZQByACAAZgBvAHIAIABkAGUAdABlAGMAdABpAG8AbgAgAHAAcgBhAGMAdABpAGMAZQA=,,,
+2026-10-16T15:33:10+05:00,WS-017,z.temirova,22,C:\Users\Public\Libraries\winupdate.exe,,,,,,kaspi-cashback.online
+2026-10-16T15:33:11+05:00,WS-017,z.temirova,3,C:\Users\Public\Libraries\winupdate.exe,,,,203.0.113.201,443,
+2026-10-16T15:39:10+05:00,WS-015,v.sokolova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-16T15:40:51+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-16T15:48:05+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-16T15:51:30+05:00,WS-010,o.li,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-16T15:58:00+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,cdek.kz
+2026-10-16T16:04:54+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-16T16:06:48+05:00,WS-001,a.akhmetov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-16T16:11:19+05:00,WS-018,a.yesenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-16T16:13:04+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-16T16:16:59+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,egov.kz
+2026-10-16T16:27:37+05:00,WS-022,f.mamyrova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,www.google.com
+2026-10-16T16:30:15+05:00,WS-014,u.baimukhanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kolesa.kz
+2026-10-16T16:41:00+05:00,WS-005,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-16T16:45:45+05:00,WS-016,y.dauletov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-16T16:51:22+05:00,WS-020,d.alieva,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,teams.microsoft.com
+2026-10-16T16:52:53+05:00,WS-003,d.omarov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-16T16:55:42+05:00,WS-008,m.tulegenov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-16T16:57:29+05:00,WS-007,l.sadykova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-16T17:23:00+05:00,WS-011,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-16T17:29:00+05:00,WS-000,it.admin,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\explorer.exe,"""C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe""",,,
+2026-10-16T17:35:26+05:00,WS-021,e.sultanov,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,kaspi.kz
+2026-10-16T17:39:21+05:00,WS-002,b.zhunusova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,halykbank.kz
+2026-10-16T17:41:13+05:00,WS-023,m.ospanova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,krisha.kz
+2026-10-16T17:48:32+05:00,WS-005,g.abenova,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-16T17:50:00+05:00,WS-010,o.li,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Users\o.li\AppData\Local\Programs\Microsoft VS Code\Code.exe,powershell.exe -NoLogo -NoExit,,,
+2026-10-16T17:55:11+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,web.telegram.org
+2026-10-16T17:58:11+05:00,WS-000,it.admin,22,C:\Program Files\Google\Chrome\Application\chrome.exe,,,,,,post.kz
+2026-10-16T17:59:00+05:00,WS-004,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Program Files\ManageEngine\UEMS_Agent\bin\dcagentservice.exe,powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBTAGUAcgB2AGkAYwBlAA==,,,
+2026-10-17T02:00:00+05:00,WS-000,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:02+05:00,WS-001,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:04+05:00,WS-002,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:07+05:00,WS-003,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:08+05:00,WS-004,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:10+05:00,WS-005,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:12+05:00,WS-006,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:15+05:00,WS-007,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:17+05:00,WS-008,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:19+05:00,WS-009,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:21+05:00,WS-010,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:23+05:00,WS-011,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:24+05:00,WS-012,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:26+05:00,WS-013,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:29+05:00,WS-014,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:30+05:00,WS-015,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:32+05:00,WS-016,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:34+05:00,WS-017,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:37+05:00,WS-018,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:38+05:00,WS-019,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:40+05:00,WS-020,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:43+05:00,WS-021,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:44+05:00,WS-022,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-17T02:00:47+05:00,WS-023,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:00+05:00,WS-000,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:03+05:00,WS-001,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:04+05:00,WS-002,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:06+05:00,WS-003,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:09+05:00,WS-004,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:11+05:00,WS-005,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:12+05:00,WS-006,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:14+05:00,WS-007,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:17+05:00,WS-008,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:18+05:00,WS-009,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:20+05:00,WS-010,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:23+05:00,WS-011,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:25+05:00,WS-012,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:26+05:00,WS-013,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:29+05:00,WS-014,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:31+05:00,WS-015,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:33+05:00,WS-016,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:35+05:00,WS-017,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:37+05:00,WS-018,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:39+05:00,WS-019,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:41+05:00,WS-020,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:43+05:00,WS-021,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:44+05:00,WS-022,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
+2026-10-18T02:00:47+05:00,WS-023,SYSTEM,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,PowerShell.EXE,C:\Windows\System32\svchost.exe,powershell.exe -NoProfile -File C:\IT\inventory.ps1,,,
