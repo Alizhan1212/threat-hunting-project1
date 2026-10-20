@@ -1,0 +1,97 @@
+{
+  "name": "Week 06 - T1059.004 simulation (Linux)",
+  "versions": {
+    "attack": "20",
+    "navigator": "5.1.0",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Techniques observed while emulating T1059.004 (Unix Shell) in a Kali Linux lab. Score: 100 = main technique studied, 60 = supporting technique observed.",
+  "filters": {
+    "platforms": ["Linux"]
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side",
+    "aggregateFunction": "average",
+    "showID": true,
+    "showName": true,
+    "showAggregateScores": false,
+    "countUnscored": false,
+    "expandedSubtechniques": "annotated"
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1059.004",
+      "tactic": "execution",
+      "score": 100,
+      "color": "#e60d0d",
+      "comment": "Main technique. bash -c and sh -c used to run commands.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1027.010",
+      "score": 60,
+      "color": "#ff9e3d",
+      "comment": "Base64 encoded command hides the real command.",
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1140",
+      "score": 60,
+      "color": "#ff9e3d",
+      "comment": "base64 -d decodes the command before it is run.",
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1033",
+      "tactic": "discovery",
+      "score": 60,
+      "color": "#ff9e3d",
+      "comment": "id, whoami",
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1082",
+      "tactic": "discovery",
+      "score": 60,
+      "color": "#ff9e3d",
+      "comment": "uname -a, /etc/os-release",
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1087.001",
+      "tactic": "discovery",
+      "score": 60,
+      "color": "#ff9e3d",
+      "comment": "Reading /etc/passwd",
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1016",
+      "tactic": "discovery",
+      "score": 60,
+      "color": "#ff9e3d",
+      "comment": "ip addr, ip route",
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": ["#ffffff", "#e60d0d"],
+    "minValue": 0,
+    "maxValue": 100
+  },
+  "legendItems": [
+    { "label": "Main technique studied", "color": "#e60d0d" },
+    { "label": "Supporting technique observed", "color": "#ff9e3d" }
+  ],
+  "metadata": [],
+  "links": [],
+  "showTacticRowBackground": false,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true,
+  "selectSubtechniquesWithParent": false,
+  "selectVisibleTechniques": false
+}
