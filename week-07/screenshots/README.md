@@ -15,4 +15,5 @@
 | `w7_elk_alerts.png` | Security → Alerts | tuned rule 5, as-published rule 211, brand DNS rule 5 |
 | `w7_navigator.png` | Navigator with `navigator-layer-w7.json` | |
 
-After saving, uncomment the matching `<!-- ![...](screenshots/...) -->` lines in `../README.md`.
+All screenshots taken 2026-10-20 in Kibana 9.5.5 (Elastic in Docker on MacBook M2) and embedded in `../README.md`.
+Extra: `w7_elk_v3_p2.png` (V3 result table), `w7_elk_rules_list.png` (3 W7 rules), `w7_elk_alert_details.png` (one alert opened).
