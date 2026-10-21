@@ -14,7 +14,6 @@
 2. Study one technique in depth (T1059.004 Unix Shell).
 3. Simulate the technique safely in a Kali Linux lab and observe the telemetry it creates.
 4. Map the results to ATT&CK tactics and techniques and visualise them in **ATT&CK Navigator**.
-5. Turn the result into a detection (Sigma rule) that feeds our threat-hunting project (Week 7).
 
 Source: https://attack.mitre.org
 
