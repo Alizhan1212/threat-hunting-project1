@@ -244,17 +244,6 @@ Also: send audit logs to a central system (SIEM) so evidence cannot be erased lo
 - Results depend on what logging was enabled.
 - The Sigma rule matches one specific pattern and will miss other ways of hiding commands. It can also have false positives and would need tuning.
 
-## 10. Next step (Week 07): MITRE CAR and a SIEM
-Week 7 uses the MITRE Cyber Analytics Repository (CAR, car.mitre.org). The plan:
-
-1. **Select a CAR analytic** related to T1059 (command and scripting interpreters), the technique studied this week. CAR can be filtered by ATT&CK technique. Prefer an analytic that includes pseudocode or a SIEM query (for example Splunk) so it can be implemented.
-2. **Set up a SIEM** in the lab (for example Wazuh, Splunk Free, or Elastic) and forward the Kali auditd logs to it.
-3. **Implement the analytic** as a search or alert in the SIEM, adapting the field names to the auditd log format.
-4. **Test it** by re-running `simulate_t1059_004.sh` and capturing the alert in screenshots.
-5. **Map the analytic to ATT&CK techniques** (T1059.004, T1027.010, T1140, and the discovery techniques) and update the Navigator layer.
-6. **Compare analytic and detection:** a CAR *analytic* describes the detection idea, the data it needs, and pseudocode, while a *detection* is the working rule running in a SIEM. Compare the chosen analytic with the Sigma rule from section 7.
-7. Document everything in `week-07/report.md` and commit it on a new branch.
-
 ---
 
 ## 11. References
