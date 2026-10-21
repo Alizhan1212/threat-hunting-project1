@@ -236,7 +236,6 @@ sudo ausearch -k t1059_exec -i | grep -iE "base64 (-d|--decode)"
 
 Also: send audit logs to a central system (SIEM) so evidence cannot be erased locally.
 
-> Verify the mitigation IDs at https://attack.mitre.org/techniques/T1059/004/ before submission.
 
 ---
 
