@@ -48,7 +48,6 @@ Source: https://attack.mitre.org
 | T1059.007 | JavaScript |
 | T1059.008 | Network Device CLI |
 
-> Check the current list at https://attack.mitre.org/techniques/T1059/ because sub-techniques are occasionally added.
 
 ---
 
@@ -79,7 +78,6 @@ sudo auditctl -l
 **Screenshot 1:** auditd running and rule active
 ![auditd rule](images/01-auditd-rule.png)
 
-> If auditd is not available in your environment (for example WSL), use the fallback evidence in section 5.3.
 
 ---
 
