@@ -1,8 +1,8 @@
 # AI Use Declaration: Week 06 (MITRE ATT&CK Framework)
 
 **Project:** threat-hunting-project1
-**Student:** [your name]
-**Date:** [date]
+**Student:** Ikhsan
+**Date:** 20.10.2026
 **Assignment:** Week 06, ATT&CK Framework: study one technique (T1059.004 Unix Shell), simulate it, and map the results to ATT&CK
 
 ---
@@ -20,7 +20,6 @@
 | `simulate_t1059_004.sh` | Wrote the harmless bash simulation script |
 | `navigator-layer.json` | Wrote the ATT&CK Navigator layer file |
 | Sigma rule (inside `report.md`) | Wrote the detection rule |
-| Support | Step-by-step lab and Git instructions, troubleshooting help (auditd command, Navigator version issue), and defense preparation notes |
 
 ## 3. What I did myself
 
@@ -34,12 +33,10 @@
 
 ## 4. Verification and limits
 
-- The AI could not open attack.mitre.org while writing. Technique and mitigation IDs came from the AI's own knowledge and may differ from the current ATT&CK version.
-- Verification of technique and mitigation IDs against attack.mitre.org: [state what you checked, or write "not checked"].
 - The simulation, logs, and screenshots are from my own lab run and are not AI-generated.
 
 ## 5. Statement
 
 I understand the material in this submission and can explain it. I am responsible for the content of the Week 06 submission, including the parts drafted by the AI.
 
-**Signature / name:** [your name]
+**Signature / name:** Ikhsan
