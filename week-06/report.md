@@ -246,7 +246,7 @@ Also: send audit logs to a central system (SIEM) so evidence cannot be erased lo
 
 ---
 
-## 11. References
+## 10. References
 - MITRE ATT&CK: https://attack.mitre.org
 - T1059 Command and Scripting Interpreter: https://attack.mitre.org/techniques/T1059/
 - T1059.004 Unix Shell: https://attack.mitre.org/techniques/T1059/004/
