@@ -1,0 +1,44 @@
+# CALDERA adversary profile — post-compromise emulation (LAB ONLY)
+#
+# Topic: phishing impersonating Kazakhstani brands (Kaspi, eGov, Kazpost, CDEK).
+# This profile emulates ONLY the post-compromise phases (persistence -> discovery
+# -> collection -> exfiltration) against a victim VM we own, inside an isolated
+# network. It does NOT send phishing and does NOT target anyone's real account.
+#
+# -------------------------------------------------------------------------
+# HOW TO USE
+# 1. In the CALDERA web UI, open "abilities" and search for the ability name
+#    written in each comment below (CALDERA ships these in the "stockpile" plugin).
+# 2. Copy that ability's real UUID from your instance and paste it in place of
+#    the REPLACE_WITH_* placeholder. UUIDs differ per install / version, so a
+#    profile only imports cleanly with the UUIDs from YOUR instance.
+# 3. Save this file under caldera/data/adversaries/ (or import via the UI),
+#    then run an Operation against your lab agent.
+# -------------------------------------------------------------------------
+
+id: 9f1d2c7a-week8-kzbrand-emulation-0001
+name: KZ Brand Phishing - Post-Compromise
+description: >
+  Lab emulation of attacker behaviour AFTER a hypothetical phishing compromise.
+  Maps to ATT&CK T1547.001, T1053.005, T1082, T1083, T1005, T1071.001, T1041/T1567.
+  Isolated lab only; collection uses harmless stand-in files.
+
+atomic_ordering:
+  # --- Persistence ---
+  - REPLACE_WITH_UUID   # T1547.001 Registry Run Keys  -> ability: "Registry Run key persistence" (Windows)
+  - REPLACE_WITH_UUID   # T1053.005 Scheduled Task     -> ability: "Create a scheduled task" / cron on Linux
+
+  # --- Discovery ---
+  - REPLACE_WITH_UUID   # T1082 System Information     -> ability: "System information discovery" (systeminfo / uname)
+  - REPLACE_WITH_UUID   # T1083 File & Directory       -> ability: "Find files" / "Identify local files"
+
+  # --- Collection ---
+  - REPLACE_WITH_UUID   # T1005 Data from Local System -> ability: "Stage sensitive files" (point it at a lab test folder only)
+
+  # --- Command & Control / Exfiltration ---
+  - REPLACE_WITH_UUID   # T1071.001 / T1041            -> ability: "Exfil staged directory over C2" (to the CALDERA server in-lab)
+  # Optional alternative exfil path, if demonstrating T1567 Exfil over Web Service:
+  # - REPLACE_WITH_UUID # T1567 -> a web-service upload ability pointed at a LOCAL sink you control, never a real service
+
+# No custom payloads are defined. Use only stock abilities so nothing in this
+# profile functions as real malware outside the CALDERA framework.
