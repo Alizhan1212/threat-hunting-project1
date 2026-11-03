@@ -67,6 +67,8 @@ A financially motivated actor runs a mass phishing campaign that impersonates we
 
 ![Week 8 emulation plan in ATT&CK Navigator](screenshots/w8_navigator.png)
 
+▶ **[Open this layer live in ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2FAlizhan1212%2Fthreat-hunting-project1%2Fmain%2Fweek-08%2Fnavigator-layer-w8.json)** — loads the layer straight from this repo, interactive, not just the screenshot above.
+
 Layer: [`navigator-layer-w8.json`](navigator-layer-w8.json) (Enterprise ATT&CK v15, 16 techniques). **Red** = documented only (would require deceiving real people). **Green** = planned for emulation in the isolated lab. The mobile technique T1660 (Phishing) is in the table above but not in the layer, because the layer covers Enterprise ATT&CK only.
 
 ## 6. CALDERA emulation (lab run)
