@@ -6,44 +6,174 @@
     "layer": "4.5"
   },
   "domain": "enterprise-attack",
-  "description": "Threat Hunting course, AITU 2026-2027. Adversary emulation plan for phishing impersonating Kazakhstani brands (Kaspi, eGov, Kazpost, CDEK). Red = documented only; Green = emulated in isolated lab.",
+  "description": "Threat Hunting course, AITU 2026-2027. Adversary emulation plan for phishing impersonating Kazakhstani brands (Kaspi, eGov, Kazpost, CDEK). Red = documented only; Green = planned for emulation in isolated lab. Mobile technique T1660 (Phishing, Mobile ATT&CK) is documented in README; this layer covers Enterprise ATT&CK only.",
   "filters": {
-    "platforms": ["Windows", "Linux", "Network", "SaaS"]
+    "platforms": [
+      "PRE",
+      "Windows",
+      "Linux",
+      "macOS",
+      "Network",
+      "SaaS",
+      "Office Suite",
+      "Identity Provider"
+    ]
   },
   "sorting": 0,
   "layout": {
     "layout": "side",
     "showID": true,
-    "showName": true
+    "showName": true,
+    "expandedSubtechniques": "annotated"
   },
   "hideDisabled": false,
   "techniques": [
-    { "techniqueID": "T1598", "tactic": "reconnaissance", "color": "#c0392b", "comment": "Phishing for Information - documented only (OSINT)", "enabled": true },
-    { "techniqueID": "T1583.001", "tactic": "resource-development", "color": "#c0392b", "comment": "Acquire lookalike Domains - documented only", "enabled": true },
-    { "techniqueID": "T1608.005", "tactic": "resource-development", "color": "#c0392b", "comment": "Stage Capabilities: Link Target - documented only", "enabled": true },
-    { "techniqueID": "T1566.002", "tactic": "initial-access", "color": "#c0392b", "comment": "Spearphishing Link - documented only", "enabled": true },
-    { "techniqueID": "T1660", "tactic": "initial-access", "color": "#c0392b", "comment": "Mobile: Phishing - documented only", "enabled": true },
-    { "techniqueID": "T1204.001", "tactic": "execution", "color": "#e2f0d9", "comment": "User Execution: Malicious Link - benign stand-in in lab", "enabled": true },
-    { "techniqueID": "T1204.002", "tactic": "execution", "color": "#e2f0d9", "comment": "User Execution: Malicious File - benign stand-in in lab", "enabled": true },
-    { "techniqueID": "T1056.003", "tactic": "credential-access", "color": "#c0392b", "comment": "Web Portal Capture - documented only", "enabled": true },
-    { "techniqueID": "T1111", "tactic": "credential-access", "color": "#c0392b", "comment": "MFA Interception - documented only", "enabled": true },
-    { "techniqueID": "T1547.001", "tactic": "persistence", "color": "#27ae60", "comment": "Registry Run Keys - emulated (CALDERA)", "enabled": true },
-    { "techniqueID": "T1053.005", "tactic": "persistence", "color": "#27ae60", "comment": "Scheduled Task - emulated (CALDERA)", "enabled": true },
-    { "techniqueID": "T1082", "tactic": "discovery", "color": "#27ae60", "comment": "System Information Discovery - emulated", "enabled": true },
-    { "techniqueID": "T1083", "tactic": "discovery", "color": "#27ae60", "comment": "File and Directory Discovery - emulated", "enabled": true },
-    { "techniqueID": "T1005", "tactic": "collection", "color": "#27ae60", "comment": "Data from Local System - emulated with stand-in data", "enabled": true },
-    { "techniqueID": "T1071.001", "tactic": "command-and-control", "color": "#27ae60", "comment": "Web Protocols - emulated to lab sink", "enabled": true },
-    { "techniqueID": "T1041", "tactic": "exfiltration", "color": "#27ae60", "comment": "Exfiltration Over C2 Channel - emulated to lab sink", "enabled": true },
-    { "techniqueID": "T1567", "tactic": "exfiltration", "color": "#27ae60", "comment": "Exfiltration Over Web Service - emulated to lab sink", "enabled": true }
+    {
+      "techniqueID": "T1598",
+      "tactic": "reconnaissance",
+      "color": "#c0392b",
+      "comment": "Phishing for Information - documented only (OSINT)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "tactic": "resource-development",
+      "color": "#c0392b",
+      "comment": "Acquire lookalike Domains - documented only",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1608.005",
+      "tactic": "resource-development",
+      "color": "#c0392b",
+      "comment": "Stage Capabilities: Link Target - documented only",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1566.002",
+      "tactic": "initial-access",
+      "color": "#c0392b",
+      "comment": "Spearphishing Link - documented only",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1204.001",
+      "tactic": "execution",
+      "color": "#27ae60",
+      "comment": "User Execution: Malicious Link - benign stand-in in lab",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "tactic": "execution",
+      "color": "#27ae60",
+      "comment": "User Execution: Malicious File - benign stand-in in lab",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1056.003",
+      "tactic": "credential-access",
+      "color": "#c0392b",
+      "comment": "Web Portal Capture - documented only",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1111",
+      "tactic": "credential-access",
+      "color": "#c0392b",
+      "comment": "MFA Interception - documented only",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "tactic": "persistence",
+      "color": "#27ae60",
+      "comment": "Registry Run Keys - emulated (CALDERA)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1053.005",
+      "tactic": "persistence",
+      "color": "#27ae60",
+      "comment": "Scheduled Task - emulated (CALDERA)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1082",
+      "tactic": "discovery",
+      "color": "#27ae60",
+      "comment": "System Information Discovery - emulated",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1083",
+      "tactic": "discovery",
+      "color": "#27ae60",
+      "comment": "File and Directory Discovery - emulated",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1005",
+      "tactic": "collection",
+      "color": "#27ae60",
+      "comment": "Data from Local System - emulated with stand-in data",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "tactic": "command-and-control",
+      "color": "#27ae60",
+      "comment": "Web Protocols - emulated to lab sink",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1041",
+      "tactic": "exfiltration",
+      "color": "#27ae60",
+      "comment": "Exfiltration Over C2 Channel - emulated to lab sink",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1567",
+      "tactic": "exfiltration",
+      "color": "#27ae60",
+      "comment": "Exfiltration Over Web Service - emulated to lab sink",
+      "enabled": true,
+      "showSubtechniques": true
+    }
   ],
   "gradient": {
-    "colors": ["#ffffff", "#66b1ff"],
+    "colors": [
+      "#ffffff",
+      "#66b1ff"
+    ],
     "minValue": 0,
     "maxValue": 100
   },
   "legendItems": [
-    { "label": "Documented only (would require deceiving real people)", "color": "#c0392b" },
-    { "label": "Emulated in isolated lab", "color": "#27ae60" }
+    {
+      "label": "Documented only (would require deceiving real people)",
+      "color": "#c0392b"
+    },
+    {
+      "label": "Planned for emulation in isolated lab (CALDERA)",
+      "color": "#27ae60"
+    }
   ],
   "showTacticRowBackground": true,
   "tacticRowBackground": "#dddddd",

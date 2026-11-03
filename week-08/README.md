@@ -32,18 +32,18 @@ A financially motivated actor runs a mass phishing campaign that impersonates we
 
 ## 3. Emulation plan by phase (ATT&CK mapping)
 
-| Phase | Adversary behaviour (modelled) | ATT&CK ID | Emulated in lab? |
+| Phase | Adversary behaviour (modelled) | ATT&CK ID | Emulation scope |
 |---|---|---|---|
 | Reconnaissance | Collect target brand assets, logos, customer-facing wording | T1598 Phishing for Information | No — OSINT only |
 | Resource Development | Register lookalike domains; stage a credential-capture page | T1583.001 Domains, T1608.005 Link Target | No — described only |
 | **Initial Access** | Deliver a lure link via SMS / messenger impersonating a delivery or bonus notice | T1566.002 Spearphishing Link (mobile: T1660 Phishing) | No — described only |
-| Execution | Victim opens the link / runs a delivered file | T1204.001 / T1204.002 User Execution | Lab: benign stand-in |
+| Execution | Victim opens the link / runs a delivered file | T1204.001 / T1204.002 User Execution | Planned: benign stand-in |
 | Credential Access | Fake form harvests credentials / card data / OTP | T1056.003 Web Portal Capture, T1111 MFA Interception | No — described only |
-| **Persistence** | Implant establishes autostart on the endpoint | T1547.001 Registry Run Keys, T1053.005 Scheduled Task | **Yes (CALDERA)** |
-| Discovery | Enumerate host, user, files | T1082 System Info, T1083 File & Directory Discovery | **Yes (CALDERA)** |
-| Collection | Stage data of interest for theft | T1005 Data from Local System | **Yes (CALDERA)** |
-| Command & Control | Beacon to attacker infrastructure | T1071.001 Web Protocols | **Yes (CALDERA)** |
-| **Exfiltration** | Send collected data out (e.g. over C2, or to a web service / bot) | T1041 Exfil over C2, T1567 Exfil over Web Service | **Yes (CALDERA, to lab sink)** |
+| **Persistence** | Implant establishes autostart on the endpoint | T1547.001 Registry Run Keys, T1053.005 Scheduled Task | Planned (CALDERA) |
+| Discovery | Enumerate host, user, files | T1082 System Info, T1083 File & Directory Discovery | Planned (CALDERA) |
+| Collection | Stage data of interest for theft | T1005 Data from Local System | Planned (CALDERA) |
+| Command & Control | Beacon to attacker infrastructure | T1071.001 Web Protocols | Planned (CALDERA) |
+| **Exfiltration** | Send collected data out (e.g. over C2, or to a web service / bot) | T1041 Exfil over C2, T1567 Exfil over Web Service | Planned (CALDERA, lab sink) |
 
 **Why the split.** The phases that require deceiving real people (recon of victims, lookalike domains, the lure, the fake form) are **documented, not performed** — performing them would mean attacking real users. Everything *after* a hypothetical compromise (persistence → exfil) is safe to emulate against a lab VM with harmless stand-in data, and that is exactly what CALDERA is for.
 
@@ -54,16 +54,26 @@ A financially motivated actor runs a mass phishing campaign that impersonates we
 | this `README.md` | the emulation plan |
 | [`osint-evidence.md`](osint-evidence.md) | OSINT backing: brand/KZ-CERT warnings, our confirmed domains from weeks 2 and 5, lure patterns |
 | [`attack-chain.md`](attack-chain.md) | kill-chain diagram (Mermaid, renders on GitHub) |
-| [`navigator-layer-w8.json`](navigator-layer-w8.json) | ATT&CK Navigator layer: red = documented only, green = emulated in lab |
+| [`navigator-layer-w8.json`](navigator-layer-w8.json) | ATT&CK Navigator layer: red = documented only, green = planned for lab emulation |
 | [`detection.md`](detection.md) | how to detect each phase |
-| [`caldera/profile.yml`](caldera/profile.yml) | CALDERA adversary profile for the post-compromise phases (lab only) |
+| [`caldera/profile.yml`](caldera/profile.yml) | CALDERA adversary profile template for the post-compromise phases (lab only) |
 | [`caldera/LAB-SETUP-mac.md`](caldera/LAB-SETUP-mac.md) | how to run CALDERA on macOS with Docker |
-| [`screenshots/`](screenshots/) | Navigator and CALDERA screenshots |
+| [`screenshots/w8_navigator.png`](screenshots/w8_navigator.png) | the plan in ATT&CK Navigator |
+| [`DEFENSE_NOTES_RU.md`](DEFENSE_NOTES_RU.md) | defence cheat sheet (RU) |
+| [`AI_USE_DECLARATION.md`](AI_USE_DECLARATION.md) | AI use declaration |
 
-## 5. Defence for each phase
+## 5. The plan in ATT&CK Navigator
+
+![Week 8 emulation plan in ATT&CK Navigator](screenshots/w8_navigator.png)
+
+Layer: [`navigator-layer-w8.json`](navigator-layer-w8.json) (Enterprise ATT&CK v15, 16 techniques). **Red** = documented only (would require deceiving real people). **Green** = planned for emulation in the isolated lab. The mobile technique T1660 (Phishing) is in the table above but not in the layer, because the layer covers Enterprise ATT&CK only.
+
+**Emulation status.** The CALDERA profile is a template: the ability UUIDs must be taken from our own CALDERA instance (see [`caldera/LAB-SETUP-mac.md`](caldera/LAB-SETUP-mac.md)). The syllabus asks for a documented plan; running it in CALDERA is the optional next step.
+
+## 6. Defence for each phase
 
 See `detection.md`. Summary: domain-registration monitoring and brand-abuse takedown for the pre-compromise phases; endpoint and network telemetry (autostart changes, scheduled tasks, anomalous outbound to messaging/web-service endpoints) for the post-compromise phases.
 
-## 6. Defence summary (what we would tell a defender)
+## 7. Defence summary (what we would tell a defender)
 
 The cheapest wins against this campaign are **upstream** (block/takedown of lookalike domains, user awareness for delivery-themed lures) and **downstream** (alert on new persistence + unusual egress). The middle of the chain is hard to catch per-user, which is exactly why the plan exists: it shows defenders where their visibility actually is.
