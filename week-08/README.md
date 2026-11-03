@@ -59,6 +59,7 @@ A financially motivated actor runs a mass phishing campaign that impersonates we
 | [`caldera/profile.yml`](caldera/profile.yml) | CALDERA adversary profile template for the post-compromise phases (lab only) |
 | [`caldera/LAB-SETUP-mac.md`](caldera/LAB-SETUP-mac.md) | how to run CALDERA on macOS with Docker |
 | [`screenshots/w8_navigator.png`](screenshots/w8_navigator.png) | the plan in ATT&CK Navigator |
+| [`screenshots/caldera_*.png`](screenshots/) | CALDERA emulation run (agent, operation, command, output) |
 | [`DEFENSE_NOTES_RU.md`](DEFENSE_NOTES_RU.md) | defence cheat sheet (RU) |
 | [`AI_USE_DECLARATION.md`](AI_USE_DECLARATION.md) | AI use declaration |
 
@@ -68,12 +69,27 @@ A financially motivated actor runs a mass phishing campaign that impersonates we
 
 Layer: [`navigator-layer-w8.json`](navigator-layer-w8.json) (Enterprise ATT&CK v15, 16 techniques). **Red** = documented only (would require deceiving real people). **Green** = planned for emulation in the isolated lab. The mobile technique T1660 (Phishing) is in the table above but not in the layer, because the layer covers Enterprise ATT&CK only.
 
-**Emulation status.** The CALDERA profile is a template: the ability UUIDs must be taken from our own CALDERA instance (see [`caldera/LAB-SETUP-mac.md`](caldera/LAB-SETUP-mac.md)). The syllabus asks for a documented plan; running it in CALDERA is the optional next step.
+## 6. CALDERA emulation (lab run)
 
-## 6. Defence for each phase
+We ran a live emulation in MITRE CALDERA 5.3.0 to show the mechanics end to end. CALDERA server and a Sandcat agent both ran in Docker on the analyst host; the agent ran inside a throwaway Ubuntu container (`14ce69b9710e`), so nothing touched a real system and no real brand or user was targeted.
+
+Setup is in [`caldera/LAB-SETUP-mac.md`](caldera/LAB-SETUP-mac.md); the topic-specific profile is [`caldera/profile.yml`](caldera/profile.yml). For the live run we used CALDERA's built-in benign **Discovery** adversary to demonstrate the operation workflow safely.
+
+| Step | Screenshot | What it shows |
+|---|---|---|
+| Agent deployed | [`caldera_1_agent.png`](screenshots/caldera_1_agent.png) | Sandcat agent `yrevwv` on host `14ce69b9710e`, group `red`, status alive/trusted |
+| Operation ran | [`caldera_2_operation.png`](screenshots/caldera_2_operation.png) | Abilities executed (Identify active user, Find local users, Find user processes…), tactic `discovery`, status `success` |
+| Command | [`caldera_3_command.png`](screenshots/caldera_3_command.png) | The real command run on the agent (`whoami`) for "Identify active user" (T1033 / T1082) |
+| Output | [`caldera_4_output.png`](screenshots/caldera_4_output.png) | Collected facts: `host.user.name = root`, standard output `root` |
+
+![CALDERA operation](screenshots/caldera_2_operation.png)
+
+**Mapping to the plan.** The Discovery run exercises the Discovery phase of our plan (T1082, T1083). Our topic-specific `profile.yml` documents the fuller post-compromise chain (persistence → discovery → collection → exfiltration); its ability UUIDs are filled from the running CALDERA instance (abilities page). The pre-compromise phases (initial access, credential capture) stay documented only, since emulating them would mean deceiving real people.
+
+## 7. Defence for each phase
 
 See `detection.md`. Summary: domain-registration monitoring and brand-abuse takedown for the pre-compromise phases; endpoint and network telemetry (autostart changes, scheduled tasks, anomalous outbound to messaging/web-service endpoints) for the post-compromise phases.
 
-## 7. Defence summary (what we would tell a defender)
+## 8. Defence summary (what we would tell a defender)
 
 The cheapest wins against this campaign are **upstream** (block/takedown of lookalike domains, user awareness for delivery-themed lures) and **downstream** (alert on new persistence + unusual egress). The middle of the chain is hard to catch per-user, which is exactly why the plan exists: it shows defenders where their visibility actually is.
