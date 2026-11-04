@@ -3,7 +3,7 @@
 **Group topic:** phishing campaigns impersonating Kazakhstani brands (Kaspi, eGov, Kazpost, CDEK)
 **Syllabus tasks (3.3, week 8):** (1) develop a simple adversary emulation plan (initial access → persistence → data exfiltration); (2) document the plan using ATT&CK techniques.
 **Topics:** adversary emulation plans. **Sources:** MITRE Engenuity, Red Teaming resources. **Recommended reading:** MITRE CALDERA documentation.
-**Performed by:** Kazhymukan Boris · **Date:** 2026-11-03
+**Performed by:** Kazhymukan Boris, Ikhsan Muptiadil, Alizhan Onlazbek
 
 > **Scope and ethics.** This is a *defensive* emulation plan for a lab exercise. It describes adversary behaviour at the level of ATT&CK techniques so we can build detections. No live phishing is sent to anyone, no lookalike site is hosted, and no malware is built. Any hands-on emulation (e.g. MITRE CALDERA) is run only inside an **isolated virtual lab** against machines we own.
 
