@@ -1,7 +1,6 @@
 # AI Use Declaration: Week 08
 
 **Students:** Kazhymukan Boris, Ikhsan Muptiadil, Alizhan Onlazbek
-**Date:** 03.11.2026
 
 - **AI tool:** Claude (Anthropic).
 - **AI helped with:** formatting the work — putting our material into the README, tables and ATT&CK Navigator layer.
