@@ -4,7 +4,7 @@
 **Date:** 03.11.2026
 
 - **AI tool:** Claude (Anthropic).
-- **AI helped with:** writing the plan and documents (README, OSINT summary, detection table, ATT&CK Navigator layer, CALDERA profile).
+- **AI helped with:** formatting the work — putting our material into the README, tables and ATT&CK Navigator layer.
 - **We did ourselves:** collected the OSINT data (weeks 2, 5), ran the CALDERA emulation in Docker, took the screenshots, and committed everything.
 
 We understand the material and can explain it. We are responsible for this submission.
