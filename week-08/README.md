@@ -60,7 +60,6 @@ A financially motivated actor runs a mass phishing campaign that impersonates we
 | [`caldera/LAB-SETUP-mac.md`](caldera/LAB-SETUP-mac.md) | how to run CALDERA on macOS with Docker |
 | [`screenshots/w8_navigator.png`](screenshots/w8_navigator.png) | the plan in ATT&CK Navigator |
 | [`screenshots/caldera_*.png`](screenshots/) | CALDERA emulation run (agent, operation, command, output) |
-| [`DEFENSE_NOTES_RU.md`](DEFENSE_NOTES_RU.md) | defence cheat sheet (RU) |
 | [`AI_USE_DECLARATION.md`](AI_USE_DECLARATION.md) | AI use declaration |
 
 ## 5. The plan in ATT&CK Navigator
