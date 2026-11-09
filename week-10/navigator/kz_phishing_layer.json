@@ -1,0 +1,174 @@
+{
+  "name": "Week10 - KZ brand phishing TTPs",
+  "versions": {
+    "attack": "20",
+    "navigator": "5.1.0",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Our group topic: phishing impersonating Kaspi, eGov, Kazpost, CDEK. From the week 8 emulation plan and weeks 5/7 hunting.",
+  "filters": {
+    "platforms": [
+      "PRE",
+      "Windows",
+      "Linux",
+      "macOS",
+      "Network",
+      "SaaS",
+      "Office Suite",
+      "Identity Provider"
+    ]
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side",
+    "showID": true,
+    "showName": true,
+    "expandedSubtechniques": "annotated"
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1005",
+      "color": "#3498db",
+      "comment": "Stage local data",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1041",
+      "color": "#3498db",
+      "comment": "Exfiltration over C2",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1053.005",
+      "color": "#3498db",
+      "comment": "Scheduled task persistence (lab emulation)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1056.003",
+      "color": "#3498db",
+      "comment": "Fake login / card form captures data",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "color": "#3498db",
+      "comment": "Word -> PowerShell (weeks 5 and 7)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "color": "#3498db",
+      "comment": "C2 over HTTPS",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1082",
+      "color": "#3498db",
+      "comment": "Host discovery (CALDERA, week 8)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1083",
+      "color": "#3498db",
+      "comment": "File discovery (CALDERA, week 8)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1111",
+      "color": "#3498db",
+      "comment": "Fake form asks for the Kaspi SMS code",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1204.001",
+      "color": "#3498db",
+      "comment": "Victim opens the link",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "color": "#3498db",
+      "comment": "Victim opens the attachment",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "color": "#3498db",
+      "comment": "Implant autostart (lab emulation, week 8)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "color": "#3498db",
+      "comment": "Kazpost-themed .docm attachment (week 5, H3)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1566.002",
+      "color": "#3498db",
+      "comment": "SMS / messenger / e-mail link: 'parcel held', 'eGov payout'",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1567",
+      "color": "#3498db",
+      "comment": "Exfiltration to web service / Telegram bot",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "color": "#3498db",
+      "comment": "Look-alike domains (kaspl[.]ga, egov-kz-pay[.]online)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1598",
+      "color": "#3498db",
+      "comment": "Collect brand assets / wording for lures",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1608.005",
+      "color": "#3498db",
+      "comment": "Credential-capture page staged behind the link",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1684.001",
+      "color": "#3498db",
+      "comment": "Poses as Kaspi, eGov, Kazpost, CDEK",
+      "enabled": true,
+      "showSubtechniques": true
+    }
+  ],
+  "legendItems": [
+    {
+      "label": "KZ brand phishing (our model)",
+      "color": "#3498db"
+    }
+  ],
+  "showTacticRowBackground": true,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true
+}

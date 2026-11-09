@@ -1,0 +1,609 @@
+{
+  "name": "Week10 - APT29 TTPs",
+  "versions": {
+    "attack": "20",
+    "navigator": "5.1.0",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "APT29 / Midnight Blizzard (G0016). ATT&CK v20.1. MITRE group page (66 techniques) + our mapping of 3 phishing campaigns 2024-2025 (WINELOADER, RDP files, GRAPELOADER).",
+  "filters": {
+    "platforms": [
+      "PRE",
+      "Windows",
+      "Linux",
+      "macOS",
+      "Network",
+      "SaaS",
+      "Office Suite",
+      "Identity Provider"
+    ]
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side",
+    "showID": true,
+    "showName": true,
+    "expandedSubtechniques": "annotated"
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1003.002",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1003.004",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1005",
+      "color": "#c0392b",
+      "comment": "MITRE G0016 + campaigns B: Victim drives exposed over the RDP session",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1016.001",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1021.007",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1027",
+      "color": "#e67e22",
+      "comment": "Campaigns AC only (not yet in G0016): RC4-encrypted core module, junk-code DLL",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1027.001",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1027.002",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1027.006",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1033",
+      "color": "#e67e22",
+      "comment": "Campaigns AC only (not yet in G0016): Username sent in first beacon",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1036.005",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1037",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1037.004",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1039",
+      "color": "#e67e22",
+      "comment": "Campaigns B only (not yet in G0016): Network drives exposed over the RDP session",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1047",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1053.005",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1055.003",
+      "color": "#e67e22",
+      "comment": "Campaigns A only (not yet in G0016): WINELOADER thread execution hijacking (Mandiant table)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1057",
+      "color": "#e67e22",
+      "comment": "Campaigns A only (not yet in G0016): Process discovery (Mandiant table)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.006",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.009",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1068",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1070.004",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1070.006",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "color": "#e67e22",
+      "comment": "Campaigns AC only (not yet in G0016): HTTPS GET/POST beacons to C2",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1078",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1078.003",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1078.004",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1082",
+      "color": "#e67e22",
+      "comment": "Campaigns AC only (not yet in G0016): Host fingerprint: computer name, process",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1087.004",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1090.002",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1090.003",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1090.004",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1098.002",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1098.005",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1105",
+      "color": "#c0392b",
+      "comment": "MITRE G0016 + campaigns AC: Second stage downloaded after the click",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1110.001",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1110.003",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1114.002",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1115",
+      "color": "#e67e22",
+      "comment": "Campaigns B only (not yet in G0016): Clipboard redirected to attacker RDP server",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1133",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1136.003",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1140",
+      "color": "#e67e22",
+      "comment": "Campaigns A only (not yet in G0016): certutil -decode rebuilds invite.zip",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1190",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1199",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1203",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1204.001",
+      "color": "#c0392b",
+      "comment": "MITRE G0016 + campaigns AC: Victim clicks the link in the invitation",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "color": "#c0392b",
+      "comment": "MITRE G0016 + campaigns ABC: Victim opens invite.hta / .rdp / wine.exe",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1218.005",
+      "color": "#c0392b",
+      "comment": "MITRE G0016 + campaigns A: ROOTSAW runs as an HTA (mshta.exe)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1505.003",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1528",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1546.003",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1546.008",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "color": "#c0392b",
+      "comment": "MITRE G0016 + campaigns ABC: Run key POWERPNT (C), Run key (A), AutoStart (B)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1548.002",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1550.003",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1553.005",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1556.007",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "color": "#c0392b",
+      "comment": "MITRE G0016 + campaigns AB: PDF lure with link (A); .RDP file attached (B)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1566.002",
+      "color": "#c0392b",
+      "comment": "MITRE G0016 + campaigns AC: Link to invite.php (A) / to wine.zip (C)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1566.003",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1568",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1573",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1574.001",
+      "color": "#e67e22",
+      "comment": "Campaigns AC only (not yet in G0016): DLL side-loading: SqlDumper.exe / wine.exe (PowerPoint)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "color": "#e67e22",
+      "comment": "Campaigns C only (not yet in G0016): Sender domains bakenhof[.]com, silry[.]com",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1583.006",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1584.004",
+      "color": "#e67e22",
+      "comment": "Campaigns A only (not yet in G0016): Compromised WordPress server hosts the ZIP / HTA",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1586.002",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1586.003",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1587.001",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1587.003",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1588.004",
+      "color": "#e67e22",
+      "comment": "Campaigns B only (not yet in G0016): RDP file signed with a Let's Encrypt certificate",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1595.002",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1621",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1649",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1651",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1665",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1684.001",
+      "color": "#e67e22",
+      "comment": "Campaigns ABC only (not yet in G0016): Poses as CDU, Microsoft/AWS staff, a European MFA",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1685.002",
+      "color": "#f5b7b1",
+      "comment": "Documented by MITRE for APT29 (G0016)",
+      "enabled": true,
+      "showSubtechniques": true
+    }
+  ],
+  "legendItems": [
+    {
+      "label": "MITRE G0016 and seen in 2024-25 campaigns",
+      "color": "#c0392b"
+    },
+    {
+      "label": "Seen in 2024-25 campaigns, not yet on G0016 page",
+      "color": "#e67e22"
+    },
+    {
+      "label": "MITRE G0016 only (older activity)",
+      "color": "#f5b7b1"
+    }
+  ],
+  "showTacticRowBackground": true,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true
+}

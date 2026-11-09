@@ -1,0 +1,297 @@
+{
+  "name": "Week10 - APT29 vs KZ brand phishing",
+  "versions": {
+    "attack": "20",
+    "navigator": "5.1.0",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Overlap of APT29 phishing campaigns (2024-2025) with our KZ-brand phishing model.",
+  "filters": {
+    "platforms": [
+      "PRE",
+      "Windows",
+      "Linux",
+      "macOS",
+      "Network",
+      "SaaS",
+      "Office Suite",
+      "Identity Provider"
+    ]
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side",
+    "showID": true,
+    "showName": true,
+    "expandedSubtechniques": "annotated"
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1005",
+      "color": "#8e44ad",
+      "comment": "BOTH. APT29: Victim drives exposed over the RDP session | KZ: Stage local data",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 3
+    },
+    {
+      "techniqueID": "T1027",
+      "color": "#e74c3c",
+      "comment": "APT29 only: RC4-encrypted core module, junk-code DLL",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 1
+    },
+    {
+      "techniqueID": "T1033",
+      "color": "#e74c3c",
+      "comment": "APT29 only: Username sent in first beacon",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 1
+    },
+    {
+      "techniqueID": "T1039",
+      "color": "#e74c3c",
+      "comment": "APT29 only: Network drives exposed over the RDP session",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 1
+    },
+    {
+      "techniqueID": "T1041",
+      "color": "#3498db",
+      "comment": "KZ phishing only: Exfiltration over C2",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 2
+    },
+    {
+      "techniqueID": "T1053.005",
+      "color": "#3498db",
+      "comment": "KZ phishing only: Scheduled task persistence (lab emulation)",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 2
+    },
+    {
+      "techniqueID": "T1055.003",
+      "color": "#e74c3c",
+      "comment": "APT29 only: WINELOADER thread execution hijacking (Mandiant table)",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 1
+    },
+    {
+      "techniqueID": "T1056.003",
+      "color": "#3498db",
+      "comment": "KZ phishing only: Fake login / card form captures data",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 2
+    },
+    {
+      "techniqueID": "T1057",
+      "color": "#e74c3c",
+      "comment": "APT29 only: Process discovery (Mandiant table)",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 1
+    },
+    {
+      "techniqueID": "T1059.001",
+      "color": "#3498db",
+      "comment": "KZ phishing only: Word -> PowerShell (weeks 5 and 7)",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 2
+    },
+    {
+      "techniqueID": "T1071.001",
+      "color": "#8e44ad",
+      "comment": "BOTH. APT29: HTTPS GET/POST beacons to C2 | KZ: C2 over HTTPS",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 3
+    },
+    {
+      "techniqueID": "T1082",
+      "color": "#8e44ad",
+      "comment": "BOTH. APT29: Host fingerprint: computer name, process | KZ: Host discovery (CALDERA, week 8)",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 3
+    },
+    {
+      "techniqueID": "T1083",
+      "color": "#3498db",
+      "comment": "KZ phishing only: File discovery (CALDERA, week 8)",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 2
+    },
+    {
+      "techniqueID": "T1105",
+      "color": "#e74c3c",
+      "comment": "APT29 only: Second stage downloaded after the click",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 1
+    },
+    {
+      "techniqueID": "T1111",
+      "color": "#3498db",
+      "comment": "KZ phishing only: Fake form asks for the Kaspi SMS code",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 2
+    },
+    {
+      "techniqueID": "T1115",
+      "color": "#e74c3c",
+      "comment": "APT29 only: Clipboard redirected to attacker RDP server",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 1
+    },
+    {
+      "techniqueID": "T1140",
+      "color": "#e74c3c",
+      "comment": "APT29 only: certutil -decode rebuilds invite.zip",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 1
+    },
+    {
+      "techniqueID": "T1204.001",
+      "color": "#8e44ad",
+      "comment": "BOTH. APT29: Victim clicks the link in the invitation | KZ: Victim opens the link",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 3
+    },
+    {
+      "techniqueID": "T1204.002",
+      "color": "#8e44ad",
+      "comment": "BOTH. APT29: Victim opens invite.hta / .rdp / wine.exe | KZ: Victim opens the attachment",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 3
+    },
+    {
+      "techniqueID": "T1218.005",
+      "color": "#e74c3c",
+      "comment": "APT29 only: ROOTSAW runs as an HTA (mshta.exe)",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 1
+    },
+    {
+      "techniqueID": "T1547.001",
+      "color": "#8e44ad",
+      "comment": "BOTH. APT29: Run key POWERPNT (C), Run key (A), AutoStart (B) | KZ: Implant autostart (lab emulation, week 8)",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 3
+    },
+    {
+      "techniqueID": "T1566.001",
+      "color": "#8e44ad",
+      "comment": "BOTH. APT29: PDF lure with link (A); .RDP file attached (B) | KZ: Kazpost-themed .docm attachment (week 5, H3)",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 3
+    },
+    {
+      "techniqueID": "T1566.002",
+      "color": "#8e44ad",
+      "comment": "BOTH. APT29: Link to invite.php (A) / to wine.zip (C) | KZ: SMS / messenger / e-mail link: 'parcel held', 'eGov payout'",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 3
+    },
+    {
+      "techniqueID": "T1567",
+      "color": "#3498db",
+      "comment": "KZ phishing only: Exfiltration to web service / Telegram bot",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 2
+    },
+    {
+      "techniqueID": "T1574.001",
+      "color": "#e74c3c",
+      "comment": "APT29 only: DLL side-loading: SqlDumper.exe / wine.exe (PowerPoint)",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 1
+    },
+    {
+      "techniqueID": "T1583.001",
+      "color": "#8e44ad",
+      "comment": "BOTH. APT29: Sender domains bakenhof[.]com, silry[.]com | KZ: Look-alike domains (kaspl[.]ga, egov-kz-pay[.]online)",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 3
+    },
+    {
+      "techniqueID": "T1584.004",
+      "color": "#e74c3c",
+      "comment": "APT29 only: Compromised WordPress server hosts the ZIP / HTA",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 1
+    },
+    {
+      "techniqueID": "T1588.004",
+      "color": "#e74c3c",
+      "comment": "APT29 only: RDP file signed with a Let's Encrypt certificate",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 1
+    },
+    {
+      "techniqueID": "T1598",
+      "color": "#3498db",
+      "comment": "KZ phishing only: Collect brand assets / wording for lures",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 2
+    },
+    {
+      "techniqueID": "T1608.005",
+      "color": "#3498db",
+      "comment": "KZ phishing only: Credential-capture page staged behind the link",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 2
+    },
+    {
+      "techniqueID": "T1684.001",
+      "color": "#8e44ad",
+      "comment": "BOTH. APT29: Poses as CDU, Microsoft/AWS staff, a European MFA | KZ: Poses as Kaspi, eGov, Kazpost, CDEK",
+      "enabled": true,
+      "showSubtechniques": true,
+      "score": 3
+    }
+  ],
+  "legendItems": [
+    {
+      "label": "Both",
+      "color": "#8e44ad"
+    },
+    {
+      "label": "APT29 only",
+      "color": "#e74c3c"
+    },
+    {
+      "label": "KZ brand phishing only",
+      "color": "#3498db"
+    }
+  ],
+  "showTacticRowBackground": true,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true
+}
