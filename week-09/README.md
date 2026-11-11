@@ -61,12 +61,22 @@ So these two tests check whether we would **notice the post-phishing foothold**,
 
 ## 4. Lab setup
 
-| Item | Value |
+The experiments were performed in an isolated Kali Linux virtual machine running under Oracle VirtualBox. The Elastic/Kibana stack reused the local SIEM environment from Week 07.
+
+| **Item** | **Value** |
 |---|---|
-| Environment | Kali Linux in a VirtualBox VM (clean snapshot taken before testing) |
-| Logging | auditd (execve rule from week 6, plus a file-watch rule added below) |
-| SIEM | Elastic / Kibana (the same local stack used in week 07) |
-| Log path to SIEM | Events exported from auditd to CSV with `ausearch --format csv` (or the fallback `auditd_to_csv.py`), then imported into Kibana as a new index via **Upload a file** (Data Visualizer), the same way `sysmon_w7.csv` was imported in week 07 |
+| Environment | Kali GNU/Linux Rolling 2026.2 (64-bit) |
+| Linux kernel | 6.19.14+kali-amd64 |
+| Virtualization platform | Oracle VirtualBox 7.2.18r175117 (Windows host) |
+| PowerShell | 7.6.6 |
+| Atomic Red Team library | Git commit `edb5039` (2026-11-06) |
+| Invoke-AtomicRedTeam | Module version 2.1.0; repository commit `8af478b` (2025-09-08) |
+| Logging | auditd 4.1.2-1+b2 |
+| Audit configuration | `execve` monitoring rule (`t1059_exec`) and `/etc/shadow` read-monitoring rule (`t1003_shadow_read`) |
+| SIEM | Elastic Stack: Elasticsearch and Kibana (same local stack used in Week 07; exact versions not recorded) |
+| Log source | Linux audit logs from `/var/log/audit/audit.log` |
+| Log export | CSV exported using `ausearch --format csv` or the fallback `auditd_to_csv.py` |
+| SIEM ingestion | Kibana Data Visualizer → Upload a file → CSV import into a new index |
 
 ### 4.1 Install PowerShell and the Atomic Red Team files
 Kali packages PowerShell. The module and the library are cloned from Red Canary's GitHub so the code can be inspected before it is used:
