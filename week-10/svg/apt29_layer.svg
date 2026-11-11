@@ -1,0 +1,516 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2590" height="784" viewBox="0 0 2590 784" font-family="Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-size="22" font-weight="bold" fill="#111">Week10 - APT29 TTPs</text>
+<text x="24" y="58" font-size="12" fill="#555">MITRE ATT&amp;CK Enterprise v20.1 · 80 techniques · shown: techniques in this layer only</text>
+<rect x="24" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="119.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Reconnaissance</text>
+<text x="119.0" y="106" font-size="11" text-anchor="middle" fill="#444">1 technique</text>
+<g><title>T1595.002 Active Scanning: Vulnerability Scanning — Documented by MITRE for APT29 (G0016)</title>
+<rect x="24" y="122" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="32" y="137" font-size="11" font-weight="bold" fill="#000000">T1595.002</text>
+<text x="32" y="151" font-size="10.5" fill="#000000">Active Scanning:</text>
+<text x="32" y="163" font-size="10.5" fill="#000000">Vulnerability Scanning</text>
+</g>
+<rect x="220" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="315.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Resource Development</text>
+<text x="315.0" y="106" font-size="11" text-anchor="middle" fill="#444">9 techniques</text>
+<g><title>T1583.001 Acquire Infrastructure: Domains — Campaigns C only (not yet in G0016): Sender domains bakenhof[.]com, silry[.]com</title>
+<rect x="220" y="122" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1583.001</text>
+<text x="228" y="151" font-size="10.5" fill="#ffffff">Acquire Infrastructure:</text>
+<text x="228" y="163" font-size="10.5" fill="#ffffff">Domains</text>
+</g>
+<g><title>T1583.006 Acquire Infrastructure: Web Services — Documented by MITRE for APT29 (G0016)</title>
+<rect x="220" y="174" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="189" font-size="11" font-weight="bold" fill="#000000">T1583.006</text>
+<text x="228" y="203" font-size="10.5" fill="#000000">Acquire Infrastructure:</text>
+<text x="228" y="215" font-size="10.5" fill="#000000">Web Services</text>
+</g>
+<g><title>T1584.004 Compromise Infrastructure: Server — Campaigns A only (not yet in G0016): Compromised WordPress server hosts the ZIP / HTA</title>
+<rect x="220" y="226" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="241" font-size="11" font-weight="bold" fill="#ffffff">T1584.004</text>
+<text x="228" y="255" font-size="10.5" fill="#ffffff">Compromise Infrastructure:</text>
+<text x="228" y="267" font-size="10.5" fill="#ffffff">Server</text>
+</g>
+<g><title>T1586.002 Compromise Accounts: Email Accounts — Documented by MITRE for APT29 (G0016)</title>
+<rect x="220" y="278" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="293" font-size="11" font-weight="bold" fill="#000000">T1586.002</text>
+<text x="228" y="307" font-size="10.5" fill="#000000">Compromise Accounts: Email</text>
+<text x="228" y="319" font-size="10.5" fill="#000000">Accounts</text>
+</g>
+<g><title>T1586.003 Compromise Accounts: Cloud Accounts — Documented by MITRE for APT29 (G0016)</title>
+<rect x="220" y="330" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="345" font-size="11" font-weight="bold" fill="#000000">T1586.003</text>
+<text x="228" y="359" font-size="10.5" fill="#000000">Compromise Accounts: Cloud</text>
+<text x="228" y="371" font-size="10.5" fill="#000000">Accounts</text>
+</g>
+<g><title>T1587.001 Develop Capabilities: Malware — Documented by MITRE for APT29 (G0016)</title>
+<rect x="220" y="382" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="397" font-size="11" font-weight="bold" fill="#000000">T1587.001</text>
+<text x="228" y="411" font-size="10.5" fill="#000000">Develop Capabilities:</text>
+<text x="228" y="423" font-size="10.5" fill="#000000">Malware</text>
+</g>
+<g><title>T1587.003 Develop Capabilities: Digital Certificates — Documented by MITRE for APT29 (G0016)</title>
+<rect x="220" y="434" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="449" font-size="11" font-weight="bold" fill="#000000">T1587.003</text>
+<text x="228" y="463" font-size="10.5" fill="#000000">Develop Capabilities:</text>
+<text x="228" y="475" font-size="10.5" fill="#000000">Digital Certificates</text>
+</g>
+<g><title>T1588.002 Obtain Capabilities: Tool — Documented by MITRE for APT29 (G0016)</title>
+<rect x="220" y="486" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="501" font-size="11" font-weight="bold" fill="#000000">T1588.002</text>
+<text x="228" y="515" font-size="10.5" fill="#000000">Obtain Capabilities: Tool</text>
+</g>
+<g><title>T1588.004 Obtain Capabilities: Digital Certificates — Campaigns B only (not yet in G0016): RDP file signed with a Let's Encrypt certificate</title>
+<rect x="220" y="538" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="553" font-size="11" font-weight="bold" fill="#ffffff">T1588.004</text>
+<text x="228" y="567" font-size="10.5" fill="#ffffff">Obtain Capabilities:</text>
+<text x="228" y="579" font-size="10.5" fill="#ffffff">Digital Certificates</text>
+</g>
+<rect x="416" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="511.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Initial Access</text>
+<text x="511.0" y="106" font-size="11" text-anchor="middle" fill="#444">9 techniques</text>
+<g><title>T1078 Valid Accounts — Documented by MITRE for APT29 (G0016)</title>
+<rect x="416" y="122" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="424" y="137" font-size="11" font-weight="bold" fill="#000000">T1078</text>
+<text x="424" y="151" font-size="10.5" fill="#000000">Valid Accounts</text>
+</g>
+<g><title>T1078.003 Valid Accounts: Local Accounts — Documented by MITRE for APT29 (G0016)</title>
+<rect x="416" y="174" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="424" y="189" font-size="11" font-weight="bold" fill="#000000">T1078.003</text>
+<text x="424" y="203" font-size="10.5" fill="#000000">Valid Accounts: Local</text>
+<text x="424" y="215" font-size="10.5" fill="#000000">Accounts</text>
+</g>
+<g><title>T1078.004 Valid Accounts: Cloud Accounts — Documented by MITRE for APT29 (G0016)</title>
+<rect x="416" y="226" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="424" y="241" font-size="11" font-weight="bold" fill="#000000">T1078.004</text>
+<text x="424" y="255" font-size="10.5" fill="#000000">Valid Accounts: Cloud</text>
+<text x="424" y="267" font-size="10.5" fill="#000000">Accounts</text>
+</g>
+<g><title>T1133 External Remote Services — Documented by MITRE for APT29 (G0016)</title>
+<rect x="416" y="278" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="424" y="293" font-size="11" font-weight="bold" fill="#000000">T1133</text>
+<text x="424" y="307" font-size="10.5" fill="#000000">External Remote Services</text>
+</g>
+<g><title>T1190 Exploit Public-Facing Application — Documented by MITRE for APT29 (G0016)</title>
+<rect x="416" y="330" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="424" y="345" font-size="11" font-weight="bold" fill="#000000">T1190</text>
+<text x="424" y="359" font-size="10.5" fill="#000000">Exploit Public-Facing</text>
+<text x="424" y="371" font-size="10.5" fill="#000000">Application</text>
+</g>
+<g><title>T1199 Trusted Relationship — Documented by MITRE for APT29 (G0016)</title>
+<rect x="416" y="382" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="424" y="397" font-size="11" font-weight="bold" fill="#000000">T1199</text>
+<text x="424" y="411" font-size="10.5" fill="#000000">Trusted Relationship</text>
+</g>
+<g><title>T1566.001 Phishing: Spearphishing Attachment — MITRE G0016 + campaigns AB: Attached lure document with link (A); .RDP file attached (B)</title>
+<rect x="416" y="434" width="190" height="46" rx="3" fill="#c0392b" stroke="#999" stroke-width="0.6"/>
+<text x="424" y="449" font-size="11" font-weight="bold" fill="#ffffff">T1566.001</text>
+<text x="424" y="463" font-size="10.5" fill="#ffffff">Phishing: Spearphishing</text>
+<text x="424" y="475" font-size="10.5" fill="#ffffff">Attachment</text>
+</g>
+<g><title>T1566.002 Phishing: Spearphishing Link — MITRE G0016 + campaigns AC: Link to invite.php (A) / to wine.zip (C)</title>
+<rect x="416" y="486" width="190" height="46" rx="3" fill="#c0392b" stroke="#999" stroke-width="0.6"/>
+<text x="424" y="501" font-size="11" font-weight="bold" fill="#ffffff">T1566.002</text>
+<text x="424" y="515" font-size="10.5" fill="#ffffff">Phishing: Spearphishing</text>
+<text x="424" y="527" font-size="10.5" fill="#ffffff">Link</text>
+</g>
+<g><title>T1566.003 Phishing: Spearphishing via Service — Documented by MITRE for APT29 (G0016)</title>
+<rect x="416" y="538" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="424" y="553" font-size="11" font-weight="bold" fill="#000000">T1566.003</text>
+<text x="424" y="567" font-size="10.5" fill="#000000">Phishing: Spearphishing</text>
+<text x="424" y="579" font-size="10.5" fill="#000000">via Service</text>
+</g>
+<rect x="612" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="707.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Execution</text>
+<text x="707.0" y="106" font-size="11" text-anchor="middle" fill="#444">10 techniques</text>
+<g><title>T1047 Windows Management Instrumentation — Documented by MITRE for APT29 (G0016)</title>
+<rect x="612" y="122" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="137" font-size="11" font-weight="bold" fill="#000000">T1047</text>
+<text x="620" y="151" font-size="10.5" fill="#000000">Windows Management</text>
+<text x="620" y="163" font-size="10.5" fill="#000000">Instrumentation</text>
+</g>
+<g><title>T1053.005 Scheduled Task/Job: Scheduled Task — Documented by MITRE for APT29 (G0016)</title>
+<rect x="612" y="174" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="189" font-size="11" font-weight="bold" fill="#000000">T1053.005</text>
+<text x="620" y="203" font-size="10.5" fill="#000000">Scheduled Task/Job:</text>
+<text x="620" y="215" font-size="10.5" fill="#000000">Scheduled Task</text>
+</g>
+<g><title>T1059.001 Command and Scripting Interpreter: PowerShell — Documented by MITRE for APT29 (G0016)</title>
+<rect x="612" y="226" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="241" font-size="11" font-weight="bold" fill="#000000">T1059.001</text>
+<text x="620" y="255" font-size="10.5" fill="#000000">Command and Scripting</text>
+<text x="620" y="267" font-size="10.5" fill="#000000">Interpreter: PowerShell</text>
+</g>
+<g><title>T1059.006 Command and Scripting Interpreter: Python — Documented by MITRE for APT29 (G0016)</title>
+<rect x="612" y="278" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="293" font-size="11" font-weight="bold" fill="#000000">T1059.006</text>
+<text x="620" y="307" font-size="10.5" fill="#000000">Command and Scripting</text>
+<text x="620" y="319" font-size="10.5" fill="#000000">Interpreter: Python</text>
+</g>
+<g><title>T1059.009 Command and Scripting Interpreter: Cloud API — Documented by MITRE for APT29 (G0016)</title>
+<rect x="612" y="330" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="345" font-size="11" font-weight="bold" fill="#000000">T1059.009</text>
+<text x="620" y="359" font-size="10.5" fill="#000000">Command and Scripting</text>
+<text x="620" y="371" font-size="10.5" fill="#000000">Interpreter: Cloud API</text>
+</g>
+<g><title>T1203 Exploitation for Client Execution — Documented by MITRE for APT29 (G0016)</title>
+<rect x="612" y="382" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="397" font-size="11" font-weight="bold" fill="#000000">T1203</text>
+<text x="620" y="411" font-size="10.5" fill="#000000">Exploitation for Client</text>
+<text x="620" y="423" font-size="10.5" fill="#000000">Execution</text>
+</g>
+<g><title>T1204.001 User Execution: Malicious Link — MITRE G0016 + campaigns AC: Victim clicks the link in the invitation</title>
+<rect x="612" y="434" width="190" height="46" rx="3" fill="#c0392b" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="449" font-size="11" font-weight="bold" fill="#ffffff">T1204.001</text>
+<text x="620" y="463" font-size="10.5" fill="#ffffff">User Execution: Malicious</text>
+<text x="620" y="475" font-size="10.5" fill="#ffffff">Link</text>
+</g>
+<g><title>T1204.002 User Execution: Malicious File — MITRE G0016 + campaigns ABC: Victim opens invite.hta / .rdp / wine.exe</title>
+<rect x="612" y="486" width="190" height="46" rx="3" fill="#c0392b" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="501" font-size="11" font-weight="bold" fill="#ffffff">T1204.002</text>
+<text x="620" y="515" font-size="10.5" fill="#ffffff">User Execution: Malicious</text>
+<text x="620" y="527" font-size="10.5" fill="#ffffff">File</text>
+</g>
+<g><title>T1574.001 Hijack Execution Flow: DLL — Campaigns AC only (not yet in G0016): DLL side-loading: SqlDumper.exe / wine.exe (PowerPoint)</title>
+<rect x="612" y="538" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="553" font-size="11" font-weight="bold" fill="#ffffff">T1574.001</text>
+<text x="620" y="567" font-size="10.5" fill="#ffffff">Hijack Execution Flow: DLL</text>
+</g>
+<g><title>T1651 Cloud Administration Command — Documented by MITRE for APT29 (G0016)</title>
+<rect x="612" y="590" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="605" font-size="11" font-weight="bold" fill="#000000">T1651</text>
+<text x="620" y="619" font-size="10.5" fill="#000000">Cloud Administration</text>
+<text x="620" y="631" font-size="10.5" fill="#000000">Command</text>
+</g>
+<rect x="808" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="903.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Persistence</text>
+<text x="903.0" y="106" font-size="11" text-anchor="middle" fill="#444">10 techniques</text>
+<g><title>T1037 Boot or Logon Initialization Scripts — Documented by MITRE for APT29 (G0016)</title>
+<rect x="808" y="122" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="816" y="137" font-size="11" font-weight="bold" fill="#000000">T1037</text>
+<text x="816" y="151" font-size="10.5" fill="#000000">Boot or Logon</text>
+<text x="816" y="163" font-size="10.5" fill="#000000">Initialization Scripts</text>
+</g>
+<g><title>T1037.004 Boot or Logon Initialization Scripts: RC Scripts — Documented by MITRE for APT29 (G0016)</title>
+<rect x="808" y="174" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="816" y="189" font-size="11" font-weight="bold" fill="#000000">T1037.004</text>
+<text x="816" y="203" font-size="10.5" fill="#000000">Boot or Logon</text>
+<text x="816" y="215" font-size="10.5" fill="#000000">Initialization Scripts: R…</text>
+</g>
+<g><title>T1098.002 Account Manipulation: Additional Email Delegate Permissions — Documented by MITRE for APT29 (G0016)</title>
+<rect x="808" y="226" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="816" y="241" font-size="11" font-weight="bold" fill="#000000">T1098.002</text>
+<text x="816" y="255" font-size="10.5" fill="#000000">Account Manipulation:</text>
+<text x="816" y="267" font-size="10.5" fill="#000000">Additional Email Delegate…</text>
+</g>
+<g><title>T1098.005 Account Manipulation: Device Registration — Documented by MITRE for APT29 (G0016)</title>
+<rect x="808" y="278" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="816" y="293" font-size="11" font-weight="bold" fill="#000000">T1098.005</text>
+<text x="816" y="307" font-size="10.5" fill="#000000">Account Manipulation:</text>
+<text x="816" y="319" font-size="10.5" fill="#000000">Device Registration</text>
+</g>
+<g><title>T1136.003 Create Account: Cloud Account — Documented by MITRE for APT29 (G0016)</title>
+<rect x="808" y="330" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="816" y="345" font-size="11" font-weight="bold" fill="#000000">T1136.003</text>
+<text x="816" y="359" font-size="10.5" fill="#000000">Create Account: Cloud</text>
+<text x="816" y="371" font-size="10.5" fill="#000000">Account</text>
+</g>
+<g><title>T1505.003 Server Software Component: Web Shell — Documented by MITRE for APT29 (G0016)</title>
+<rect x="808" y="382" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="816" y="397" font-size="11" font-weight="bold" fill="#000000">T1505.003</text>
+<text x="816" y="411" font-size="10.5" fill="#000000">Server Software Component:</text>
+<text x="816" y="423" font-size="10.5" fill="#000000">Web Shell</text>
+</g>
+<g><title>T1546.003 Event Triggered Execution: Windows Management Instrumentation Event Subscription — Documented by MITRE for APT29 (G0016)</title>
+<rect x="808" y="434" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="816" y="449" font-size="11" font-weight="bold" fill="#000000">T1546.003</text>
+<text x="816" y="463" font-size="10.5" fill="#000000">Event Triggered Execution:</text>
+<text x="816" y="475" font-size="10.5" fill="#000000">Windows Management…</text>
+</g>
+<g><title>T1546.008 Event Triggered Execution: Accessibility Features — Documented by MITRE for APT29 (G0016)</title>
+<rect x="808" y="486" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="816" y="501" font-size="11" font-weight="bold" fill="#000000">T1546.008</text>
+<text x="816" y="515" font-size="10.5" fill="#000000">Event Triggered Execution:</text>
+<text x="816" y="527" font-size="10.5" fill="#000000">Accessibility Features</text>
+</g>
+<g><title>T1547.001 Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder — MITRE G0016 + campaigns ABC: Run key POWERPNT (C); Run key per Zscaler (A); AutoStart possible after RDP (B)</title>
+<rect x="808" y="538" width="190" height="46" rx="3" fill="#c0392b" stroke="#999" stroke-width="0.6"/>
+<text x="816" y="553" font-size="11" font-weight="bold" fill="#ffffff">T1547.001</text>
+<text x="816" y="567" font-size="10.5" fill="#ffffff">Boot or Logon Autostart</text>
+<text x="816" y="579" font-size="10.5" fill="#ffffff">Execution: Registry Run…</text>
+</g>
+<g><title>T1556.007 Modify Authentication Process: Hybrid Identity — Documented by MITRE for APT29 (G0016)</title>
+<rect x="808" y="590" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="816" y="605" font-size="11" font-weight="bold" fill="#000000">T1556.007</text>
+<text x="816" y="619" font-size="10.5" fill="#000000">Modify Authentication</text>
+<text x="816" y="631" font-size="10.5" fill="#000000">Process: Hybrid Identity</text>
+</g>
+<rect x="1004" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="1099.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Privilege Escalation</text>
+<text x="1099.0" y="106" font-size="11" text-anchor="middle" fill="#444">3 techniques</text>
+<g><title>T1055.003 Process Injection: Thread Execution Hijacking — Campaigns A only (not yet in G0016): WINELOADER thread execution hijacking (Mandiant table)</title>
+<rect x="1004" y="122" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="1012" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1055.003</text>
+<text x="1012" y="151" font-size="10.5" fill="#ffffff">Process Injection: Thread</text>
+<text x="1012" y="163" font-size="10.5" fill="#ffffff">Execution Hijacking</text>
+</g>
+<g><title>T1068 Exploitation for Privilege Escalation — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1004" y="174" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1012" y="189" font-size="11" font-weight="bold" fill="#000000">T1068</text>
+<text x="1012" y="203" font-size="10.5" fill="#000000">Exploitation for Privilege</text>
+<text x="1012" y="215" font-size="10.5" fill="#000000">Escalation</text>
+</g>
+<g><title>T1548.002 Abuse Elevation Control Mechanism: Bypass User Account Control — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1004" y="226" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1012" y="241" font-size="11" font-weight="bold" fill="#000000">T1548.002</text>
+<text x="1012" y="255" font-size="10.5" fill="#000000">Abuse Elevation Control</text>
+<text x="1012" y="267" font-size="10.5" fill="#000000">Mechanism: Bypass User…</text>
+</g>
+<rect x="1200" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="1295.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Stealth</text>
+<text x="1295.0" y="106" font-size="11" text-anchor="middle" fill="#444">10 techniques</text>
+<g><title>T1027 Obfuscated Files or Information — Campaigns AC only (not yet in G0016): RC4-encrypted core module, junk-code DLL</title>
+<rect x="1200" y="122" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1027</text>
+<text x="1208" y="151" font-size="10.5" fill="#ffffff">Obfuscated Files or</text>
+<text x="1208" y="163" font-size="10.5" fill="#ffffff">Information</text>
+</g>
+<g><title>T1027.001 Obfuscated Files or Information: Binary Padding — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1200" y="174" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="189" font-size="11" font-weight="bold" fill="#000000">T1027.001</text>
+<text x="1208" y="203" font-size="10.5" fill="#000000">Obfuscated Files or</text>
+<text x="1208" y="215" font-size="10.5" fill="#000000">Information: Binary…</text>
+</g>
+<g><title>T1027.002 Obfuscated Files or Information: Software Packing — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1200" y="226" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="241" font-size="11" font-weight="bold" fill="#000000">T1027.002</text>
+<text x="1208" y="255" font-size="10.5" fill="#000000">Obfuscated Files or</text>
+<text x="1208" y="267" font-size="10.5" fill="#000000">Information: Software…</text>
+</g>
+<g><title>T1027.006 Obfuscated Files or Information: HTML Smuggling — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1200" y="278" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="293" font-size="11" font-weight="bold" fill="#000000">T1027.006</text>
+<text x="1208" y="307" font-size="10.5" fill="#000000">Obfuscated Files or</text>
+<text x="1208" y="319" font-size="10.5" fill="#000000">Information: HTML…</text>
+</g>
+<g><title>T1036.005 Masquerading: Match Legitimate Resource Name or Location — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1200" y="330" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="345" font-size="11" font-weight="bold" fill="#000000">T1036.005</text>
+<text x="1208" y="359" font-size="10.5" fill="#000000">Masquerading: Match</text>
+<text x="1208" y="371" font-size="10.5" fill="#000000">Legitimate Resource Name…</text>
+</g>
+<g><title>T1070.004 Indicator Removal: File Deletion — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1200" y="382" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="397" font-size="11" font-weight="bold" fill="#000000">T1070.004</text>
+<text x="1208" y="411" font-size="10.5" fill="#000000">Indicator Removal: File</text>
+<text x="1208" y="423" font-size="10.5" fill="#000000">Deletion</text>
+</g>
+<g><title>T1070.006 Indicator Removal: Timestomp — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1200" y="434" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="449" font-size="11" font-weight="bold" fill="#000000">T1070.006</text>
+<text x="1208" y="463" font-size="10.5" fill="#000000">Indicator Removal:</text>
+<text x="1208" y="475" font-size="10.5" fill="#000000">Timestomp</text>
+</g>
+<g><title>T1140 Deobfuscate/Decode Files or Information — Campaigns A only (not yet in G0016): certutil -decode rebuilds invite.zip</title>
+<rect x="1200" y="486" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="501" font-size="11" font-weight="bold" fill="#ffffff">T1140</text>
+<text x="1208" y="515" font-size="10.5" fill="#ffffff">Deobfuscate/Decode Files</text>
+<text x="1208" y="527" font-size="10.5" fill="#ffffff">or Information</text>
+</g>
+<g><title>T1218.005 System Binary Proxy Execution: Mshta — MITRE G0016 + campaigns A: ROOTSAW runs as an HTA (mshta.exe)</title>
+<rect x="1200" y="538" width="190" height="46" rx="3" fill="#c0392b" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="553" font-size="11" font-weight="bold" fill="#ffffff">T1218.005</text>
+<text x="1208" y="567" font-size="10.5" fill="#ffffff">System Binary Proxy</text>
+<text x="1208" y="579" font-size="10.5" fill="#ffffff">Execution: Mshta</text>
+</g>
+<g><title>T1684.001 Social Engineering: Impersonation — Campaigns ABC only (not yet in G0016): Poses as CDU, Microsoft/AWS staff, a European MFA</title>
+<rect x="1200" y="590" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="605" font-size="11" font-weight="bold" fill="#ffffff">T1684.001</text>
+<text x="1208" y="619" font-size="10.5" fill="#ffffff">Social Engineering:</text>
+<text x="1208" y="631" font-size="10.5" fill="#ffffff">Impersonation</text>
+</g>
+<rect x="1396" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="1491.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Defense Impairment</text>
+<text x="1491.0" y="106" font-size="11" text-anchor="middle" fill="#444">2 techniques</text>
+<g><title>T1553.005 Subvert Trust Controls: Mark-of-the-Web Bypass — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1396" y="122" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1404" y="137" font-size="11" font-weight="bold" fill="#000000">T1553.005</text>
+<text x="1404" y="151" font-size="10.5" fill="#000000">Subvert Trust Controls:</text>
+<text x="1404" y="163" font-size="10.5" fill="#000000">Mark-of-the-Web Bypass</text>
+</g>
+<g><title>T1685.002 Disable or Modify Tools: Disable or Modify Cloud Log — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1396" y="174" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1404" y="189" font-size="11" font-weight="bold" fill="#000000">T1685.002</text>
+<text x="1404" y="203" font-size="10.5" fill="#000000">Disable or Modify Tools:</text>
+<text x="1404" y="215" font-size="10.5" fill="#000000">Disable or Modify Cloud…</text>
+</g>
+<rect x="1592" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="1687.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Credential Access</text>
+<text x="1687.0" y="106" font-size="11" text-anchor="middle" fill="#444">7 techniques</text>
+<g><title>T1003.002 OS Credential Dumping: Security Account Manager — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1592" y="122" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1600" y="137" font-size="11" font-weight="bold" fill="#000000">T1003.002</text>
+<text x="1600" y="151" font-size="10.5" fill="#000000">OS Credential Dumping:</text>
+<text x="1600" y="163" font-size="10.5" fill="#000000">Security Account Manager</text>
+</g>
+<g><title>T1003.004 OS Credential Dumping: LSA Secrets — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1592" y="174" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1600" y="189" font-size="11" font-weight="bold" fill="#000000">T1003.004</text>
+<text x="1600" y="203" font-size="10.5" fill="#000000">OS Credential Dumping: LSA</text>
+<text x="1600" y="215" font-size="10.5" fill="#000000">Secrets</text>
+</g>
+<g><title>T1110.001 Brute Force: Password Guessing — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1592" y="226" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1600" y="241" font-size="11" font-weight="bold" fill="#000000">T1110.001</text>
+<text x="1600" y="255" font-size="10.5" fill="#000000">Brute Force: Password</text>
+<text x="1600" y="267" font-size="10.5" fill="#000000">Guessing</text>
+</g>
+<g><title>T1110.003 Brute Force: Password Spraying — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1592" y="278" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1600" y="293" font-size="11" font-weight="bold" fill="#000000">T1110.003</text>
+<text x="1600" y="307" font-size="10.5" fill="#000000">Brute Force: Password</text>
+<text x="1600" y="319" font-size="10.5" fill="#000000">Spraying</text>
+</g>
+<g><title>T1528 Steal Application Access Token — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1592" y="330" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1600" y="345" font-size="11" font-weight="bold" fill="#000000">T1528</text>
+<text x="1600" y="359" font-size="10.5" fill="#000000">Steal Application Access</text>
+<text x="1600" y="371" font-size="10.5" fill="#000000">Token</text>
+</g>
+<g><title>T1621 Multi-Factor Authentication Request Generation — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1592" y="382" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1600" y="397" font-size="11" font-weight="bold" fill="#000000">T1621</text>
+<text x="1600" y="411" font-size="10.5" fill="#000000">Multi-Factor</text>
+<text x="1600" y="423" font-size="10.5" fill="#000000">Authentication Request…</text>
+</g>
+<g><title>T1649 Steal or Forge Authentication Certificates — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1592" y="434" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1600" y="449" font-size="11" font-weight="bold" fill="#000000">T1649</text>
+<text x="1600" y="463" font-size="10.5" fill="#000000">Steal or Forge</text>
+<text x="1600" y="475" font-size="10.5" fill="#000000">Authentication…</text>
+</g>
+<rect x="1788" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="1883.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Discovery</text>
+<text x="1883.0" y="106" font-size="11" text-anchor="middle" fill="#444">5 techniques</text>
+<g><title>T1016.001 System Network Configuration Discovery: Internet Connection Discovery — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1788" y="122" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1796" y="137" font-size="11" font-weight="bold" fill="#000000">T1016.001</text>
+<text x="1796" y="151" font-size="10.5" fill="#000000">System Network</text>
+<text x="1796" y="163" font-size="10.5" fill="#000000">Configuration Discovery:…</text>
+</g>
+<g><title>T1033 System Owner/User Discovery — Campaigns AC only (not yet in G0016): Username sent in first beacon</title>
+<rect x="1788" y="174" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="1796" y="189" font-size="11" font-weight="bold" fill="#ffffff">T1033</text>
+<text x="1796" y="203" font-size="10.5" fill="#ffffff">System Owner/User</text>
+<text x="1796" y="215" font-size="10.5" fill="#ffffff">Discovery</text>
+</g>
+<g><title>T1057 Process Discovery — Campaigns A only (not yet in G0016): Process discovery (Mandiant table)</title>
+<rect x="1788" y="226" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="1796" y="241" font-size="11" font-weight="bold" fill="#ffffff">T1057</text>
+<text x="1796" y="255" font-size="10.5" fill="#ffffff">Process Discovery</text>
+</g>
+<g><title>T1082 System Information Discovery — Campaigns AC only (not yet in G0016): Host fingerprint: computer name, process</title>
+<rect x="1788" y="278" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="1796" y="293" font-size="11" font-weight="bold" fill="#ffffff">T1082</text>
+<text x="1796" y="307" font-size="10.5" fill="#ffffff">System Information</text>
+<text x="1796" y="319" font-size="10.5" fill="#ffffff">Discovery</text>
+</g>
+<g><title>T1087.004 Account Discovery: Cloud Account — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1788" y="330" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1796" y="345" font-size="11" font-weight="bold" fill="#000000">T1087.004</text>
+<text x="1796" y="359" font-size="10.5" fill="#000000">Account Discovery: Cloud</text>
+<text x="1796" y="371" font-size="10.5" fill="#000000">Account</text>
+</g>
+<rect x="1984" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="2079.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Lateral Movement</text>
+<text x="2079.0" y="106" font-size="11" text-anchor="middle" fill="#444">2 techniques</text>
+<g><title>T1021.007 Remote Services: Cloud Services — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1984" y="122" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1992" y="137" font-size="11" font-weight="bold" fill="#000000">T1021.007</text>
+<text x="1992" y="151" font-size="10.5" fill="#000000">Remote Services: Cloud</text>
+<text x="1992" y="163" font-size="10.5" fill="#000000">Services</text>
+</g>
+<g><title>T1550.003 Use Alternate Authentication Material: Pass the Ticket — Documented by MITRE for APT29 (G0016)</title>
+<rect x="1984" y="174" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="1992" y="189" font-size="11" font-weight="bold" fill="#000000">T1550.003</text>
+<text x="1992" y="203" font-size="10.5" fill="#000000">Use Alternate</text>
+<text x="1992" y="215" font-size="10.5" fill="#000000">Authentication Material:…</text>
+</g>
+<rect x="2180" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="2275.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Collection</text>
+<text x="2275.0" y="106" font-size="11" text-anchor="middle" fill="#444">4 techniques</text>
+<g><title>T1005 Data from Local System — MITRE G0016 + campaigns B: Victim drives exposed over the RDP session</title>
+<rect x="2180" y="122" width="190" height="46" rx="3" fill="#c0392b" stroke="#999" stroke-width="0.6"/>
+<text x="2188" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1005</text>
+<text x="2188" y="151" font-size="10.5" fill="#ffffff">Data from Local System</text>
+</g>
+<g><title>T1039 Data from Network Shared Drive — Campaigns B only (not yet in G0016): Network drives exposed over the RDP session</title>
+<rect x="2180" y="174" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="2188" y="189" font-size="11" font-weight="bold" fill="#ffffff">T1039</text>
+<text x="2188" y="203" font-size="10.5" fill="#ffffff">Data from Network Shared</text>
+<text x="2188" y="215" font-size="10.5" fill="#ffffff">Drive</text>
+</g>
+<g><title>T1114.002 Email Collection: Remote Email Collection — Documented by MITRE for APT29 (G0016)</title>
+<rect x="2180" y="226" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="2188" y="241" font-size="11" font-weight="bold" fill="#000000">T1114.002</text>
+<text x="2188" y="255" font-size="10.5" fill="#000000">Email Collection: Remote</text>
+<text x="2188" y="267" font-size="10.5" fill="#000000">Email Collection</text>
+</g>
+<g><title>T1115 Clipboard Data — Campaigns B only (not yet in G0016): Clipboard redirected to attacker RDP server</title>
+<rect x="2180" y="278" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="2188" y="293" font-size="11" font-weight="bold" fill="#ffffff">T1115</text>
+<text x="2188" y="307" font-size="10.5" fill="#ffffff">Clipboard Data</text>
+</g>
+<rect x="2376" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="2471.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Command and Control</text>
+<text x="2471.0" y="106" font-size="11" text-anchor="middle" fill="#444">8 techniques</text>
+<g><title>T1071.001 Application Layer Protocol: Web Protocols — Campaigns AC only (not yet in G0016): HTTPS GET/POST beacons to C2</title>
+<rect x="2376" y="122" width="190" height="46" rx="3" fill="#e67e22" stroke="#999" stroke-width="0.6"/>
+<text x="2384" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1071.001</text>
+<text x="2384" y="151" font-size="10.5" fill="#ffffff">Application Layer</text>
+<text x="2384" y="163" font-size="10.5" fill="#ffffff">Protocol: Web Protocols</text>
+</g>
+<g><title>T1090.002 Proxy: External Proxy — Documented by MITRE for APT29 (G0016)</title>
+<rect x="2376" y="174" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="2384" y="189" font-size="11" font-weight="bold" fill="#000000">T1090.002</text>
+<text x="2384" y="203" font-size="10.5" fill="#000000">Proxy: External Proxy</text>
+</g>
+<g><title>T1090.003 Proxy: Multi-hop Proxy — Documented by MITRE for APT29 (G0016)</title>
+<rect x="2376" y="226" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="2384" y="241" font-size="11" font-weight="bold" fill="#000000">T1090.003</text>
+<text x="2384" y="255" font-size="10.5" fill="#000000">Proxy: Multi-hop Proxy</text>
+</g>
+<g><title>T1090.004 Proxy: Domain Fronting — Documented by MITRE for APT29 (G0016)</title>
+<rect x="2376" y="278" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="2384" y="293" font-size="11" font-weight="bold" fill="#000000">T1090.004</text>
+<text x="2384" y="307" font-size="10.5" fill="#000000">Proxy: Domain Fronting</text>
+</g>
+<g><title>T1105 Ingress Tool Transfer — MITRE G0016 + campaigns AC: Second stage downloaded after the click</title>
+<rect x="2376" y="330" width="190" height="46" rx="3" fill="#c0392b" stroke="#999" stroke-width="0.6"/>
+<text x="2384" y="345" font-size="11" font-weight="bold" fill="#ffffff">T1105</text>
+<text x="2384" y="359" font-size="10.5" fill="#ffffff">Ingress Tool Transfer</text>
+</g>
+<g><title>T1568 Dynamic Resolution — Documented by MITRE for APT29 (G0016)</title>
+<rect x="2376" y="382" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="2384" y="397" font-size="11" font-weight="bold" fill="#000000">T1568</text>
+<text x="2384" y="411" font-size="10.5" fill="#000000">Dynamic Resolution</text>
+</g>
+<g><title>T1573 Encrypted Channel — Documented by MITRE for APT29 (G0016)</title>
+<rect x="2376" y="434" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="2384" y="449" font-size="11" font-weight="bold" fill="#000000">T1573</text>
+<text x="2384" y="463" font-size="10.5" fill="#000000">Encrypted Channel</text>
+</g>
+<g><title>T1665 Hide Infrastructure — Documented by MITRE for APT29 (G0016)</title>
+<rect x="2376" y="486" width="190" height="46" rx="3" fill="#f5b7b1" stroke="#999" stroke-width="0.6"/>
+<text x="2384" y="501" font-size="11" font-weight="bold" fill="#000000">T1665</text>
+<text x="2384" y="515" font-size="10.5" fill="#000000">Hide Infrastructure</text>
+</g>
+<text x="24" y="666" font-size="13" font-weight="bold" fill="#111">Legend</text>
+<rect x="24" y="680" width="18" height="18" fill="#c0392b" stroke="#999"/>
+<text x="52" y="694" font-size="12" fill="#222">MITRE G0016 and seen in 2024-25 campaigns</text>
+<rect x="24" y="706" width="18" height="18" fill="#e67e22" stroke="#999"/>
+<text x="52" y="720" font-size="12" fill="#222">Seen in 2024-25 campaigns, not yet on G0016 page</text>
+<rect x="24" y="732" width="18" height="18" fill="#f5b7b1" stroke="#999"/>
+<text x="52" y="746" font-size="12" fill="#222">MITRE G0016 only (older activity)</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo3YmEyYWI1Yy1lZmU1LTQzNGQtYTM5MS02Y2IzY2JiZjc5ZTAAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaPYIyyVTrUZkEcLdkfdxizoAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDplN2FhNDBkNy0yNGRkLTQzZTktOTVkNC01NmJhODc3ODllNzNscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo5GFFtZOJf+ExUCp+62E5RwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggDhdtt/bS7Ef8K2jnW+z7cnrF4XWikfDXLA11LggGUV+kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaNiHQpnLa0g7VAPW73HNudoAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIKDqCTQTTmo1jzsFoF2ghRUSuXjAqmjwNkvHUwIx/LF0ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GaFRZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjdiYTJhYjVjLWVmZTUtNDM0ZC1hMzkxLTZjYjNjYmJmNzllMC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjRjYTE3YmI4LTc3ODQtNGVmNi05ZjZmLTVjOThhMjZiYzdmMnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAOF2239tLsR/wraOdb7PtyesXhdaKR8NcsDXUuCAZRX6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggM8KDtxPNDWQPFMIWnuJYfo/EzBo/XFV7VId8iQuo73miY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggJwHszGbjlnr3x0lNw7hrq8ZH+7qz7Vm1vLiYDFylMJx0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQKgyXeJ+Ro6J6MiSZiDj0Sgjd3SaHwZZbYV5iIY3ShoUe6t+Xn5ZUfEJcSKj0RbczSRhzxo4iB+1rWBjNhzP5w0=</c2pa:manifest></metadata></svg>

@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2394" height="524" viewBox="0 0 2394 524" font-family="Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-size="22" font-weight="bold" fill="#111">Week10 - APT29 vs KZ brand phishing</text>
+<text x="24" y="58" font-size="12" fill="#555">MITRE ATT&amp;CK Enterprise v20.1 · 31 techniques · shown: techniques in this layer only</text>
+<rect x="24" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="119.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Reconnaissance</text>
+<text x="119.0" y="106" font-size="11" text-anchor="middle" fill="#444">1 technique</text>
+<g><title>T1598 Phishing for Information — KZ phishing only: Collect brand assets / wording for lures</title>
+<rect x="24" y="122" width="190" height="46" rx="3" fill="#3498db" stroke="#999" stroke-width="0.6"/>
+<text x="32" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1598</text>
+<text x="32" y="151" font-size="10.5" fill="#ffffff">Phishing for Information</text>
+</g>
+<rect x="220" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="315.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Resource Development</text>
+<text x="315.0" y="106" font-size="11" text-anchor="middle" fill="#444">4 techniques</text>
+<g><title>T1583.001 Acquire Infrastructure: Domains — BOTH. APT29: Sender domains bakenhof[.]com, silry[.]com | KZ: Look-alike domains (kaspl[.]ga, egov-kz-pay[.]online)</title>
+<rect x="220" y="122" width="190" height="46" rx="3" fill="#8e44ad" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1583.001</text>
+<text x="228" y="151" font-size="10.5" fill="#ffffff">Acquire Infrastructure:</text>
+<text x="228" y="163" font-size="10.5" fill="#ffffff">Domains</text>
+</g>
+<g><title>T1584.004 Compromise Infrastructure: Server — APT29 only: Compromised WordPress server hosts the ZIP / HTA</title>
+<rect x="220" y="174" width="190" height="46" rx="3" fill="#e74c3c" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="189" font-size="11" font-weight="bold" fill="#ffffff">T1584.004</text>
+<text x="228" y="203" font-size="10.5" fill="#ffffff">Compromise Infrastructure:</text>
+<text x="228" y="215" font-size="10.5" fill="#ffffff">Server</text>
+</g>
+<g><title>T1588.004 Obtain Capabilities: Digital Certificates — APT29 only: RDP file signed with a Let's Encrypt certificate</title>
+<rect x="220" y="226" width="190" height="46" rx="3" fill="#e74c3c" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="241" font-size="11" font-weight="bold" fill="#ffffff">T1588.004</text>
+<text x="228" y="255" font-size="10.5" fill="#ffffff">Obtain Capabilities:</text>
+<text x="228" y="267" font-size="10.5" fill="#ffffff">Digital Certificates</text>
+</g>
+<g><title>T1608.005 Stage Capabilities: Link Target — KZ phishing only: Credential-capture page staged behind the link</title>
+<rect x="220" y="278" width="190" height="46" rx="3" fill="#3498db" stroke="#999" stroke-width="0.6"/>
+<text x="228" y="293" font-size="11" font-weight="bold" fill="#ffffff">T1608.005</text>
+<text x="228" y="307" font-size="10.5" fill="#ffffff">Stage Capabilities: Link</text>
+<text x="228" y="319" font-size="10.5" fill="#ffffff">Target</text>
+</g>
+<rect x="416" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="511.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Initial Access</text>
+<text x="511.0" y="106" font-size="11" text-anchor="middle" fill="#444">2 techniques</text>
+<g><title>T1566.001 Phishing: Spearphishing Attachment — BOTH. APT29: Attached lure document with link (A); .RDP file attached (B) | KZ: Kazpost-themed .docm attachment (week 5, H3)</title>
+<rect x="416" y="122" width="190" height="46" rx="3" fill="#8e44ad" stroke="#999" stroke-width="0.6"/>
+<text x="424" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1566.001</text>
+<text x="424" y="151" font-size="10.5" fill="#ffffff">Phishing: Spearphishing</text>
+<text x="424" y="163" font-size="10.5" fill="#ffffff">Attachment</text>
+</g>
+<g><title>T1566.002 Phishing: Spearphishing Link — BOTH. APT29: Link to invite.php (A) / to wine.zip (C) | KZ: SMS / messenger / e-mail link: 'parcel held', 'eGov payout'</title>
+<rect x="416" y="174" width="190" height="46" rx="3" fill="#8e44ad" stroke="#999" stroke-width="0.6"/>
+<text x="424" y="189" font-size="11" font-weight="bold" fill="#ffffff">T1566.002</text>
+<text x="424" y="203" font-size="10.5" fill="#ffffff">Phishing: Spearphishing</text>
+<text x="424" y="215" font-size="10.5" fill="#ffffff">Link</text>
+</g>
+<rect x="612" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="707.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Execution</text>
+<text x="707.0" y="106" font-size="11" text-anchor="middle" fill="#444">5 techniques</text>
+<g><title>T1053.005 Scheduled Task/Job: Scheduled Task — KZ phishing only: Scheduled task persistence (lab emulation)</title>
+<rect x="612" y="122" width="190" height="46" rx="3" fill="#3498db" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1053.005</text>
+<text x="620" y="151" font-size="10.5" fill="#ffffff">Scheduled Task/Job:</text>
+<text x="620" y="163" font-size="10.5" fill="#ffffff">Scheduled Task</text>
+</g>
+<g><title>T1059.001 Command and Scripting Interpreter: PowerShell — KZ phishing only: Word -&gt; PowerShell (weeks 5 and 7)</title>
+<rect x="612" y="174" width="190" height="46" rx="3" fill="#3498db" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="189" font-size="11" font-weight="bold" fill="#ffffff">T1059.001</text>
+<text x="620" y="203" font-size="10.5" fill="#ffffff">Command and Scripting</text>
+<text x="620" y="215" font-size="10.5" fill="#ffffff">Interpreter: PowerShell</text>
+</g>
+<g><title>T1204.001 User Execution: Malicious Link — BOTH. APT29: Victim clicks the link in the invitation | KZ: Victim opens the link</title>
+<rect x="612" y="226" width="190" height="46" rx="3" fill="#8e44ad" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="241" font-size="11" font-weight="bold" fill="#ffffff">T1204.001</text>
+<text x="620" y="255" font-size="10.5" fill="#ffffff">User Execution: Malicious</text>
+<text x="620" y="267" font-size="10.5" fill="#ffffff">Link</text>
+</g>
+<g><title>T1204.002 User Execution: Malicious File — BOTH. APT29: Victim opens invite.hta / .rdp / wine.exe | KZ: Victim opens the attachment</title>
+<rect x="612" y="278" width="190" height="46" rx="3" fill="#8e44ad" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="293" font-size="11" font-weight="bold" fill="#ffffff">T1204.002</text>
+<text x="620" y="307" font-size="10.5" fill="#ffffff">User Execution: Malicious</text>
+<text x="620" y="319" font-size="10.5" fill="#ffffff">File</text>
+</g>
+<g><title>T1574.001 Hijack Execution Flow: DLL — APT29 only: DLL side-loading: SqlDumper.exe / wine.exe (PowerPoint)</title>
+<rect x="612" y="330" width="190" height="46" rx="3" fill="#e74c3c" stroke="#999" stroke-width="0.6"/>
+<text x="620" y="345" font-size="11" font-weight="bold" fill="#ffffff">T1574.001</text>
+<text x="620" y="359" font-size="10.5" fill="#ffffff">Hijack Execution Flow: DLL</text>
+</g>
+<rect x="808" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="903.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Persistence</text>
+<text x="903.0" y="106" font-size="11" text-anchor="middle" fill="#444">1 technique</text>
+<g><title>T1547.001 Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder — BOTH. APT29: Run key POWERPNT (C); Run key per Zscaler (A); AutoStart possible after RDP (B) | KZ: Implant autostart (lab emulation, week 8)</title>
+<rect x="808" y="122" width="190" height="46" rx="3" fill="#8e44ad" stroke="#999" stroke-width="0.6"/>
+<text x="816" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1547.001</text>
+<text x="816" y="151" font-size="10.5" fill="#ffffff">Boot or Logon Autostart</text>
+<text x="816" y="163" font-size="10.5" fill="#ffffff">Execution: Registry Run…</text>
+</g>
+<rect x="1004" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="1099.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Privilege Escalation</text>
+<text x="1099.0" y="106" font-size="11" text-anchor="middle" fill="#444">1 technique</text>
+<g><title>T1055.003 Process Injection: Thread Execution Hijacking — APT29 only: WINELOADER thread execution hijacking (Mandiant table)</title>
+<rect x="1004" y="122" width="190" height="46" rx="3" fill="#e74c3c" stroke="#999" stroke-width="0.6"/>
+<text x="1012" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1055.003</text>
+<text x="1012" y="151" font-size="10.5" fill="#ffffff">Process Injection: Thread</text>
+<text x="1012" y="163" font-size="10.5" fill="#ffffff">Execution Hijacking</text>
+</g>
+<rect x="1200" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="1295.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Stealth</text>
+<text x="1295.0" y="106" font-size="11" text-anchor="middle" fill="#444">4 techniques</text>
+<g><title>T1027 Obfuscated Files or Information — APT29 only: RC4-encrypted core module, junk-code DLL</title>
+<rect x="1200" y="122" width="190" height="46" rx="3" fill="#e74c3c" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1027</text>
+<text x="1208" y="151" font-size="10.5" fill="#ffffff">Obfuscated Files or</text>
+<text x="1208" y="163" font-size="10.5" fill="#ffffff">Information</text>
+</g>
+<g><title>T1140 Deobfuscate/Decode Files or Information — APT29 only: certutil -decode rebuilds invite.zip</title>
+<rect x="1200" y="174" width="190" height="46" rx="3" fill="#e74c3c" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="189" font-size="11" font-weight="bold" fill="#ffffff">T1140</text>
+<text x="1208" y="203" font-size="10.5" fill="#ffffff">Deobfuscate/Decode Files</text>
+<text x="1208" y="215" font-size="10.5" fill="#ffffff">or Information</text>
+</g>
+<g><title>T1218.005 System Binary Proxy Execution: Mshta — APT29 only: ROOTSAW runs as an HTA (mshta.exe)</title>
+<rect x="1200" y="226" width="190" height="46" rx="3" fill="#e74c3c" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="241" font-size="11" font-weight="bold" fill="#ffffff">T1218.005</text>
+<text x="1208" y="255" font-size="10.5" fill="#ffffff">System Binary Proxy</text>
+<text x="1208" y="267" font-size="10.5" fill="#ffffff">Execution: Mshta</text>
+</g>
+<g><title>T1684.001 Social Engineering: Impersonation — BOTH. APT29: Poses as CDU, Microsoft/AWS staff, a European MFA | KZ: Poses as Kaspi, eGov, Kazpost, CDEK</title>
+<rect x="1200" y="278" width="190" height="46" rx="3" fill="#8e44ad" stroke="#999" stroke-width="0.6"/>
+<text x="1208" y="293" font-size="11" font-weight="bold" fill="#ffffff">T1684.001</text>
+<text x="1208" y="307" font-size="10.5" fill="#ffffff">Social Engineering:</text>
+<text x="1208" y="319" font-size="10.5" fill="#ffffff">Impersonation</text>
+</g>
+<rect x="1396" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="1491.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Credential Access</text>
+<text x="1491.0" y="106" font-size="11" text-anchor="middle" fill="#444">2 techniques</text>
+<g><title>T1056.003 Input Capture: Web Portal Capture — KZ phishing only: Fake login / card form captures data</title>
+<rect x="1396" y="122" width="190" height="46" rx="3" fill="#3498db" stroke="#999" stroke-width="0.6"/>
+<text x="1404" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1056.003</text>
+<text x="1404" y="151" font-size="10.5" fill="#ffffff">Input Capture: Web Portal</text>
+<text x="1404" y="163" font-size="10.5" fill="#ffffff">Capture</text>
+</g>
+<g><title>T1111 Multi-Factor Authentication Interception — KZ phishing only: Fake form asks for the Kaspi SMS code</title>
+<rect x="1396" y="174" width="190" height="46" rx="3" fill="#3498db" stroke="#999" stroke-width="0.6"/>
+<text x="1404" y="189" font-size="11" font-weight="bold" fill="#ffffff">T1111</text>
+<text x="1404" y="203" font-size="10.5" fill="#ffffff">Multi-Factor</text>
+<text x="1404" y="215" font-size="10.5" fill="#ffffff">Authentication…</text>
+</g>
+<rect x="1592" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="1687.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Discovery</text>
+<text x="1687.0" y="106" font-size="11" text-anchor="middle" fill="#444">4 techniques</text>
+<g><title>T1033 System Owner/User Discovery — APT29 only: Username sent in first beacon</title>
+<rect x="1592" y="122" width="190" height="46" rx="3" fill="#e74c3c" stroke="#999" stroke-width="0.6"/>
+<text x="1600" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1033</text>
+<text x="1600" y="151" font-size="10.5" fill="#ffffff">System Owner/User</text>
+<text x="1600" y="163" font-size="10.5" fill="#ffffff">Discovery</text>
+</g>
+<g><title>T1057 Process Discovery — APT29 only: Process discovery (Mandiant table)</title>
+<rect x="1592" y="174" width="190" height="46" rx="3" fill="#e74c3c" stroke="#999" stroke-width="0.6"/>
+<text x="1600" y="189" font-size="11" font-weight="bold" fill="#ffffff">T1057</text>
+<text x="1600" y="203" font-size="10.5" fill="#ffffff">Process Discovery</text>
+</g>
+<g><title>T1082 System Information Discovery — BOTH. APT29: Host fingerprint: computer name, process | KZ: Host discovery (CALDERA, week 8)</title>
+<rect x="1592" y="226" width="190" height="46" rx="3" fill="#8e44ad" stroke="#999" stroke-width="0.6"/>
+<text x="1600" y="241" font-size="11" font-weight="bold" fill="#ffffff">T1082</text>
+<text x="1600" y="255" font-size="10.5" fill="#ffffff">System Information</text>
+<text x="1600" y="267" font-size="10.5" fill="#ffffff">Discovery</text>
+</g>
+<g><title>T1083 File and Directory Discovery — KZ phishing only: File discovery (CALDERA, week 8)</title>
+<rect x="1592" y="278" width="190" height="46" rx="3" fill="#3498db" stroke="#999" stroke-width="0.6"/>
+<text x="1600" y="293" font-size="11" font-weight="bold" fill="#ffffff">T1083</text>
+<text x="1600" y="307" font-size="10.5" fill="#ffffff">File and Directory</text>
+<text x="1600" y="319" font-size="10.5" fill="#ffffff">Discovery</text>
+</g>
+<rect x="1788" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="1883.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Collection</text>
+<text x="1883.0" y="106" font-size="11" text-anchor="middle" fill="#444">3 techniques</text>
+<g><title>T1005 Data from Local System — BOTH. APT29: Victim drives exposed over the RDP session | KZ: Stage local data</title>
+<rect x="1788" y="122" width="190" height="46" rx="3" fill="#8e44ad" stroke="#999" stroke-width="0.6"/>
+<text x="1796" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1005</text>
+<text x="1796" y="151" font-size="10.5" fill="#ffffff">Data from Local System</text>
+</g>
+<g><title>T1039 Data from Network Shared Drive — APT29 only: Network drives exposed over the RDP session</title>
+<rect x="1788" y="174" width="190" height="46" rx="3" fill="#e74c3c" stroke="#999" stroke-width="0.6"/>
+<text x="1796" y="189" font-size="11" font-weight="bold" fill="#ffffff">T1039</text>
+<text x="1796" y="203" font-size="10.5" fill="#ffffff">Data from Network Shared</text>
+<text x="1796" y="215" font-size="10.5" fill="#ffffff">Drive</text>
+</g>
+<g><title>T1115 Clipboard Data — APT29 only: Clipboard redirected to attacker RDP server</title>
+<rect x="1788" y="226" width="190" height="46" rx="3" fill="#e74c3c" stroke="#999" stroke-width="0.6"/>
+<text x="1796" y="241" font-size="11" font-weight="bold" fill="#ffffff">T1115</text>
+<text x="1796" y="255" font-size="10.5" fill="#ffffff">Clipboard Data</text>
+</g>
+<rect x="1984" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="2079.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Command and Control</text>
+<text x="2079.0" y="106" font-size="11" text-anchor="middle" fill="#444">2 techniques</text>
+<g><title>T1071.001 Application Layer Protocol: Web Protocols — BOTH. APT29: HTTPS GET/POST beacons to C2 | KZ: C2 over HTTPS</title>
+<rect x="1984" y="122" width="190" height="46" rx="3" fill="#8e44ad" stroke="#999" stroke-width="0.6"/>
+<text x="1992" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1071.001</text>
+<text x="1992" y="151" font-size="10.5" fill="#ffffff">Application Layer</text>
+<text x="1992" y="163" font-size="10.5" fill="#ffffff">Protocol: Web Protocols</text>
+</g>
+<g><title>T1105 Ingress Tool Transfer — APT29 only: Second stage downloaded after the click</title>
+<rect x="1984" y="174" width="190" height="46" rx="3" fill="#e74c3c" stroke="#999" stroke-width="0.6"/>
+<text x="1992" y="189" font-size="11" font-weight="bold" fill="#ffffff">T1105</text>
+<text x="1992" y="203" font-size="10.5" fill="#ffffff">Ingress Tool Transfer</text>
+</g>
+<rect x="2180" y="70" width="190" height="44" fill="#dddddd"/>
+<text x="2275.0" y="90" font-size="13" font-weight="bold" text-anchor="middle" fill="#111">Exfiltration</text>
+<text x="2275.0" y="106" font-size="11" text-anchor="middle" fill="#444">2 techniques</text>
+<g><title>T1041 Exfiltration Over C2 Channel — KZ phishing only: Exfiltration over C2</title>
+<rect x="2180" y="122" width="190" height="46" rx="3" fill="#3498db" stroke="#999" stroke-width="0.6"/>
+<text x="2188" y="137" font-size="11" font-weight="bold" fill="#ffffff">T1041</text>
+<text x="2188" y="151" font-size="10.5" fill="#ffffff">Exfiltration Over C2</text>
+<text x="2188" y="163" font-size="10.5" fill="#ffffff">Channel</text>
+</g>
+<g><title>T1567 Exfiltration Over Web Service — KZ phishing only: Exfiltration to web service / Telegram bot</title>
+<rect x="2180" y="174" width="190" height="46" rx="3" fill="#3498db" stroke="#999" stroke-width="0.6"/>
+<text x="2188" y="189" font-size="11" font-weight="bold" fill="#ffffff">T1567</text>
+<text x="2188" y="203" font-size="10.5" fill="#ffffff">Exfiltration Over Web</text>
+<text x="2188" y="215" font-size="10.5" fill="#ffffff">Service</text>
+</g>
+<text x="24" y="406" font-size="13" font-weight="bold" fill="#111">Legend</text>
+<rect x="24" y="420" width="18" height="18" fill="#8e44ad" stroke="#999"/>
+<text x="52" y="434" font-size="12" fill="#222">Both</text>
+<rect x="24" y="446" width="18" height="18" fill="#e74c3c" stroke="#999"/>
+<text x="52" y="460" font-size="12" fill="#222">APT29 only</text>
+<rect x="24" y="472" width="18" height="18" fill="#3498db" stroke="#999"/>
+<text x="52" y="486" font-size="12" fill="#222">KZ brand phishing only</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpiYmUyMWZiYS04YWFlLTRhNGItYjg5OS05Y2NhYTk2ZWU2MGMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaKs6sl7vxCPd/qfAEsoLo1YAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpmYTM4ZTgxMy1kYzM5LTQ0YjMtOTJmZS1iMDk5YTZlZDkxOGFscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoyKoSzQqBf3yLxKdtzlNU/wAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggDSD/CFLluXWSqE/kZfybEXPa0p7KAwdEglUFf/IbSC+kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaNZVkXo0q8b0yWyrf/YiOysAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIFBfpRMygynjeDFWP9q9Ag94mcVNZasZeyVKxI59boiqZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GUmlZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmJiZTIxZmJhLThhYWUtNGE0Yi1iODk5LTljY2FhOTZlZTYwYy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjFkYjMzYzNiLTg1NzktNDZlZS1iZDAzLTQ2OTFhZjQ1MWI0YXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCANIP8IUuW5dZKoT+Rl/JsRc9rSnsoDB0SCVQV/8htIL6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggbakVdniCUaR5gegIeAAB7BvKrEPKtwXnFfH93inoAnaiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggSrtOEB3OyVxvJxAhLsPeyPzsazlj+49r4eMGRi36nQd0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQD6F8kmHqLQxvDKQ0bTZ1dilA5aMYSZmdMCReVny9rm1aW53f8jWEYJ7AzAPl23ELnpC4yB9/4d4BuuXcBlVObE=</c2pa:manifest></metadata></svg>
