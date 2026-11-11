@@ -31,6 +31,25 @@ We chose **APT29** because its main tradecraft is phishing that impersonates tru
 
 Notable software: EnvyScout / ROOTSAW (HTML/HTA dropper), WINELOADER, GRAPELOADER, Cobalt Strike, SUNBURST, Mimikatz.
 
+### 2.1 Why APT29 is linked to Russia and APT41 to China
+
+Neither state admits these operations; the link (attribution) comes from governments and security vendors combining several kinds of evidence.
+
+**APT29 → Russia (SVR)**
+- **Government attribution:** on 15 April 2021 the US government formally attributed the SolarWinds campaign to Russia's Foreign Intelligence Service (SVR) "with high confidence", sanctioned six Russian technology companies that support SVR cyber operations and expelled 10 Russian diplomats.
+- **Intelligence insight:** according to de Volkskrant and Nieuwsuur (January 2018), Dutch intelligence gained access to the group's network in 2014, including a CCTV camera at its office, and identified people entering the office as employees of the Russian Foreign Intelligence Service.
+- **Technical evidence from vendors:** malware lineage from one campaign to the next (the "Duke" families), and targets that match Russian foreign-intelligence interests (ministries of foreign affairs, NATO governments, diplomats).
+
+**APT41 → China**
+- **Indictments:** in September 2020 the US Department of Justice charged five Chinese nationals as members of APT41; prosecutors described their employer, Chengdu 404 Network Technology, as a cover company for the hacking. More than 100 victims were named worldwide.
+- **Vendor research:** Mandiant describes APT41 as a group that runs state-directed espionage and, in parallel, financially motivated crime (theft of virtual currency from game companies, ransomware, cryptojacking), hence the name "Double Dragon".
+
+### 2.2 Known campaigns in ATT&CK: what happened
+
+**C0024 — SolarWinds Compromise (2019–2021).** APT29 broke into the network of SolarWinds, the vendor of the Orion IT-monitoring platform. On the build server it planted **SUNSPOT**, which silently inserted the **SUNBURST** backdoor into Orion while the product was being compiled. The trojanized update shipped with SolarWinds' genuine digital signature, so customers installed it themselves; SolarWinds reported that fewer than 18,000 customers downloaded it. The group then picked only high-value victims for a second stage (TEARDROP, Raindrop, Cobalt Strike). **Outcome:** at least nine US federal agencies and about 100 companies were second-stage victims (including Microsoft); the intrusion was discovered in December 2020 when FireEye (now Mandiant) found it in its own network; in April 2021 the US formally blamed the SVR and imposed sanctions. Lesson: compromise one trusted supplier and the victims install the backdoor for you.
+
+**C0023 — Operation Ghost (2013–2019).** After the loud 2015–2016 operations many assumed the group had gone quiet, but it kept spying on the ministries of foreign affairs of at least three European countries and on the Washington embassy of an EU member state. It used new "Duke" malware (**PolyglotDuke**, **RegDuke**, **FatDuke**) plus an updated **MiniDuke** backdoor. To stay hidden, infected machines read the encoded addresses of their command servers from ordinary posts on Twitter, Reddit and Imgur, payloads and commands were hidden inside images (steganography), and RegDuke used Dropbox as its C2. **Outcome:** ESET exposed the campaign in October 2019 and linked it to APT29 with high confidence through shared code, the same targets and the same tactics as earlier Duke operations. Lesson: social-media and cloud traffic can carry C2 that looks like normal browsing.
+
 ## 3. Case studies: three phishing campaigns (2024–2025)
 
 We picked three recent campaigns where phishing was the entry point, because they are the closest to our topic.
@@ -223,6 +242,10 @@ Neither week 9 test is an exact APT29 sub-technique: APT29 targets Windows and c
 - Microsoft Threat Intelligence, *Midnight Blizzard conducts large-scale spear-phishing campaign using RDP files* (2024): https://www.microsoft.com/en-us/security/blog/2024/10/29/midnight-blizzard-conducts-large-scale-spear-phishing-campaign-using-rdp-files/
 - Check Point Research, *Renewed APT29 Phishing Campaign Against European Diplomats* (2025): https://research.checkpoint.com/2025/apt29-phishing-campaign/
 - MITRE ATT&CK STIX data (v20.1): https://github.com/mitre-attack/attack-stix-data
+- Breaking Defense, *US slaps Russia with sanctions, other actions for SolarWinds campaign* (15 April 2021): https://breakingdefense.com/2021/04/us-slaps-russia-with-sanctions-other-actions-for-solarwinds-campaign/
+- ESET WeLiveSecurity, *Operation Ghost: The Dukes aren't back – they never left* (2019): https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+- ASPI The Strategist, *A rare insight into cyber espionage: Dutch intelligence and two Russian bears* (2018): https://www.aspistrategist.org.au/rare-insight-cyber-espionage-dutch-intelligence-two-russian-bears/
+- TechCrunch, *Justice Department charges five Chinese members of APT41* (16 September 2020): https://techcrunch.com/2020/09/16/justice-department-charges-apt41-chinese-hackers
 - Mandiant, *APT1: Exposing One of China's Cyber Espionage Units* (2013)
 - CrowdStrike, *Global Threat Report*
 
