@@ -402,7 +402,7 @@
     {
       "techniqueID": "T1547.001",
       "color": "#c0392b",
-      "comment": "MITRE G0016 + campaigns ABC: Run key POWERPNT (C), Run key (A), AutoStart (B)",
+      "comment": "MITRE G0016 + campaigns ABC: Run key POWERPNT (C); Run key per Zscaler (A); AutoStart possible after RDP (B)",
       "enabled": true,
       "showSubtechniques": true
     },
@@ -437,7 +437,7 @@
     {
       "techniqueID": "T1566.001",
       "color": "#c0392b",
-      "comment": "MITRE G0016 + campaigns AB: PDF lure with link (A); .RDP file attached (B)",
+      "comment": "MITRE G0016 + campaigns AB: Attached lure document with link (A); .RDP file attached (B)",
       "enabled": true,
       "showSubtechniques": true
     },

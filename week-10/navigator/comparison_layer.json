@@ -191,7 +191,7 @@
     {
       "techniqueID": "T1547.001",
       "color": "#8e44ad",
-      "comment": "BOTH. APT29: Run key POWERPNT (C), Run key (A), AutoStart (B) | KZ: Implant autostart (lab emulation, week 8)",
+      "comment": "BOTH. APT29: Run key POWERPNT (C); Run key per Zscaler (A); AutoStart possible after RDP (B) | KZ: Implant autostart (lab emulation, week 8)",
       "enabled": true,
       "showSubtechniques": true,
       "score": 3
@@ -199,7 +199,7 @@
     {
       "techniqueID": "T1566.001",
       "color": "#8e44ad",
-      "comment": "BOTH. APT29: PDF lure with link (A); .RDP file attached (B) | KZ: Kazpost-themed .docm attachment (week 5, H3)",
+      "comment": "BOTH. APT29: Attached lure document with link (A); .RDP file attached (B) | KZ: Kazpost-themed .docm attachment (week 5, H3)",
       "enabled": true,
       "showSubtechniques": true,
       "score": 3
