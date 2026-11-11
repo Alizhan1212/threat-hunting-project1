@@ -265,8 +265,6 @@ Restore the VM snapshot if you changed anything else.
 | T1003.008 | Privileged Account Management | M1026 | Limits who can read `/etc/shadow` |
 | T1003.008 | Audit | M1047 | A watch rule on `/etc/shadow` makes the access visible |
 
-> Verify the mitigation IDs at attack.mitre.org before submission.
-
 ---
 
 ## 10. Limitations
