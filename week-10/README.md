@@ -40,7 +40,7 @@ We picked three recent campaigns where phishing was the entry point, because the
 | Kill chain stage | What happened |
 |---|---|
 | Lure | E-mail invitation to a dinner reception on 1 March 2024, with the CDU party logo, written in German |
-| Delivery | Link to `waterforvoiceless[.]org/invite.php`, a **compromised WordPress site**, which served a ZIP with `invite.hta` |
+| Delivery | Attached German-language lure document with a link to `waterforvoiceless[.]org/invite.php`, a **compromised WordPress site**, which served a ZIP with `invite.hta` |
 | Execution | ROOTSAW (EnvyScout) HTA runs, downloads `invite.txt`, decodes it with `certutil -decode`, unpacks with `tar` |
 | Side-loading | Legitimate `SqlDumper.exe` loads malicious `vcruntime140.dll` = WINELOADER |
 | Stealth | RC4-encrypted core module, bypass of ntdll hooks, thread execution hijacking |
@@ -57,7 +57,7 @@ Source: [Mandiant / Google Cloud blog](https://cloud.google.com/blog/topics/thre
 | Delivery | Attached `.rdp` configuration file **signed with a Let's Encrypt certificate** |
 | Execution | User opens the `.rdp` file → Windows connects to the attacker's RDP server |
 | Collection | The session exposes the victim's local drives, network drives, clipboard, printers, smart cards, Windows Hello / passkeys |
-| Persistence | Attacker can drop malware into AutoStart locations or install a RAT |
+| Persistence | Microsoft warns the attacker **could** drop malware into AutoStart locations or install a RAT (possible, not observed) |
 | Scale | Thousands of targets in 100+ organizations (government, academia, defense, NGOs), mostly UK, Europe, Australia, Japan |
 
 Source: [Microsoft Threat Intelligence](https://www.microsoft.com/en-us/security/blog/2024/10/29/midnight-blizzard-conducts-large-scale-spear-phishing-campaign-using-rdp-files/). Microsoft calls the signed RDP file a new access vector for this actor. No malware is needed in the first stage: a built-in Windows feature does the work.
@@ -80,7 +80,7 @@ Source: [Check Point Research](https://research.checkpoint.com/2025/apt29-phishi
 1. **Impersonation of a trusted organization** (a party, Microsoft, a ministry) is the core of every lure.
 2. **The user does the work**: a click or opening a file is required in all three.
 3. **Legitimate binaries** carry the malicious code (DLL side-loading of `SqlDumper.exe`, PowerPoint; built-in RDP client).
-4. **Persistence via the Run key** in all three.
+4. **Persistence via the Run key**: observed in C (Check Point) and A (reported by Zscaler); in B it is the possible next step Microsoft warns about.
 5. **Ordinary HTTPS** for C2, so the traffic blends in.
 
 ## 4. Mapping to MITRE ATT&CK
@@ -92,7 +92,7 @@ ATT&CK version: **v20.1** (in v20 MITRE split *Defense Evasion* into **Stealth**
 | Resource Development | Compromise Infrastructure: Server | T1584.004 | A | Compromised WordPress site hosts ZIP / HTA |
 | Resource Development | Acquire Infrastructure: Domains | T1583.001 | C | Sender domains `bakenhof[.]com`, `silry[.]com` |
 | Resource Development | Obtain Capabilities: Digital Certificates | T1588.004 | B | Let's Encrypt certificate signs the RDP file |
-| Initial Access | Spearphishing Attachment | T1566.001 | A, B | PDF lure with a link; `.rdp` attachment |
+| Initial Access | Spearphishing Attachment | T1566.001 | A, B | Attached lure document with a link; `.rdp` attachment |
 | Initial Access | Spearphishing Link | T1566.002 | A, C | Link to `invite.php` / `wine.zip` |
 | Stealth | Impersonation | T1684.001 | A, B, C | Poses as CDU, Microsoft/AWS staff, a European MFA |
 | Execution | User Execution: Malicious Link | T1204.001 | A, C | Victim clicks the invitation link |
@@ -103,7 +103,7 @@ ATT&CK version: **v20.1** (in v20 MITRE split *Defense Evasion* into **Stealth**
 | Execution / Stealth | Hijack Execution Flow: DLL (side-loading) | T1574.001 | A, C | `SqlDumper.exe` → `vcruntime140.dll`; `wine.exe` → `ppcore.dll` |
 | Stealth | Obfuscated Files or Information | T1027 | A, C | RC4-encrypted core module, junk-code DLL |
 | Privilege Escalation / Stealth | Process Injection: Thread Execution Hijacking | T1055.003 | A | WINELOADER (Mandiant ATT&CK table) |
-| Persistence | Boot or Logon Autostart: Registry Run Keys | T1547.001 | A, B, C | Run key `POWERPNT`; AutoStart folder after RDP |
+| Persistence | Boot or Logon Autostart: Registry Run Keys | T1547.001 | A, B, C | Run key `POWERPNT` (C); Run key per Zscaler (A); AutoStart possible after RDP access (B) |
 | Discovery | System Information Discovery | T1082 | A, C | Host fingerprint in first beacon |
 | Discovery | System Owner/User Discovery | T1033 | A, C | User name in first beacon |
 | Discovery | Process Discovery | T1057 | A | Mandiant ATT&CK table |
@@ -127,12 +127,27 @@ Open live in Navigator:
 - ▶ [KZ phishing layer](https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2FAlizhan1212%2Fthreat-hunting-project1%2Fmain%2Fweek-10%2Fnavigator%2Fkz_phishing_layer.json)
 - ▶ [Comparison layer](https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2FAlizhan1212%2Fthreat-hunting-project1%2Fmain%2Fweek-10%2Fnavigator%2Fcomparison_layer.json)
 
+### SVG exports of the layers
+
+| APT29 TTPs | KZ brand phishing | APT29 vs KZ phishing |
+|---|---|---|
+| [`svg/apt29_layer.svg`](svg/apt29_layer.svg) | [`svg/kz_phishing_layer.svg`](svg/kz_phishing_layer.svg) | [`svg/comparison_layer.svg`](svg/comparison_layer.svg) |
+
+![APT29 layer](svg/apt29_layer.svg)
+
+![KZ brand phishing layer](svg/kz_phishing_layer.svg)
+
+![Comparison layer](svg/comparison_layer.svg)
+
+The SVGs show only the techniques in each layer, in ATT&CK Navigator column order and layer colours, with the layer legend; hover a technique to see its comment. They are rendered by [`scripts/render_svg.py`](scripts/render_svg.py).
+
 The layers are generated by [`scripts/build_layers.py`](scripts/build_layers.py) from the official ATT&CK STIX data, so every ID is checked against ATT&CK v20.1 (the script stops if an ID is revoked or missing).
 
 ```bash
 cd week-10
 pip install matplotlib
 python3 scripts/build_layers.py      # downloads ATT&CK STIX, writes navigator/*.json and images/
+python3 scripts/render_svg.py        # renders navigator/*.json to svg/*.svg
 ```
 
 ## 6. Comparison with our topic (KZ-brand phishing)
@@ -164,18 +179,27 @@ T1583.001 Domains, T1566.001 Spearphishing Attachment, T1566.002 Spearphishing L
 | T1566.001 / T1204.002 | Office, PDF reader or mail client spawning `mshta`, `powershell`, `mstsc` | Sysmon EID 1 | Week 7 (CAR PowerShell rule) |
 | T1566.001 (RDP variant) | `mstsc.exe` started with a `.rdp` file from a mail/download folder; outbound TCP 3389 to the internet | Sysmon EID 1, 3; firewall | New |
 | T1574.001 | Signed binary run from `AppData` / `Downloads` loading an unsigned DLL from the same folder | Sysmon EID 7 | New |
-| T1547.001 | New value under `HKCU\...\Run` pointing to `AppData` | Sysmon EID 13 | Week 9 (Atomic test) |
+| T1547.001 | New value under `HKCU\...\Run` pointing to `AppData` | Sysmon EID 13 | New (next Atomic test, see section 8) |
 | T1071.001 | Regular beacons (fixed interval, e.g. 60 s) to a rare domain | Proxy, Zeek | New |
 
 **Mitigations (from the reports):** block outbound RDP to the internet, phishing-resistant MFA (FIDO2) that also defeats the Kaspi SMS-code theft, attack surface reduction rules that block executables from e-mail, and user awareness of "invitation" and "parcel" lures.
 
 ## 8. Link to week 9 (Atomic Red Team)
 
-Several APT29 techniques above can be tested with Atomic Red Team in our lab and checked in Elastic:
+In [week 9](../week-09/README.md) we ran two Atomic Red Team tests on the Kali lab VM and recorded them in Elastic: **T1059.004** (Unix Shell) and **T1003.008** (/etc/passwd and /etc/shadow).
 
-| Technique | Atomic test | Why it matters here |
+| Week 9 technique | Parent on the APT29 page (G0016) | What it tells us for APT29 |
 |---|---|---|
-| T1547.001 | Registry Run key | Used in all three APT29 campaigns and in our week 8 plan |
+| T1059.004 Unix Shell | T1059 — APT29 uses T1059.001 PowerShell, T1059.006 Python, T1059.009 Cloud API | Same tactic (Execution). Our telemetry sees interpreter launches; for APT29's Windows tradecraft the equivalent is the PowerShell detection from week 7 |
+| T1003.008 /etc/shadow | T1003 — APT29 uses T1003.002 SAM, T1003.004 LSA Secrets | Same tactic (Credential Access). Week 9 showed that a file-watch on the credential store gives a clean, low-noise signal; on Windows the equivalent is watching access to the SAM / LSA secrets |
+
+Neither week 9 test is an exact APT29 sub-technique: APT29 targets Windows and cloud, our lab VM is Linux. The tactics match, the platform does not.
+
+**Next Atomic tests that would cover the APT29 phishing chain directly** (Windows lab needed):
+
+| Technique | Atomic test | Why |
+|---|---|---|
+| T1547.001 | Registry Run key | APT29 persistence (campaigns A and C) and in our week 8 plan |
 | T1218.005 | Mshta | ROOTSAW / EnvyScout in campaign A |
 | T1140 | certutil decode | Campaign A |
 | T1059.001 | PowerShell | Our week 5/7 hypothesis (Word → PowerShell) |
@@ -209,5 +233,7 @@ Several APT29 techniques above can be tested with Atomic Red Team in our lab and
 | `README.md` | this report |
 | `navigator/*.json` | three ATT&CK Navigator layers |
 | `scripts/build_layers.py` | builds the layers and the overlap image from ATT&CK STIX |
+| `svg/*.svg` | SVG exports of the three layers |
+| `scripts/render_svg.py` | renders the layers to SVG |
 | `images/w10_overlap_matrix.png` | overlap matrix (generated) |
 | `AI_USE_DECLARATION.md` | AI use declaration |
