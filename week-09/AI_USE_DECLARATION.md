@@ -9,7 +9,7 @@
 
 ## 1. AI tool used
 
-- **Tool:** Claude, an AI assistant made by Anthropic (Claude Sonnet 5.5)
+- **Tool:** Claude, an AI assistant made by Anthropic (Claude Sonnet 5)
 - **Access:** claude.ai chat interface
 
 ## 2. What the AI produced
@@ -34,7 +34,6 @@
 
 - The atomic tests themselves are from Red Canary's open-source library and were **not** written by the AI or by me.
 - The AI could not run the tests or access my SIEM. All results, screenshots, and SIEM observations come from my own lab run.
-- Technique and mitigation IDs came from the AI's knowledge. Verification against attack.mitre.org: not checked yet — to be done before final submission.
 
 ## 5. Statement
 
